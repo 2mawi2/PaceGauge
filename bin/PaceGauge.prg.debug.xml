@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/Users/mariusw/git/garmin/PaceGauge/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeBackground.mc" id="1" lineNum="9" parent="globals/Background" pc="268435456" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeBackground.mc" id="1" lineNum="10" parent="globals/Background" pc="268435460" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeBackground.mc" id="1" lineNum="14" parent="globals/Background" pc="268435481" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeBackground.mc" id="1" lineNum="16" parent="globals/Background" pc="268435501" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeBackground.mc" id="2" lineNum="19" parent="globals/Background" pc="268435522" symbol="setColor"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeBackground.mc" id="2" lineNum="20" parent="globals/Background" pc="268435526" symbol="setColor"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeBackground.mc" id="3" lineNum="23" parent="globals/Background" pc="268435537" symbol="draw"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeBackground.mc" id="3" lineNum="24" parent="globals/Background" pc="268435541" symbol="draw"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeBackground.mc" id="3" lineNum="25" parent="globals/Background" pc="268435573" symbol="draw"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeBackground.mc" id="4" lineNum="5" parent="globals/Background" pc="268438626" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeBackground.mc" id="4" lineNum="5" parent="globals/Background" pc="268438626" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="6" lineNum="14" parent="globals/PaceGauge" pc="268435586" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="6" lineNum="15" parent="globals/PaceGauge" pc="268435590" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="6" lineNum="16" parent="globals/PaceGauge" pc="268435600" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="6" lineNum="17" parent="globals/PaceGauge" pc="268435610" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="6" lineNum="18" parent="globals/PaceGauge" pc="268435620" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="7" lineNum="7" parent="globals/PaceGauge" pc="268438645" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="8" lineNum="27" parent="globals/PaceGaugeView" pc="268435631" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="8" lineNum="28" parent="globals/PaceGaugeView" pc="268435635" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="8" lineNum="29" parent="globals/PaceGaugeView" pc="268435653" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="9" lineNum="34" parent="globals/PaceGaugeView" pc="268435667" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="9" lineNum="35" parent="globals/PaceGaugeView" pc="268435671" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="9" lineNum="36" parent="globals/PaceGaugeView" pc="268435690" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="9" lineNum="37" parent="globals/PaceGaugeView" pc="268435713" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="9" lineNum="38" parent="globals/PaceGaugeView" pc="268435759" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="9" lineNum="39" parent="globals/PaceGaugeView" pc="268435782" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="9" lineNum="41" parent="globals/PaceGaugeView" pc="268435828" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="9" lineNum="42" parent="globals/PaceGaugeView" pc="268435851" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="9" lineNum="44" parent="globals/PaceGaugeView" pc="268435897" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="9" lineNum="45" parent="globals/PaceGaugeView" pc="268435920" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="9" lineNum="47" parent="globals/PaceGaugeView" pc="268435966" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="9" lineNum="48" parent="globals/PaceGaugeView" pc="268436009" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="9" lineNum="49" parent="globals/PaceGaugeView" pc="268436033" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="9" lineNum="51" parent="globals/PaceGaugeView" pc="268436055" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="9" lineNum="52" parent="globals/PaceGaugeView" pc="268436079" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="9" lineNum="54" parent="globals/PaceGaugeView" pc="268436101" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="10" lineNum="64" parent="globals/PaceGaugeView" pc="268436139" symbol="compute"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="10" lineNum="66" parent="globals/PaceGaugeView" pc="268436143" symbol="compute"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="10" lineNum="67" parent="globals/PaceGaugeView" pc="268436154" symbol="compute"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="10" lineNum="68" parent="globals/PaceGaugeView" pc="268436167" symbol="compute"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="10" lineNum="70" parent="globals/PaceGaugeView" pc="268436197" symbol="compute"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="11" lineNum="75" parent="globals/PaceGaugeView" pc="268436214" symbol="mpsToPace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="11" lineNum="76" parent="globals/PaceGaugeView" pc="268436218" symbol="mpsToPace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="11" lineNum="77" parent="globals/PaceGaugeView" pc="268436228" symbol="mpsToPace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="11" lineNum="78" parent="globals/PaceGaugeView" pc="268436238" symbol="mpsToPace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="12" lineNum="83" parent="globals/PaceGaugeView" pc="268436242" symbol="onUpdate"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="12" lineNum="85" parent="globals/PaceGaugeView" pc="268436246" symbol="onUpdate"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="12" lineNum="88" parent="globals/PaceGaugeView" pc="268436289" symbol="onUpdate"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="12" lineNum="89" parent="globals/PaceGaugeView" pc="268436313" symbol="onUpdate"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="12" lineNum="90" parent="globals/PaceGaugeView" pc="268436340" symbol="onUpdate"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="12" lineNum="92" parent="globals/PaceGaugeView" pc="268436367" symbol="onUpdate"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="12" lineNum="94" parent="globals/PaceGaugeView" pc="268436391" symbol="onUpdate"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="12" lineNum="95" parent="globals/PaceGaugeView" pc="268436425" symbol="onUpdate"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="12" lineNum="96" parent="globals/PaceGaugeView" pc="268436445" symbol="onUpdate"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="13" lineNum="99" parent="globals/PaceGaugeView" pc="268436460" symbol="calculatePaceGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="13" lineNum="100" parent="globals/PaceGaugeView" pc="268436464" symbol="calculatePaceGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="13" lineNum="101" parent="globals/PaceGaugeView" pc="268436483" symbol="calculatePaceGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="13" lineNum="102" parent="globals/PaceGaugeView" pc="268436490" symbol="calculatePaceGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="13" lineNum="103" parent="globals/PaceGaugeView" pc="268436501" symbol="calculatePaceGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="13" lineNum="105" parent="globals/PaceGaugeView" pc="268436523" symbol="calculatePaceGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="13" lineNum="106" parent="globals/PaceGaugeView" pc="268436545" symbol="calculatePaceGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="13" lineNum="107" parent="globals/PaceGaugeView" pc="268436552" symbol="calculatePaceGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="13" lineNum="108" parent="globals/PaceGaugeView" pc="268436562" symbol="calculatePaceGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="13" lineNum="109" parent="globals/PaceGaugeView" pc="268436584" symbol="calculatePaceGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="13" lineNum="110" parent="globals/PaceGaugeView" pc="268436603" symbol="calculatePaceGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="14" lineNum="113" parent="globals/PaceGaugeView" pc="268436635" symbol="drawGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="14" lineNum="114" parent="globals/PaceGaugeView" pc="268436639" symbol="drawGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="14" lineNum="115" parent="globals/PaceGaugeView" pc="268436654" symbol="drawGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="14" lineNum="116" parent="globals/PaceGaugeView" pc="268436690" symbol="drawGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="15" lineNum="23" parent="globals/PaceGaugeView" pc="268438695" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeView.mc" id="15" lineNum="23" parent="globals/PaceGaugeView" pc="268438695" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeApp.mc" id="17" lineNum="7" parent="globals/PaceGaugeApp" pc="268436735" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeApp.mc" id="17" lineNum="8" parent="globals/PaceGaugeApp" pc="268436739" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeApp.mc" id="18" lineNum="12" parent="globals/PaceGaugeApp" pc="268436758" symbol="onStart"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeApp.mc" id="19" lineNum="16" parent="globals/PaceGaugeApp" pc="268436763" symbol="onStop"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeApp.mc" id="20" lineNum="20" parent="globals/PaceGaugeApp" pc="268436768" symbol="getInitialView"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeApp.mc" id="20" lineNum="21" parent="globals/PaceGaugeApp" pc="268436772" symbol="getInitialView"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeApp.mc" id="21" lineNum="5" parent="globals/PaceGaugeApp" pc="268438676" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeApp.mc" id="21" lineNum="5" parent="globals/PaceGaugeApp" pc="268438676" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeApp.mc" id="22" lineNum="26" parent="globals" pc="268436810" symbol="getApp"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/PaceGaugeApp.mc" id="22" lineNum="27" parent="globals" pc="268436822" symbol="getApp"/>
+        <entry filename="Rez" id="24" lineNum="2" parent="globals/Rez/Drawables" pc="268438670" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="25" lineNum="6" parent="globals/Rez/Fonts" pc="268438672" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="26" lineNum="8" parent="globals/Rez/JsonData" pc="268438674" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="27" lineNum="17" parent="globals/Rez/Layouts" pc="268436839" symbol="MainLayout"/>
+        <entry filename="Rez" id="27" lineNum="19" parent="globals/Rez/Layouts" pc="268436851" symbol="MainLayout"/>
+        <entry filename="Rez" id="27" lineNum="20" parent="globals/Rez/Layouts" pc="268436864" symbol="MainLayout"/>
+        <entry filename="Rez" id="27" lineNum="22" parent="globals/Rez/Layouts" pc="268436877" symbol="MainLayout"/>
+        <entry filename="Rez" id="27" lineNum="23" parent="globals/Rez/Layouts" pc="268436901" symbol="MainLayout"/>
+        <entry filename="Rez" id="27" lineNum="24" parent="globals/Rez/Layouts" pc="268437064" symbol="MainLayout"/>
+        <entry filename="Rez" id="27" lineNum="26" parent="globals/Rez/Layouts" pc="268437227" symbol="MainLayout"/>
+        <entry filename="Rez" id="28" lineNum="35" parent="globals/Rez/Layouts" pc="268437265" symbol="TopLeftLayout"/>
+        <entry filename="Rez" id="28" lineNum="38" parent="globals/Rez/Layouts" pc="268437277" symbol="TopLeftLayout"/>
+        <entry filename="Rez" id="28" lineNum="39" parent="globals/Rez/Layouts" pc="268437301" symbol="TopLeftLayout"/>
+        <entry filename="Rez" id="28" lineNum="40" parent="globals/Rez/Layouts" pc="268437434" symbol="TopLeftLayout"/>
+        <entry filename="Rez" id="28" lineNum="42" parent="globals/Rez/Layouts" pc="268437567" symbol="TopLeftLayout"/>
+        <entry filename="Rez" id="29" lineNum="51" parent="globals/Rez/Layouts" pc="268437605" symbol="TopRightLayout"/>
+        <entry filename="Rez" id="29" lineNum="54" parent="globals/Rez/Layouts" pc="268437617" symbol="TopRightLayout"/>
+        <entry filename="Rez" id="29" lineNum="55" parent="globals/Rez/Layouts" pc="268437641" symbol="TopRightLayout"/>
+        <entry filename="Rez" id="29" lineNum="56" parent="globals/Rez/Layouts" pc="268437774" symbol="TopRightLayout"/>
+        <entry filename="Rez" id="29" lineNum="58" parent="globals/Rez/Layouts" pc="268437907" symbol="TopRightLayout"/>
+        <entry filename="Rez" id="30" lineNum="67" parent="globals/Rez/Layouts" pc="268437945" symbol="BottomLeftLayout"/>
+        <entry filename="Rez" id="30" lineNum="70" parent="globals/Rez/Layouts" pc="268437957" symbol="BottomLeftLayout"/>
+        <entry filename="Rez" id="30" lineNum="71" parent="globals/Rez/Layouts" pc="268437981" symbol="BottomLeftLayout"/>
+        <entry filename="Rez" id="30" lineNum="72" parent="globals/Rez/Layouts" pc="268438114" symbol="BottomLeftLayout"/>
+        <entry filename="Rez" id="30" lineNum="74" parent="globals/Rez/Layouts" pc="268438247" symbol="BottomLeftLayout"/>
+        <entry filename="Rez" id="31" lineNum="83" parent="globals/Rez/Layouts" pc="268438285" symbol="BottomRightLayout"/>
+        <entry filename="Rez" id="31" lineNum="86" parent="globals/Rez/Layouts" pc="268438297" symbol="BottomRightLayout"/>
+        <entry filename="Rez" id="31" lineNum="87" parent="globals/Rez/Layouts" pc="268438321" symbol="BottomRightLayout"/>
+        <entry filename="Rez" id="31" lineNum="88" parent="globals/Rez/Layouts" pc="268438454" symbol="BottomRightLayout"/>
+        <entry filename="Rez" id="31" lineNum="90" parent="globals/Rez/Layouts" pc="268438587" symbol="BottomRightLayout"/>
+        <entry filename="Rez" id="32" lineNum="10" parent="globals/Rez/Layouts" pc="268438673" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="33" lineNum="95" parent="globals/Rez/Menus" pc="268438671" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="34" lineNum="97" parent="globals/Rez/Strings" pc="268438675" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="35" lineNum="1" parent="globals/Rez" pc="268438646" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="35" lineNum="1" parent="globals/Rez" pc="268438646" symbol="&lt;init&gt;"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="4" module="true" symbol="globals/Rez/Menus"/>
+        <entry id="16" method="true" symbol="MainLayout"/>
+        <entry id="25" method="true" symbol="drawGauge"/>
+        <entry field="true" id="22" symbol="mValue"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="21" symbol="AppName"/>
+        <entry id="8" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+        <entry id="24" method="true" symbol="calculatePaceGauge"/>
+        <entry id="8388631" module="true" symbol="Activity"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry field="true" id="8389138" symbol="label"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry field="true" id="8389067" symbol="height"/>
+        <entry id="14" module="true" symbol="Menus"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="23" method="true" symbol="mpsToPace"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry field="true" id="8388738" symbol="currentSpeed"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry id="8389137" method="true" symbol="compute"/>
+        <entry id="9" object="true" symbol="PaceGauge"/>
+        <entry id="8389131" method="true" symbol="setColor"/>
+        <entry id="7" module="true" symbol="globals/Rez/JsonData"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="17" method="true" symbol="TopLeftLayout"/>
+        <entry field="true" id="8391337" symbol="offset"/>
+        <entry field="true" id="12" symbol="end"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="19" method="true" symbol="BottomLeftLayout"/>
+        <entry id="20" method="true" symbol="BottomRightLayout"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="11" object="true" symbol="PaceGaugeApp"/>
+        <entry id="8390088" module="true" object="true" symbol="JsonData"/>
+        <entry field="true" id="8389130" symbol="mColor"/>
+        <entry id="8389068" method="true" symbol="draw"/>
+        <entry field="true" id="15" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8390146" module="true" object="true" symbol="Background"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="8389347" symbol="color"/>
+        <entry id="13" module="true" symbol="Layouts"/>
+        <entry field="true" id="8388698" method="true" symbol="start"/>
+        <entry id="5" module="true" symbol="globals/Rez/Fonts"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry id="10" object="true" symbol="PaceGaugeView"/>
+        <entry id="18" method="true" symbol="TopRightLayout"/>
+    </symbolTable>
+    <localVars>
+        <entry endPc="268435520" name="dictionary" stackId="1" startPc="268435460"/>
+        <entry arg="true" endPc="268435536" name="color" stackId="1" startPc="268435522"/>
+        <entry arg="true" endPc="268435585" name="dc" stackId="1" startPc="268435537"/>
+        <entry arg="true" endPc="268435630" name="height" stackId="4" startPc="268435586"/>
+        <entry arg="true" endPc="268435630" name="end" stackId="2" startPc="268435586"/>
+        <entry arg="true" endPc="268435630" name="offset" stackId="3" startPc="268435586"/>
+        <entry arg="true" endPc="268435630" name="start" stackId="1" startPc="268435586"/>
+        <entry endPc="268436100" name="valueView" stackId="4" startPc="268435966"/>
+        <entry endPc="268436100" name="labelView" stackId="3" startPc="268435966"/>
+        <entry endPc="268436137" name="obscurityFlags" stackId="2" startPc="268435671"/>
+        <entry arg="true" endPc="268436138" name="dc" stackId="1" startPc="268435667"/>
+        <entry arg="true" endPc="268436213" name="info" stackId="1" startPc="268436139"/>
+        <entry endPc="268436240" name="kmh" stackId="2" startPc="268436218"/>
+        <entry endPc="268436240" name="pace" stackId="3" startPc="268436218"/>
+        <entry arg="true" endPc="268436241" name="mps" stackId="1" startPc="268436214"/>
+        <entry endPc="268436458" name="value" stackId="2" startPc="268436246"/>
+        <entry arg="true" endPc="268436459" name="dc" stackId="1" startPc="268436242"/>
+        <entry endPc="268436633" name="height" stackId="5" startPc="268436464"/>
+        <entry endPc="268436633" name="end" stackId="7" startPc="268436464"/>
+        <entry endPc="268436633" name="additionalBottomAndTopPadding" stackId="3" startPc="268436464"/>
+        <entry endPc="268436633" name="padding" stackId="4" startPc="268436464"/>
+        <entry endPc="268436633" name="offset" stackId="8" startPc="268436464"/>
+        <entry endPc="268436633" name="obscurityFlags" stackId="2" startPc="268436464"/>
+        <entry endPc="268436633" name="start" stackId="6" startPc="268436464"/>
+        <entry arg="true" endPc="268436634" name="dc" stackId="1" startPc="268436460"/>
+        <entry endPc="268436733" name="gauge" stackId="2" startPc="268436639"/>
+        <entry arg="true" endPc="268436734" name="dc" stackId="1" startPc="268436635"/>
+        <entry arg="true" endPc="268436762" name="state" stackId="1" startPc="268436758"/>
+        <entry arg="true" endPc="268436767" name="state" stackId="1" startPc="268436763"/>
+        <entry endPc="268437263" name="rez_cmp_local_text_value" stackId="6" startPc="268436851"/>
+        <entry endPc="268437263" name="rez_cmp_local_var_dc_getWidth" stackId="3" startPc="268436851"/>
+        <entry endPc="268437263" name="rez_cmp_local_var_dc_getHeight" stackId="2" startPc="268436851"/>
+        <entry endPc="268437263" name="rez_cmp_local_custom_drawable_11634811591814003062" stackId="4" startPc="268436851"/>
+        <entry endPc="268437263" name="rez_cmp_local_text_label" stackId="5" startPc="268436851"/>
+        <entry arg="true" endPc="268437264" name="dc" stackId="1" startPc="268436839"/>
+        <entry endPc="268437603" name="rez_cmp_local_text_value" stackId="4" startPc="268437277"/>
+        <entry endPc="268437603" name="rez_cmp_local_custom_drawable_61130817938452695438" stackId="2" startPc="268437277"/>
+        <entry endPc="268437603" name="rez_cmp_local_text_label" stackId="3" startPc="268437277"/>
+        <entry arg="true" endPc="268437604" name="dc" stackId="1" startPc="268437265"/>
+        <entry endPc="268437943" name="rez_cmp_local_text_value" stackId="4" startPc="268437617"/>
+        <entry endPc="268437943" name="rez_cmp_local_custom_drawable_55132411244460766190" stackId="2" startPc="268437617"/>
+        <entry endPc="268437943" name="rez_cmp_local_text_label" stackId="3" startPc="268437617"/>
+        <entry arg="true" endPc="268437944" name="dc" stackId="1" startPc="268437605"/>
+        <entry endPc="268438283" name="rez_cmp_local_text_value" stackId="4" startPc="268437957"/>
+        <entry endPc="268438283" name="rez_cmp_local_custom_drawable_10100725601857658367" stackId="2" startPc="268437957"/>
+        <entry endPc="268438283" name="rez_cmp_local_text_label" stackId="3" startPc="268437957"/>
+        <entry arg="true" endPc="268438284" name="dc" stackId="1" startPc="268437945"/>
+        <entry endPc="268438623" name="rez_cmp_local_text_value" stackId="4" startPc="268438297"/>
+        <entry endPc="268438623" name="rez_cmp_local_text_label" stackId="3" startPc="268438297"/>
+        <entry endPc="268438623" name="rez_cmp_local_custom_drawable_19090170814724129095" stackId="2" startPc="268438297"/>
+        <entry arg="true" endPc="268438624" name="dc" stackId="1" startPc="268438285"/>
+    </localVars>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="label"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/Background" offset="174" parentId="globals" symbolId="Background" type="class"/>
+        <dataEntry label="globals/PaceGauge" offset="245" parentId="globals" symbolId="PaceGauge" type="class"/>
+        <dataEntry label="globals/Rez" offset="324" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/Rez/Drawables" offset="403" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="442" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Fonts" offset="473" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="504" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/JsonData" offset="575" parentId="Rez" symbolId="JsonData" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="606" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/PaceGaugeApp" offset="653" parentId="globals" symbolId="PaceGaugeApp" type="class"/>
+        <dataEntry label="globals/PaceGaugeView" offset="724" parentId="globals" symbolId="PaceGaugeView" type="class"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435521" name="initialize" parent="Background" startPc="268435456">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435536" name="setColor" parent="Background" startPc="268435522">
+            <param id="color"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435585" name="draw" parent="Background" startPc="268435537">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268438644" name="&lt;init&gt;" parent="Background" startPc="268438626">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435630" name="initialize" parent="PaceGauge" startPc="268435586">
+            <param id="start"/>
+            <param id="end"/>
+            <param id="offset"/>
+            <param id="height"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268438645" name="&lt;init&gt;" parent="PaceGauge" startPc="268438645">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435666" name="initialize" parent="PaceGaugeView" startPc="268435631">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436138" name="onLayout" parent="PaceGaugeView" startPc="268435667">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436213" name="compute" parent="PaceGaugeView" startPc="268436139">
+            <param id="info"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436241" name="mpsToPace" parent="PaceGaugeView" startPc="268436214">
+            <param id="mps"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436459" name="onUpdate" parent="PaceGaugeView" startPc="268436242">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436634" name="calculatePaceGauge" parent="PaceGaugeView" startPc="268436460">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436734" name="drawGauge" parent="PaceGaugeView" startPc="268436635">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268438713" name="&lt;init&gt;" parent="PaceGaugeView" startPc="268438695">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436757" name="initialize" parent="PaceGaugeApp" startPc="268436735">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436762" name="onStart" parent="PaceGaugeApp" startPc="268436758">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436767" name="onStop" parent="PaceGaugeApp" startPc="268436763">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436809" name="getInitialView" parent="PaceGaugeApp" startPc="268436768">
+            <documentation><![CDATA[<div class="description"> Return the initial view of your application here<br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268438694" name="&lt;init&gt;" parent="PaceGaugeApp" startPc="268438676">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436838" name="getApp" startPc="268436810">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268438670" name="&lt;init&gt;" parent="Drawables" startPc="268438670">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268438672" name="&lt;init&gt;" parent="Fonts" startPc="268438672">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268438674" name="&lt;init&gt;" parent="JsonData" startPc="268438674">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437264" name="MainLayout" parent="Layouts" startPc="268436839">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437604" name="TopLeftLayout" parent="Layouts" startPc="268437265">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437944" name="TopRightLayout" parent="Layouts" startPc="268437605">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438284" name="BottomLeftLayout" parent="Layouts" startPc="268437945">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438624" name="BottomRightLayout" parent="Layouts" startPc="268438285">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268438673" name="&lt;init&gt;" parent="Layouts" startPc="268438673">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268438671" name="&lt;init&gt;" parent="Menus" startPc="268438671">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268438675" name="&lt;init&gt;" parent="Strings" startPc="268438675">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268438669" name="&lt;init&gt;" parent="Rez" startPc="268438646">
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>
