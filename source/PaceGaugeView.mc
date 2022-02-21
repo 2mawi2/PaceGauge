@@ -23,7 +23,7 @@ class PaceGauge
     public function highlightedIndex() as Number {
         var tileLength = self.length() / 6;
         for (var i = 0; i < 6; i++) {
-            if (self.getIndicatorPosition() < self.start + tileLength * (i + 1)) {
+            if (self.getIndicatorPosition() <= self.start + tileLength * (i + 1)) {
                 return i;
             }
         }
@@ -71,13 +71,9 @@ class PaceGaugeView extends WatchUi.DataField {
             View.setLayout(Rez.Layouts.BottomRightLayout(dc));
         } else {
             View.setLayout(Rez.Layouts.MainLayout(dc));
-            var labelView = View.findDrawableById("label");
-            labelView.locY = labelView.locY - 30;
-
             var valueView = View.findDrawableById("value");
             valueView.locY = valueView.locY + 7;
         }
-        (View.findDrawableById("label") as Text).setText("Pace");//Rez.Strings.label);
     }
 
 
@@ -126,7 +122,7 @@ class PaceGaugeView extends WatchUi.DataField {
         var height = 8;
         var start = 0 + padding;
         var end = dc.getWidth() - padding;
-        var currentPacePercent = 67; 
+        var currentPacePercent = 51; 
         return new PaceGauge(start, end, offset, height, currentPacePercent);
     }
 
@@ -181,7 +177,6 @@ class PaceGaugeView extends WatchUi.DataField {
         }
         drawCurrentPace(dc, gauge);
     }
-
 
 
     function drawCurrentPace(dc as DC, gauge as PaceGauge) {
