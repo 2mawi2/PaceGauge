@@ -23,6 +23,10 @@ class PaceGaugeView extends WatchUi.DataField {
 
         } else if (obscurityFlags == (OBSCURE_BOTTOM | OBSCURE_RIGHT)) {
             View.setLayout(Rez.Layouts.BottomRightLayout(dc));
+        } else if (obscurityFlags == 7) {
+            View.setLayout(Rez.Layouts.MainLayout(dc));
+            var valueView = View.findDrawableById("value");
+            valueView.locY = valueView.locY - 10;
         } else {
             View.setLayout(Rez.Layouts.MainLayout(dc));
             var valueView = View.findDrawableById("value");
@@ -32,7 +36,7 @@ class PaceGaugeView extends WatchUi.DataField {
 
     function compute(info as Activity.Info) as Void {
         if(info has :currentSpeed){
-            if(info.currentSpeed != null){
+            if(info.currentSpeed != null && info.currentSpeed > 0.0001f){
                 pace = mpsToPace(info.currentSpeed) as Number;
             } else {
                 pace = 0.0f;
@@ -54,9 +58,14 @@ class PaceGaugeView extends WatchUi.DataField {
         } else {
             value.setColor(Graphics.COLOR_BLACK);
         }
-        value.setText(format(pace));
+        var gauge = calculatePaceGauge(dc);
+        if (pace == 0.0f) {
+            value.setText("--:--");
+        } else {
+            value.setText(format(pace));
+        }
         View.onUpdate(dc);
-        drawGauge(dc);
+        drawGauge(dc, gauge);
     }
 
     function format(digitalPace as Float) as String {
@@ -76,14 +85,15 @@ class PaceGaugeView extends WatchUi.DataField {
         var additionalBottomAndTopPadding = 0.0;
         var offset = dc.getHeight()/10;
         if (obscurityFlags == 7) {
-            offset = dc.getHeight() - offset;
+            offset = dc.getHeight() - offset * 2;
         }
-        var padding = dc.getWidth() * 0.15 + additionalBottomAndTopPadding;
-        var height = 8;
+        var padding = dc.getWidth() * 0.14 + additionalBottomAndTopPadding;
+        var height = 9;
         var start = 0 + padding;
         var end = dc.getWidth() - padding;
         var currentPacePercent = calculatePercentageFrom(pace); 
-        return new PaceGauge(start, end, offset, height, currentPacePercent);
+        var isInverse = obscurityFlags == 7;
+        return new PaceGauge(start, end, offset, height, currentPacePercent, isInverse);
     }
 
 
@@ -144,7 +154,6 @@ class PaceGaugeView extends WatchUi.DataField {
         }
     }
 
-
     function fillRectangleWithContrast(
         dc as DC, 
         x as Float, 
@@ -164,15 +173,18 @@ class PaceGaugeView extends WatchUi.DataField {
         dc.fillRectangle(x + width - contrastSize, y, contrastSize, height);
     }
 
-    function drawGauge(dc as DC) as Void {
+    function drawGauge(dc as DC, gauge as PaceGauge) as Void {
         dc.setAntiAlias(true);
-        var gauge = calculatePaceGauge(dc);
         var tile = gauge.tileLength();
         var colors = gauge.getColors();
+
+        //dc.setColor(gauge.getHighlightedColor(), gauge.getHighlightedColor());
+        //dc.fillRectangle(gauge.start, gauge.offset - 9, gauge.length(), 5);
+
         for(var i = 0; i < 6; i++) {
             var height = gauge.height;
-            if (i == gauge.highlightedIndex()) {
-                height = height * 1.8;
+            if (i == gauge.highlightedIndex() && pace > 0.0001f) {
+                height = height * 2.5;
             }
             fillRectangleWithContrast(
                 dc, 
@@ -183,19 +195,25 @@ class PaceGaugeView extends WatchUi.DataField {
                 colors[i]
             );
         }
-        drawCurrentPace(dc, gauge);
+        if (pace > 0.0001f) {
+            drawCurrentPace(dc, gauge);
+        }
     }
 
     function drawCurrentPace(dc as DC, gauge as PaceGauge) {
-        var indicatorWidth = 9.0;
+        var indicatorWidth = 10.0;
         var position = gauge.getIndicatorPosition();
- 
+        var indicatorY = gauge.offset - 5;
+        var indicatorHeight = 30;
+        if (gauge.isInverse) {
+            indicatorY = indicatorY - gauge.height;
+        }
         fillRectangleWithContrast(
             dc, 
             position, 
-            gauge.offset, 
+            indicatorY, 
             indicatorWidth, 
-            30, 
+            indicatorHeight, 
             Graphics.COLOR_WHITE
         );
     }

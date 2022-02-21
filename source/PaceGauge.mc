@@ -6,19 +6,22 @@ class PaceGauge
     public var offset;
     public var height;
     public var currentPacePercent;
+    public var isInverse;
    
     public function initialize(
         start, 
         end, 
         offset, 
         height, 
-        currentPacePercent
+        currentPacePercent,
+        isInverse
     ) {
         self.start = start;
         self.end = end;
         self.offset = offset;
         self.height = height;
         self.currentPacePercent = currentPacePercent;
+        self.isInverse = isInverse;
     }
 
     public function length() as Number {
@@ -28,7 +31,6 @@ class PaceGauge
     public function getIndicatorPosition() as Number {
         return self.start + self.length() * (self.currentPacePercent / 100.0);
     }
-
 
     public function highlightedIndex() as Number {
         var tileLength = self.tileLength();
@@ -44,7 +46,6 @@ class PaceGauge
         return self.length() / 6;
     }
 
-
     function getColors() as Array {
         return [
             Graphics.COLOR_BLUE, 
@@ -54,6 +55,10 @@ class PaceGauge
             Graphics.COLOR_RED,
             Graphics.COLOR_DK_RED
         ];
+    }
+
+    function getHighlightedColor() as Number {
+        return self.getColors()[self.highlightedIndex()];
     }
 
 }
