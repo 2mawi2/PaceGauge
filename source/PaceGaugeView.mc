@@ -54,9 +54,21 @@ class PaceGaugeView extends WatchUi.DataField {
         } else {
             value.setColor(Graphics.COLOR_BLACK);
         }
-        value.setText(pace.format("%.2f"));
+        value.setText(format(pace));
         View.onUpdate(dc);
         drawGauge(dc);
+    }
+
+    function format(digitalPace as Float) as String {
+        var minutes = Math.floor(digitalPace);
+        var seconds = Math.floor((digitalPace - minutes) * 60);
+        var formattedMinutes = minutes.format("%.0f");
+        var formattedSeconds = seconds.format("%.0f");
+        if (seconds < 10) {
+            formattedSeconds = "0" + formattedSeconds;
+        }
+        var paceString = formattedMinutes + ":" + formattedSeconds;
+        return paceString;
     }
 
     function calculatePaceGauge(dc as DC) as PaceGauge {
