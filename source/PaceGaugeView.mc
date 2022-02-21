@@ -3,60 +3,14 @@ import Toybox.Graphics;
 import Toybox.Lang;
 import Toybox.WatchUi;
 
-
-class PaceGauge 
-{
-    public var start;
-    public var end;
-    public var offset;
-    public var height;
-    public var currentPacePercent;
-
-    public function length() as Number {
-        return self.end - self.start;
-    }
-
-    public function getIndicatorPosition() as Number {
-        return self.start + self.length() * (self.currentPacePercent / 100.0);
-    }
-
-    public function highlightedIndex() as Number {
-        var tileLength = self.length() / 6;
-        for (var i = 0; i < 6; i++) {
-            if (self.getIndicatorPosition() <= self.start + tileLength * (i + 1)) {
-                return i;
-            }
-        }
-        return 0;
-    }
-
-    public function initialize(
-        start, 
-        end, 
-        offset, 
-        height, 
-        currentPacePercent
-    ) {
-        self.start = start;
-        self.end = end;
-        self.offset = offset;
-        self.height = height;
-        self.currentPacePercent = currentPacePercent;
-    }
-}
-
-
 class PaceGaugeView extends WatchUi.DataField {
-
-    hidden var mValue as Numeric;
+    hidden var pace as Numeric;
 
     function initialize() {
         DataField.initialize();
-        mValue = 0.0f;
+        pace = 0.0f;
     }
 
-    // Set your layout here. Anytime the size of obscurity of
-    // the draw context is changed this will be called.
     function onLayout(dc as Dc) as Void {
         var obscurityFlags = DataField.getObscurityFlags();
         if (obscurityFlags == (OBSCURE_TOP | OBSCURE_LEFT)) {
@@ -72,17 +26,16 @@ class PaceGaugeView extends WatchUi.DataField {
         } else {
             View.setLayout(Rez.Layouts.MainLayout(dc));
             var valueView = View.findDrawableById("value");
-            valueView.locY = valueView.locY + 7;
+            valueView.locY = valueView.locY + 15;
         }
     }
-
 
     function compute(info as Activity.Info) as Void {
         if(info has :currentSpeed){
             if(info.currentSpeed != null){
-                mValue = mpsToPace(info.currentSpeed) as Number;
+                pace = mpsToPace(info.currentSpeed) as Number;
             } else {
-                mValue = 0.0f;
+                pace = 0.0f;
             }
         }
     }
@@ -93,20 +46,15 @@ class PaceGaugeView extends WatchUi.DataField {
         return pace;
     } 
 
-    // Display the value you computed here. This will be called
-    // once a second when the data field is visible.
     function onUpdate(dc as Dc) as Void {
-        // Set the background color
         (View.findDrawableById("Background") as Text).setColor(getBackgroundColor());
-
-        // Set the foreground color and value
         var value = View.findDrawableById("value") as Text;
         if (getBackgroundColor() == Graphics.COLOR_BLACK) {
             value.setColor(Graphics.COLOR_WHITE);
         } else {
             value.setColor(Graphics.COLOR_BLACK);
         }
-        value.setText(mValue.format("%.2f"));
+        value.setText(pace.format("%.2f"));
         View.onUpdate(dc);
         drawGauge(dc);
     }
@@ -115,27 +63,75 @@ class PaceGaugeView extends WatchUi.DataField {
         var obscurityFlags = DataField.getObscurityFlags();
         var additionalBottomAndTopPadding = 0.0;
         var offset = dc.getHeight()/10;
-        if (obscurityFlags == 7) {// || obscurityFlags == 13) {
+        if (obscurityFlags == 7) {
             offset = dc.getHeight() - offset;
         }
         var padding = dc.getWidth() * 0.15 + additionalBottomAndTopPadding;
         var height = 8;
         var start = 0 + padding;
         var end = dc.getWidth() - padding;
-        var currentPacePercent = 51; 
+        var currentPacePercent = calculatePercentageFrom(pace); 
         return new PaceGauge(start, end, offset, height, currentPacePercent);
     }
 
-    function getColors() as Array {
-        return [
-            Graphics.COLOR_RED, 
-            Graphics.COLOR_BLUE, 
-            Graphics.COLOR_DK_BLUE, 
-            Graphics.COLOR_DK_GREEN, 
-            Graphics.COLOR_YELLOW,
-            Graphics.COLOR_ORANGE
-        ];
+
+    function max(a as Float, b as Float) as Float {
+        if (a > b) {
+            return a;
+        } else {
+            return b;
+        }
     }
+
+    function min(a as Float, b as Float) as Float {
+        if (a < b) {
+            return a;
+        } else {
+            return b;
+        }
+    }
+
+    function clip(a as Float, min as Float, max as Float) as Float {
+        return max(min(a, max), min);
+    }
+
+    function zonePercentageToTotalPercentage(pThreshold as Float, upper as Float, lower as Float) as Float {
+        var percentageOfZone = 1.0 - max((pThreshold - lower), 0) / (upper - lower);
+        var totalPercentage = percentageOfZone * (1.0f / 6.0f) * 100.0;
+        return totalPercentage;
+    }
+
+    function calculatePercentageFrom(pace as Float) as Float {
+        var clipped = clip(pace, 0.8f*pace, 1.40f*pace);
+        var thresholdPace = 5.5f;
+        var pThreshold = clipped / thresholdPace;
+        if (pThreshold > 1.29f) {
+            var base = 0.0 * (100.0 / 6.0);
+            var percentage = zonePercentageToTotalPercentage(pThreshold, 1.4f, 1.29f);
+            return base + percentage;
+        } else if (pThreshold > 1.14f) {
+            var base = 1.0 * (100.0 / 6.0);
+            var percentage = zonePercentageToTotalPercentage(pThreshold, 1.29f, 1.14f);
+            return base + percentage;
+        } else if (pThreshold > 1.06f) {
+            var base = 2.0 * (100.0 / 6.0);
+            var percentage = zonePercentageToTotalPercentage(pThreshold, 1.14f, 1.06f);
+            return base + percentage;
+        } else if (pThreshold > 0.97f) {
+            var base = 3.0 * (100.0 / 6.0);
+            var percentage = zonePercentageToTotalPercentage(pThreshold, 1.06f, 0.97f);
+            return base + percentage;
+        } else if (pThreshold > 0.90f) {
+            var base = 4.0 * (100.0 / 6.0);
+            var percentage = zonePercentageToTotalPercentage(pThreshold, 0.97f, 0.90f);
+            return base + percentage;
+        } else {
+            var base = 5.0 * (100.0 / 6.0);
+            var percentage = zonePercentageToTotalPercentage(pThreshold, 0.90f, 0.80f);
+            return base + percentage;
+        }
+    }
+
 
     function fillRectangleWithContrast(
         dc as DC, 
@@ -156,15 +152,15 @@ class PaceGaugeView extends WatchUi.DataField {
         dc.fillRectangle(x + width - contrastSize, y, contrastSize, height);
     }
 
-    function drawGauge(dc as DC) {
+    function drawGauge(dc as DC) as Void {
         dc.setAntiAlias(true);
         var gauge = calculatePaceGauge(dc);
-        var tile = gauge.length() / 6;
-        var colors = getColors();
+        var tile = gauge.tileLength();
+        var colors = gauge.getColors();
         for(var i = 0; i < 6; i++) {
             var height = gauge.height;
             if (i == gauge.highlightedIndex()) {
-                height = height * 1.7;
+                height = height * 1.8;
             }
             fillRectangleWithContrast(
                 dc, 
@@ -177,7 +173,6 @@ class PaceGaugeView extends WatchUi.DataField {
         }
         drawCurrentPace(dc, gauge);
     }
-
 
     function drawCurrentPace(dc as DC, gauge as PaceGauge) {
         var indicatorWidth = 9.0;
@@ -192,9 +187,6 @@ class PaceGaugeView extends WatchUi.DataField {
             Graphics.COLOR_WHITE
         );
     }
-
-
-
 }
 
  
