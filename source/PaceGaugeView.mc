@@ -5,10 +5,26 @@ import Toybox.WatchUi;
 
 class PaceGaugeView extends WatchUi.DataField {
     hidden var pace as Numeric;
+    hidden var thresholdPace as Float = -1.0;
 
     function initialize() {
         DataField.initialize();
         pace = 0.0f;
+    }
+
+    function handleSettingUpdate() {
+        updateThresholdPace();
+    }
+
+    function updateThresholdPace() {
+        var thresholdMinutes = Application.Properties.getValue("thresholdMinutes") as Number;
+        var thresholdSeconds = Application.Properties.getValue("thresholdSeconds") as Number;
+        thresholdMinutes = clip(thresholdMinutes, 0, 60);
+        thresholdSeconds = clip(thresholdSeconds, 0, 60);
+        var newThresholdPace = thresholdMinutes + thresholdSeconds / 60.0f;
+        if (newThresholdPace > 0.0f) {
+            thresholdPace = newThresholdPace;
+        }
     }
 
     function onLayout(dc as Dc) as Void {
@@ -51,6 +67,10 @@ class PaceGaugeView extends WatchUi.DataField {
     } 
 
     function onUpdate(dc as Dc) as Void {
+        if (thresholdPace == -1.0) {
+            updateThresholdPace();
+        }
+        
         (View.findDrawableById("Background") as Text).setColor(getBackgroundColor());
         var value = View.findDrawableById("value") as Text;
         if (getBackgroundColor() == Graphics.COLOR_BLACK) {
@@ -58,14 +78,30 @@ class PaceGaugeView extends WatchUi.DataField {
         } else {
             value.setColor(Graphics.COLOR_BLACK);
         }
-        var gauge = calculatePaceGauge(dc);
-        if (pace == 0.0f) {
-            value.setText("--:--");
+        if (thresholdPace != -1.0) {
+            hideConfigError();
+            var gauge = calculatePaceGauge(dc);
+            if (pace == 0.0f) {
+                value.setText("--:--");
+            } else {
+                value.setText(format(pace));
+            }
+            View.onUpdate(dc);
+            drawGauge(dc, gauge);
         } else {
-            value.setText(format(pace));
+            showConfigError();
+            View.onUpdate(dc);
         }
-        View.onUpdate(dc);
-        drawGauge(dc, gauge);
+    }
+
+    function showConfigError() {
+        var error = View.findDrawableById("error") as Text;
+        error.setText("no config");
+    }
+
+    function hideConfigError() {
+        var error = View.findDrawableById("error") as Text;
+        error.setText("");
     }
 
     function format(digitalPace as Float) as String {
@@ -118,14 +154,13 @@ class PaceGaugeView extends WatchUi.DataField {
     }
 
     function zonePercentageToTotalPercentage(pThreshold as Float, upper as Float, lower as Float) as Float {
-        var percentageOfZone = 1.0 - max((pThreshold - lower), 0) / (upper - lower);
-        var totalPercentage = percentageOfZone * (1.0f / 6.0f) * 100.0;
-        return totalPercentage;
+        var clippedPThreshold = clip(pThreshold, lower, upper);
+        var totalPercentage = (clippedPThreshold - lower) / (upper - lower);
+        return (1-clip(totalPercentage, 0, 1)) * (100.0 / 6.0);
     }
 
     function calculatePercentageFrom(pace as Float) as Float {
         var clipped = clip(pace, 0.8f*pace, 1.40f*pace);
-        var thresholdPace = 5.5f;
         var pThreshold = clipped / thresholdPace;
         if (pThreshold > 1.29f) {
             var base = 0.0 * (100.0 / 6.0);
@@ -177,10 +212,7 @@ class PaceGaugeView extends WatchUi.DataField {
         dc.setAntiAlias(true);
         var tile = gauge.tileLength();
         var colors = gauge.getColors();
-
-        //dc.setColor(gauge.getHighlightedColor(), gauge.getHighlightedColor());
-        //dc.fillRectangle(gauge.start, gauge.offset - 9, gauge.length(), 5);
-
+        
         for(var i = 0; i < 6; i++) {
             var height = gauge.height;
             if (i == gauge.highlightedIndex() && pace > 0.0001f) {

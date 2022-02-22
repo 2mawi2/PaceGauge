@@ -1,5 +1,8 @@
 <strings>
     <string id="AppName">PaceGauge</string>
+    <string id="ThresholdPaceMinutes">Minutes</string>
+    <string id="ThresholdPaceSeconds">Seconds</string>
+    <string id="ThresholdPacePrompt">Enter your threshold pace</string>
+    <string id="NumberError">Input must be numeric.</string>
 
-    <string id="label">My Value</string>
 </strings>

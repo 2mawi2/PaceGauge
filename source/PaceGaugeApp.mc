@@ -4,6 +4,8 @@ import Toybox.WatchUi;
 
 class PaceGaugeApp extends Application.AppBase {
 
+    var paceGaugeView = new PaceGaugeView();
+
     function initialize() {
         AppBase.initialize();
     }
@@ -18,7 +20,12 @@ class PaceGaugeApp extends Application.AppBase {
 
     //! Return the initial view of your application here
     function getInitialView() as Array<Views or InputDelegates>? {
-        return [ new PaceGaugeView() ] as Array<Views or InputDelegates>;
+        return [ paceGaugeView ] as Array<Views or InputDelegates>;
+    }
+
+    function onSettingsChanged() { // triggered by settings change in GCM
+        paceGaugeView.handleSettingUpdate();
+        WatchUi.requestUpdate();   // update the view to reflect changes
     }
 
 }
