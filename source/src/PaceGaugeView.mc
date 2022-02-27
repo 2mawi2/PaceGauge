@@ -115,47 +115,11 @@ class PaceGaugeView extends WatchUi.DataField {
         var height = 9;
         var start = 0 + padding;
         var end = dc.getWidth() - padding;
-        var currentPacePercent = calculatePercentageFrom(viewModel.pace); 
+        var currentPacePercent = viewModel.calculatePacePercentage(); 
         var isInverse = obscurityFlags == 7;
         return new PaceGauge(start, end, offset, height, currentPacePercent, isInverse);
     }
 
-
-    function zonePercentageToTotalPercentage(pThreshold as Float, upper as Float, lower as Float) as Float {
-        var clippedPThreshold = clip(pThreshold, lower, upper);
-        var totalPercentage = (clippedPThreshold - lower) / (upper - lower);
-        return (1-clip(totalPercentage, 0, 1)) * (100.0 / 6.0);
-    }
-
-    function calculatePercentageFrom(pace as Float) as Float {
-        var clipped = clip(pace, 0.8f*pace, 1.40f*pace);
-        var pThreshold = clipped / viewModel.thresholdPace;
-        if (pThreshold > 1.29f) {
-            var base = 0.0 * (100.0 / 6.0);
-            var percentage = zonePercentageToTotalPercentage(pThreshold, 1.4f, 1.29f);
-            return base + percentage;
-        } else if (pThreshold > 1.14f) {
-            var base = 1.0 * (100.0 / 6.0);
-            var percentage = zonePercentageToTotalPercentage(pThreshold, 1.29f, 1.14f);
-            return base + percentage;
-        } else if (pThreshold > 1.06f) {
-            var base = 2.0 * (100.0 / 6.0);
-            var percentage = zonePercentageToTotalPercentage(pThreshold, 1.14f, 1.06f);
-            return base + percentage;
-        } else if (pThreshold > 0.97f) {
-            var base = 3.0 * (100.0 / 6.0);
-            var percentage = zonePercentageToTotalPercentage(pThreshold, 1.06f, 0.97f);
-            return base + percentage;
-        } else if (pThreshold > 0.90f) {
-            var base = 4.0 * (100.0 / 6.0);
-            var percentage = zonePercentageToTotalPercentage(pThreshold, 0.97f, 0.90f);
-            return base + percentage;
-        } else {
-            var base = 5.0 * (100.0 / 6.0);
-            var percentage = zonePercentageToTotalPercentage(pThreshold, 0.90f, 0.80f);
-            return base + percentage;
-        }
-    }
 
     function fillRectangleWithContrast(
         dc as DC, 
