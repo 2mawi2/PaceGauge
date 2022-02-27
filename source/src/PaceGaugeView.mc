@@ -3,13 +3,15 @@ import Toybox.Graphics;
 import Toybox.Lang;
 import Toybox.WatchUi;
 
+
 class PaceGaugeView extends WatchUi.DataField {
-    hidden var pace as Numeric;
-    hidden var thresholdPace as Float = -1.0;
+
+    hidden var viewModel as PaceGaugeViewModel;
 
     function initialize() {
+        self.viewModel = new PaceGaugeViewModel();
         DataField.initialize();
-        pace = 0.0f;
+        
     }
 
     function handleSettingUpdate() {
@@ -19,12 +21,7 @@ class PaceGaugeView extends WatchUi.DataField {
     function updateThresholdPace() {
         var thresholdMinutes = Application.Properties.getValue("thresholdMinutes") as Number;
         var thresholdSeconds = Application.Properties.getValue("thresholdSeconds") as Number;
-        thresholdMinutes = clip(thresholdMinutes, 0, 60);
-        thresholdSeconds = clip(thresholdSeconds, 0, 60);
-        var newThresholdPace = thresholdMinutes + thresholdSeconds / 60.0f;
-        if (newThresholdPace > 0.0f) {
-            thresholdPace = newThresholdPace;
-        }
+        viewModel.onNewThresholdPaceConfig(thresholdMinutes, thresholdSeconds);
     }
 
     function onLayout(dc as Dc) as Void {
@@ -52,22 +49,13 @@ class PaceGaugeView extends WatchUi.DataField {
 
     function compute(info as Activity.Info) as Void {
         if(info has :currentSpeed){
-            if(info.currentSpeed != null && info.currentSpeed > 0.0001f){
-                pace = mpsToPace(info.currentSpeed) as Number;
-            } else {
-                pace = 0.0f;
-            }
+            self.viewModel.onNewCurrentSpeed(info.currentSpeed);
         }
     }
 
-    function mpsToPace(mps as Float) as Float {
-        var kmh = mps * 3.6;
-        var pace = 60.0 / kmh;
-        return pace;
-    } 
 
     function onUpdate(dc as Dc) as Void {
-        if (thresholdPace == -1.0) {
+        if (viewModel.thresholdPace == -1.0) {
             updateThresholdPace();
         }
         
@@ -78,13 +66,13 @@ class PaceGaugeView extends WatchUi.DataField {
         } else {
             value.setColor(Graphics.COLOR_BLACK);
         }
-        if (thresholdPace != -1.0) {
+        if (viewModel.thresholdPace != -1.0) {
             hideConfigError();
             var gauge = calculatePaceGauge(dc);
-            if (pace == 0.0f) {
+            if (viewModel.pace == 0.0f) {
                 value.setText("--:--");
             } else {
-                value.setText(format(pace));
+                value.setText(format(viewModel.pace));
             }
             View.onUpdate(dc);
             drawGauge(dc, gauge);
@@ -127,31 +115,11 @@ class PaceGaugeView extends WatchUi.DataField {
         var height = 9;
         var start = 0 + padding;
         var end = dc.getWidth() - padding;
-        var currentPacePercent = calculatePercentageFrom(pace); 
+        var currentPacePercent = calculatePercentageFrom(viewModel.pace); 
         var isInverse = obscurityFlags == 7;
         return new PaceGauge(start, end, offset, height, currentPacePercent, isInverse);
     }
 
-
-    function max(a as Float, b as Float) as Float {
-        if (a > b) {
-            return a;
-        } else {
-            return b;
-        }
-    }
-
-    function min(a as Float, b as Float) as Float {
-        if (a < b) {
-            return a;
-        } else {
-            return b;
-        }
-    }
-
-    function clip(a as Float, min as Float, max as Float) as Float {
-        return max(min(a, max), min);
-    }
 
     function zonePercentageToTotalPercentage(pThreshold as Float, upper as Float, lower as Float) as Float {
         var clippedPThreshold = clip(pThreshold, lower, upper);
@@ -161,7 +129,7 @@ class PaceGaugeView extends WatchUi.DataField {
 
     function calculatePercentageFrom(pace as Float) as Float {
         var clipped = clip(pace, 0.8f*pace, 1.40f*pace);
-        var pThreshold = clipped / thresholdPace;
+        var pThreshold = clipped / viewModel.thresholdPace;
         if (pThreshold > 1.29f) {
             var base = 0.0 * (100.0 / 6.0);
             var percentage = zonePercentageToTotalPercentage(pThreshold, 1.4f, 1.29f);
@@ -215,7 +183,7 @@ class PaceGaugeView extends WatchUi.DataField {
         
         for(var i = 0; i < 6; i++) {
             var height = gauge.height;
-            if (i == gauge.highlightedIndex() && pace > 0.0001f) {
+            if (i == gauge.highlightedIndex() && viewModel.pace > 0.0001f) {
                 height = height * 2.5;
             }
             fillRectangleWithContrast(
@@ -227,7 +195,7 @@ class PaceGaugeView extends WatchUi.DataField {
                 colors[i]
             );
         }
-        if (pace > 0.0001f) {
+        if (viewModel.pace > 0.0001f) {
             drawCurrentPace(dc, gauge);
         }
     }
