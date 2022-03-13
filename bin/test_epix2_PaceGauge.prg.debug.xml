@@ -718,21 +718,21 @@
         <entry arg="true" endPc="268441823" name="mps" stackId="1" startPc="268441758"/>
         <entry endPc="268442248" name="rez_cmp_local_text_value" stackId="5" startPc="268441836"/>
         <entry endPc="268442248" name="rez_cmp_local_var_dc_getWidth" stackId="3" startPc="268441836"/>
+        <entry endPc="268442248" name="rez_cmp_local_custom_drawable_14974907131618150059" stackId="4" startPc="268441836"/>
         <entry endPc="268442248" name="rez_cmp_local_var_dc_getHeight" stackId="2" startPc="268441836"/>
         <entry endPc="268442248" name="rez_cmp_local_text_error" stackId="6" startPc="268441836"/>
-        <entry endPc="268442248" name="rez_cmp_local_custom_drawable_20153318171155781451" stackId="4" startPc="268441836"/>
         <entry arg="true" endPc="268442249" name="dc" stackId="1" startPc="268441824"/>
-        <entry endPc="268442445" name="rez_cmp_local_custom_drawable_52852723613966740871" stackId="2" startPc="268442262"/>
         <entry endPc="268442445" name="rez_cmp_local_text_value" stackId="3" startPc="268442262"/>
+        <entry endPc="268442445" name="rez_cmp_local_custom_drawable_11307788321967842285" stackId="2" startPc="268442262"/>
         <entry arg="true" endPc="268442446" name="dc" stackId="1" startPc="268442250"/>
         <entry endPc="268442642" name="rez_cmp_local_text_value" stackId="3" startPc="268442459"/>
-        <entry endPc="268442642" name="rez_cmp_local_custom_drawable_13962901631932680676" stackId="2" startPc="268442459"/>
+        <entry endPc="268442642" name="rez_cmp_local_custom_drawable_37137493019725111463" stackId="2" startPc="268442459"/>
         <entry arg="true" endPc="268442643" name="dc" stackId="1" startPc="268442447"/>
         <entry endPc="268442839" name="rez_cmp_local_text_value" stackId="3" startPc="268442656"/>
-        <entry endPc="268442839" name="rez_cmp_local_custom_drawable_32326642319842986615" stackId="2" startPc="268442656"/>
+        <entry endPc="268442839" name="rez_cmp_local_custom_drawable_65026214918311690033" stackId="2" startPc="268442656"/>
         <entry arg="true" endPc="268442840" name="dc" stackId="1" startPc="268442644"/>
         <entry endPc="268443036" name="rez_cmp_local_text_value" stackId="3" startPc="268442853"/>
-        <entry endPc="268443036" name="rez_cmp_local_custom_drawable_18458154522465833811" stackId="2" startPc="268442853"/>
+        <entry endPc="268443036" name="rez_cmp_local_custom_drawable_28751452115814450362" stackId="2" startPc="268442853"/>
         <entry arg="true" endPc="268443037" name="dc" stackId="1" startPc="268442841"/>
     </localVars>
     <annotations>
