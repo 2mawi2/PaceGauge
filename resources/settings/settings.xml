@@ -1,10 +1,10 @@
 <settings>
-
-    <setting propertyKey="@Properties.thresholdMinutes" title="@Strings.ThresholdPaceMinutes" prompt="@Strings.ThresholdPacePrompt">
-        <settingConfig type="numeric" errorMessage="@Strings.NumberError" />
-    </setting>
-
-     <setting propertyKey="@Properties.thresholdSeconds" title="@Strings.ThresholdPaceSeconds" prompt="@Strings.ThresholdPacePrompt">
-        <settingConfig type="numeric" errorMessage="@Strings.NumberError" />
-    </setting>
+    <group id="groupName" title="@Strings.ThresholdPacePrompt">
+        <setting propertyKey="@Properties.thresholdMinutes" title="@Strings.ThresholdPaceMinutes" prompt="@Strings.ThresholdPacePrompt">
+            <settingConfig required="true" min="0" max="59"  type="numeric" errorMessage="@Strings.NumberError" />
+        </setting>
+        <setting propertyKey="@Properties.thresholdSeconds" title="@Strings.ThresholdPaceSeconds" prompt="@Strings.ThresholdPacePrompt">
+            <settingConfig required="true" min="0" max="59" type="numeric" errorMessage="@Strings.NumberError" />
+        </setting>
+    </group>
 </settings>

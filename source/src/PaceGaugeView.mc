@@ -53,6 +53,13 @@ class PaceGaugeView extends WatchUi.DataField {
         }
     }
 
+    function getInverseBackgroundColor(){
+        if (getBackgroundColor() == Graphics.COLOR_BLACK) {
+            return Graphics.COLOR_WHITE;
+        } else {
+            return Graphics.COLOR_BLACK;
+        }
+    }
 
     function onUpdate(dc as Dc) as Void {
         if (viewModel.thresholdPace == -1.0) {
@@ -61,11 +68,7 @@ class PaceGaugeView extends WatchUi.DataField {
         
         (View.findDrawableById("Background") as Text).setColor(getBackgroundColor());
         var value = View.findDrawableById("value") as Text;
-        if (getBackgroundColor() == Graphics.COLOR_BLACK) {
-            value.setColor(Graphics.COLOR_WHITE);
-        } else {
-            value.setColor(Graphics.COLOR_BLACK);
-        }
+        value.setColor(getInverseBackgroundColor());
         if (viewModel.thresholdPace != -1.0) {
             hideConfigError();
             var gauge = calculatePaceGauge(dc);
@@ -81,6 +84,7 @@ class PaceGaugeView extends WatchUi.DataField {
             View.onUpdate(dc);
         }
     }
+
 
     function showConfigError() {
         var error = View.findDrawableById("error") as Text;
@@ -133,10 +137,10 @@ class PaceGaugeView extends WatchUi.DataField {
         dc.setColor(color, color);
         dc.fillRectangle(x, y, width, height);
 
-        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
+        dc.setColor(getBackgroundColor(), getBackgroundColor());
         dc.fillRectangle(x, y, contrastSize, height);
         
-        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
+        dc.setColor(getBackgroundColor(), getBackgroundColor());
         dc.fillRectangle(x + width - contrastSize, y, contrastSize, height);
     }
 
@@ -178,7 +182,7 @@ class PaceGaugeView extends WatchUi.DataField {
             indicatorY, 
             indicatorWidth, 
             indicatorHeight, 
-            Graphics.COLOR_WHITE
+            getInverseBackgroundColor()
         );
     }
 }
