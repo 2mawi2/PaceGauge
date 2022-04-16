@@ -1,0 +1,1140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/Users/mariusw/git/garmin/PaceGauge/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="UnitTests" id="1" lineNum="4" parent="globals" pc="268435456" symbol="getTestObject"/>
+        <entry filename="UnitTests" id="1" lineNum="5" parent="globals" pc="268435468" symbol="getTestObject"/>
+        <entry filename="UnitTests" id="2" lineNum="11" parent="globals/RunNoEvil" pc="268435492" symbol="initialize"/>
+        <entry filename="UnitTests" id="2" lineNum="12" parent="globals/RunNoEvil" pc="268435496" symbol="initialize"/>
+        <entry filename="UnitTests" id="2" lineNum="13" parent="globals/RunNoEvil" pc="268435518" symbol="initialize"/>
+        <entry filename="UnitTests" id="2" lineNum="14" parent="globals/RunNoEvil" pc="268435552" symbol="initialize"/>
+        <entry filename="UnitTests" id="2" lineNum="15" parent="globals/RunNoEvil" pc="268435566" symbol="initialize"/>
+        <entry filename="UnitTests" id="3" lineNum="17" parent="globals/RunNoEvil" pc="268435579" symbol="getIndexOf"/>
+        <entry filename="UnitTests" id="3" lineNum="18" parent="globals/RunNoEvil" pc="268435583" symbol="getIndexOf"/>
+        <entry filename="UnitTests" id="3" lineNum="19" parent="globals/RunNoEvil" pc="268435600" symbol="getIndexOf"/>
+        <entry filename="UnitTests" id="3" lineNum="21" parent="globals/RunNoEvil" pc="268435623" symbol="getIndexOf"/>
+        <entry filename="UnitTests" id="3" lineNum="22" parent="globals/RunNoEvil" pc="268435642" symbol="getIndexOf"/>
+        <entry filename="UnitTests" id="3" lineNum="23" parent="globals/RunNoEvil" pc="268435657" symbol="getIndexOf"/>
+        <entry filename="UnitTests" id="3" lineNum="24" parent="globals/RunNoEvil" pc="268435682" symbol="getIndexOf"/>
+        <entry filename="UnitTests" id="3" lineNum="27" parent="globals/RunNoEvil" pc="268435701" symbol="getIndexOf"/>
+        <entry filename="UnitTests" id="4" lineNum="29" parent="globals/RunNoEvil" pc="268435708" symbol="getTestName"/>
+        <entry filename="UnitTests" id="4" lineNum="30" parent="globals/RunNoEvil" pc="268435712" symbol="getTestName"/>
+        <entry filename="UnitTests" id="5" lineNum="32" parent="globals/RunNoEvil" pc="268435725" symbol="getNumberOfTests"/>
+        <entry filename="UnitTests" id="5" lineNum="33" parent="globals/RunNoEvil" pc="268435729" symbol="getNumberOfTests"/>
+        <entry filename="UnitTests" id="6" lineNum="35" parent="globals/RunNoEvil" pc="268435748" symbol="populate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="6" lineNum="36" parent="globals/RunNoEvil" pc="268435752" symbol="populate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="6" lineNum="37" parent="globals/RunNoEvil" pc="268435771" symbol="populate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="6" lineNum="38" parent="globals/RunNoEvil" pc="268435790" symbol="populate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="6" lineNum="39" parent="globals/RunNoEvil" pc="268435809" symbol="populate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="6" lineNum="40" parent="globals/RunNoEvil" pc="268435828" symbol="populate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="6" lineNum="41" parent="globals/RunNoEvil" pc="268435847" symbol="populate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="6" lineNum="42" parent="globals/RunNoEvil" pc="268435866" symbol="populate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="6" lineNum="43" parent="globals/RunNoEvil" pc="268435885" symbol="populate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="6" lineNum="44" parent="globals/RunNoEvil" pc="268435904" symbol="populate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="6" lineNum="45" parent="globals/RunNoEvil" pc="268435923" symbol="populate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="6" lineNum="46" parent="globals/RunNoEvil" pc="268435942" symbol="populate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="6" lineNum="47" parent="globals/RunNoEvil" pc="268435961" symbol="populate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="6" lineNum="48" parent="globals/RunNoEvil" pc="268435980" symbol="populate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="6" lineNum="49" parent="globals/RunNoEvil" pc="268435999" symbol="populate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="6" lineNum="50" parent="globals/RunNoEvil" pc="268436018" symbol="populate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="6" lineNum="51" parent="globals/RunNoEvil" pc="268436037" symbol="populate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="6" lineNum="52" parent="globals/RunNoEvil" pc="268436056" symbol="populate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="6" lineNum="53" parent="globals/RunNoEvil" pc="268436075" symbol="populate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="6" lineNum="54" parent="globals/RunNoEvil" pc="268436094" symbol="populate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="6" lineNum="55" parent="globals/RunNoEvil" pc="268436113" symbol="populate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="6" lineNum="56" parent="globals/RunNoEvil" pc="268436132" symbol="populate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="58" parent="globals/RunNoEvil" pc="268436152" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="59" parent="globals/RunNoEvil" pc="268436156" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="60" parent="globals/RunNoEvil" pc="268436160" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="61" parent="globals/RunNoEvil" pc="268436171" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="63" parent="globals/RunNoEvil" pc="268436193" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="64" parent="globals/RunNoEvil" pc="268436204" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="66" parent="globals/RunNoEvil" pc="268436226" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="67" parent="globals/RunNoEvil" pc="268436237" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="69" parent="globals/RunNoEvil" pc="268436259" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="70" parent="globals/RunNoEvil" pc="268436270" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="72" parent="globals/RunNoEvil" pc="268436292" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="73" parent="globals/RunNoEvil" pc="268436303" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="75" parent="globals/RunNoEvil" pc="268436325" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="76" parent="globals/RunNoEvil" pc="268436336" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="78" parent="globals/RunNoEvil" pc="268436358" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="79" parent="globals/RunNoEvil" pc="268436369" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="81" parent="globals/RunNoEvil" pc="268436391" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="82" parent="globals/RunNoEvil" pc="268436402" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="84" parent="globals/RunNoEvil" pc="268436424" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="85" parent="globals/RunNoEvil" pc="268436435" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="87" parent="globals/RunNoEvil" pc="268436457" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="88" parent="globals/RunNoEvil" pc="268436468" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="90" parent="globals/RunNoEvil" pc="268436490" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="91" parent="globals/RunNoEvil" pc="268436501" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="93" parent="globals/RunNoEvil" pc="268436523" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="94" parent="globals/RunNoEvil" pc="268436534" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="96" parent="globals/RunNoEvil" pc="268436556" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="97" parent="globals/RunNoEvil" pc="268436567" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="99" parent="globals/RunNoEvil" pc="268436589" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="100" parent="globals/RunNoEvil" pc="268436600" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="102" parent="globals/RunNoEvil" pc="268436622" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="103" parent="globals/RunNoEvil" pc="268436633" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="105" parent="globals/RunNoEvil" pc="268436655" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="106" parent="globals/RunNoEvil" pc="268436666" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="108" parent="globals/RunNoEvil" pc="268436688" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="109" parent="globals/RunNoEvil" pc="268436699" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="111" parent="globals/RunNoEvil" pc="268436721" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="112" parent="globals/RunNoEvil" pc="268436732" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="114" parent="globals/RunNoEvil" pc="268436754" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="115" parent="globals/RunNoEvil" pc="268436765" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="117" parent="globals/RunNoEvil" pc="268436787" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="118" parent="globals/RunNoEvil" pc="268436798" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="120" parent="globals/RunNoEvil" pc="268436820" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="121" parent="globals/RunNoEvil" pc="268436831" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="7" lineNum="123" parent="globals/RunNoEvil" pc="268436853" symbol="evaluate_test_entries_0_to_21"/>
+        <entry filename="UnitTests" id="8" lineNum="125" parent="globals/RunNoEvil" pc="268436857" symbol="runTest"/>
+        <entry filename="UnitTests" id="8" lineNum="126" parent="globals/RunNoEvil" pc="268436861" symbol="runTest"/>
+        <entry filename="UnitTests" id="8" lineNum="127" parent="globals/RunNoEvil" pc="268436865" symbol="runTest"/>
+        <entry filename="UnitTests" id="8" lineNum="128" parent="globals/RunNoEvil" pc="268436883" symbol="runTest"/>
+        <entry filename="UnitTests" id="8" lineNum="130" parent="globals/RunNoEvil" pc="268436901" symbol="runTest"/>
+        <entry filename="UnitTests" id="8" lineNum="131" parent="globals/RunNoEvil" pc="268436935" symbol="runTest"/>
+        <entry filename="UnitTests" id="8" lineNum="132" parent="globals/RunNoEvil" pc="268436939" symbol="runTest"/>
+        <entry filename="UnitTests" id="8" lineNum="133" parent="globals/RunNoEvil" pc="268436950" symbol="runTest"/>
+        <entry filename="UnitTests" id="8" lineNum="135" parent="globals/RunNoEvil" pc="268436976" symbol="runTest"/>
+        <entry filename="UnitTests" id="8" lineNum="136" parent="globals/RunNoEvil" pc="268436990" symbol="runTest"/>
+        <entry filename="UnitTests" id="8" lineNum="138" parent="globals/RunNoEvil" pc="268436996" symbol="runTest"/>
+        <entry filename="UnitTests" id="9" lineNum="8" parent="globals/RunNoEvil" pc="268443106" symbol="&lt;init&gt;"/>
+        <entry filename="UnitTests" id="9" lineNum="8" parent="globals/RunNoEvil" pc="268443106" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" id="11" lineNum="3" parent="globals" pc="268437000" symbol="should_return_max_of_two_numbers"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" id="11" lineNum="4" parent="globals" pc="268437012" symbol="should_return_max_of_two_numbers"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" id="12" lineNum="8" parent="globals" pc="268437041" symbol="should_return_max_of_two_numbers2"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" id="12" lineNum="9" parent="globals" pc="268437053" symbol="should_return_max_of_two_numbers2"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" id="13" lineNum="13" parent="globals" pc="268437082" symbol="should_return_min_of_two_numbers"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" id="13" lineNum="14" parent="globals" pc="268437094" symbol="should_return_min_of_two_numbers"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" id="14" lineNum="18" parent="globals" pc="268437123" symbol="should_return_min_of_two_numbers2"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" id="14" lineNum="19" parent="globals" pc="268437135" symbol="should_return_min_of_two_numbers2"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" id="15" lineNum="23" parent="globals" pc="268437164" symbol="should_clip_number_to_min_and_max"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" id="15" lineNum="24" parent="globals" pc="268437176" symbol="should_clip_number_to_min_and_max"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" id="16" lineNum="28" parent="globals" pc="268437210" symbol="should_clip_number_to_min_and_max2"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" id="16" lineNum="29" parent="globals" pc="268437222" symbol="should_clip_number_to_min_and_max2"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" id="17" lineNum="33" parent="globals" pc="268437256" symbol="should_clip_number_to_min_and_max3"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" id="17" lineNum="34" parent="globals" pc="268437268" symbol="should_clip_number_to_min_and_max3"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" id="18" lineNum="38" parent="globals" pc="268437302" symbol="should_convert_mps_to_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" id="18" lineNum="39" parent="globals" pc="268437314" symbol="should_convert_mps_to_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" id="18" lineNum="40" parent="globals" pc="268437321" symbol="should_convert_mps_to_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" id="19" lineNum="44" parent="globals" pc="268437348" symbol="should_pace_conversion_should_not_fail_for_zero"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" id="19" lineNum="45" parent="globals" pc="268437360" symbol="should_pace_conversion_should_not_fail_for_zero"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" id="20" lineNum="49" parent="globals" pc="268437394" symbol="should_return_absolute_negative_value"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" id="20" lineNum="50" parent="globals" pc="268437406" symbol="should_return_absolute_negative_value"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" id="21" lineNum="54" parent="globals" pc="268437430" symbol="should_return_absolute_positive_value"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" id="21" lineNum="55" parent="globals" pc="268437442" symbol="should_return_absolute_positive_value"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" id="22" lineNum="59" parent="globals" pc="268437466" symbol="should_return_absolute_zero_value"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" id="22" lineNum="60" parent="globals" pc="268437478" symbol="should_return_absolute_zero_value"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" id="24" lineNum="8" parent="globals/PaceGaugeViewModel" pc="268437502" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" id="24" lineNum="9" parent="globals/PaceGaugeViewModel" pc="268437506" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" id="24" lineNum="10" parent="globals/PaceGaugeViewModel" pc="268437519" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" id="25" lineNum="13" parent="globals/PaceGaugeViewModel" pc="268437550" symbol="onNewThresholdPaceConfig"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" id="25" lineNum="14" parent="globals/PaceGaugeViewModel" pc="268437554" symbol="onNewThresholdPaceConfig"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" id="25" lineNum="15" parent="globals/PaceGaugeViewModel" pc="268437579" symbol="onNewThresholdPaceConfig"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" id="25" lineNum="16" parent="globals/PaceGaugeViewModel" pc="268437604" symbol="onNewThresholdPaceConfig"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" id="25" lineNum="17" parent="globals/PaceGaugeViewModel" pc="268437617" symbol="onNewThresholdPaceConfig"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" id="25" lineNum="18" parent="globals/PaceGaugeViewModel" pc="268437628" symbol="onNewThresholdPaceConfig"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" id="26" lineNum="22" parent="globals/PaceGaugeViewModel" pc="268437642" symbol="onNewCurrentSpeed"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" id="26" lineNum="23" parent="globals/PaceGaugeViewModel" pc="268437646" symbol="onNewCurrentSpeed"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" id="26" lineNum="24" parent="globals/PaceGaugeViewModel" pc="268437653" symbol="onNewCurrentSpeed"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" id="26" lineNum="26" parent="globals/PaceGaugeViewModel" pc="268437677" symbol="onNewCurrentSpeed"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" id="27" lineNum="30" parent="globals/PaceGaugeViewModel" pc="268437691" symbol="calculatePacePercentage"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" id="27" lineNum="31" parent="globals/PaceGaugeViewModel" pc="268437695" symbol="calculatePacePercentage"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" id="28" lineNum="3" parent="globals/PaceGaugeViewModel" pc="268443105" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="30" lineNum="4" parent="globals" pc="268437730" symbol="should_update_pace_if_current_speed_not_null"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="30" lineNum="6" parent="globals" pc="268437742" symbol="should_update_pace_if_current_speed_not_null"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="30" lineNum="8" parent="globals" pc="268437766" symbol="should_update_pace_if_current_speed_not_null"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="30" lineNum="10" parent="globals" pc="268437783" symbol="should_update_pace_if_current_speed_not_null"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="31" lineNum="15" parent="globals" pc="268437799" symbol="should_convert_mps_to_pace_if_current_speed_not_null"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="31" lineNum="17" parent="globals" pc="268437811" symbol="should_convert_mps_to_pace_if_current_speed_not_null"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="31" lineNum="18" parent="globals" pc="268437818" symbol="should_convert_mps_to_pace_if_current_speed_not_null"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="31" lineNum="20" parent="globals" pc="268437842" symbol="should_convert_mps_to_pace_if_current_speed_not_null"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="31" lineNum="22" parent="globals" pc="268437856" symbol="should_convert_mps_to_pace_if_current_speed_not_null"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="32" lineNum="26" parent="globals" pc="268437880" symbol="should_not_throw_when_current_speed_is_zero"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="32" lineNum="28" parent="globals" pc="268437892" symbol="should_not_throw_when_current_speed_is_zero"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="32" lineNum="30" parent="globals" pc="268437916" symbol="should_not_throw_when_current_speed_is_zero"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="32" lineNum="32" parent="globals" pc="268437933" symbol="should_not_throw_when_current_speed_is_zero"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="33" lineNum="37" parent="globals" pc="268437949" symbol="should_calculate_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="33" lineNum="39" parent="globals" pc="268437961" symbol="should_calculate_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="33" lineNum="40" parent="globals" pc="268437985" symbol="should_calculate_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="33" lineNum="41" parent="globals" pc="268437992" symbol="should_calculate_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="33" lineNum="43" parent="globals" pc="268437999" symbol="should_calculate_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="33" lineNum="45" parent="globals" pc="268438015" symbol="should_calculate_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="34" lineNum="49" parent="globals" pc="268438031" symbol="should_clip_low_configured_minutes_when_calculating_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="34" lineNum="51" parent="globals" pc="268438043" symbol="should_clip_low_configured_minutes_when_calculating_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="34" lineNum="52" parent="globals" pc="268438067" symbol="should_clip_low_configured_minutes_when_calculating_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="34" lineNum="53" parent="globals" pc="268438074" symbol="should_clip_low_configured_minutes_when_calculating_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="34" lineNum="55" parent="globals" pc="268438081" symbol="should_clip_low_configured_minutes_when_calculating_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="34" lineNum="57" parent="globals" pc="268438097" symbol="should_clip_low_configured_minutes_when_calculating_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="35" lineNum="61" parent="globals" pc="268438113" symbol="should_clip_low_configured_seconds_when_calculating_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="35" lineNum="63" parent="globals" pc="268438125" symbol="should_clip_low_configured_seconds_when_calculating_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="35" lineNum="64" parent="globals" pc="268438149" symbol="should_clip_low_configured_seconds_when_calculating_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="35" lineNum="65" parent="globals" pc="268438156" symbol="should_clip_low_configured_seconds_when_calculating_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="35" lineNum="67" parent="globals" pc="268438163" symbol="should_clip_low_configured_seconds_when_calculating_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="35" lineNum="69" parent="globals" pc="268438179" symbol="should_clip_low_configured_seconds_when_calculating_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="36" lineNum="73" parent="globals" pc="268438195" symbol="should_clip_high_configured_minutes_when_calculating_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="36" lineNum="75" parent="globals" pc="268438207" symbol="should_clip_high_configured_minutes_when_calculating_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="36" lineNum="76" parent="globals" pc="268438231" symbol="should_clip_high_configured_minutes_when_calculating_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="36" lineNum="77" parent="globals" pc="268438238" symbol="should_clip_high_configured_minutes_when_calculating_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="36" lineNum="79" parent="globals" pc="268438245" symbol="should_clip_high_configured_minutes_when_calculating_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="36" lineNum="81" parent="globals" pc="268438261" symbol="should_clip_high_configured_minutes_when_calculating_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="37" lineNum="85" parent="globals" pc="268438277" symbol="should_clip_high_configured_seconds_when_calculating_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="37" lineNum="87" parent="globals" pc="268438289" symbol="should_clip_high_configured_seconds_when_calculating_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="37" lineNum="88" parent="globals" pc="268438313" symbol="should_clip_high_configured_seconds_when_calculating_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="37" lineNum="89" parent="globals" pc="268438320" symbol="should_clip_high_configured_seconds_when_calculating_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="37" lineNum="91" parent="globals" pc="268438327" symbol="should_clip_high_configured_seconds_when_calculating_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="37" lineNum="93" parent="globals" pc="268438343" symbol="should_clip_high_configured_seconds_when_calculating_threshold_pace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="38" lineNum="97" parent="globals" pc="268438369" symbol="should_only_update_threshold_pace_if_config_changed"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="38" lineNum="99" parent="globals" pc="268438381" symbol="should_only_update_threshold_pace_if_config_changed"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="38" lineNum="100" parent="globals" pc="268438405" symbol="should_only_update_threshold_pace_if_config_changed"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="38" lineNum="101" parent="globals" pc="268438418" symbol="should_only_update_threshold_pace_if_config_changed"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="38" lineNum="102" parent="globals" pc="268438425" symbol="should_only_update_threshold_pace_if_config_changed"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="38" lineNum="104" parent="globals" pc="268438432" symbol="should_only_update_threshold_pace_if_config_changed"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" id="38" lineNum="106" parent="globals" pc="268438448" symbol="should_only_update_threshold_pace_if_config_changed"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="40" lineNum="6" parent="globals/ZonePacePercentage" pc="268438464" symbol="calculatePacePercentage"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="40" lineNum="7" parent="globals/ZonePacePercentage" pc="268438468" symbol="calculatePacePercentage"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="40" lineNum="8" parent="globals/ZonePacePercentage" pc="268438499" symbol="calculatePacePercentage"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="40" lineNum="9" parent="globals/ZonePacePercentage" pc="268438506" symbol="calculatePacePercentage"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="40" lineNum="10" parent="globals/ZonePacePercentage" pc="268438517" symbol="calculatePacePercentage"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="40" lineNum="11" parent="globals/ZonePacePercentage" pc="268438524" symbol="calculatePacePercentage"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="40" lineNum="12" parent="globals/ZonePacePercentage" pc="268438549" symbol="calculatePacePercentage"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="40" lineNum="13" parent="globals/ZonePacePercentage" pc="268438558" symbol="calculatePacePercentage"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="40" lineNum="14" parent="globals/ZonePacePercentage" pc="268438569" symbol="calculatePacePercentage"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="40" lineNum="15" parent="globals/ZonePacePercentage" pc="268438576" symbol="calculatePacePercentage"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="40" lineNum="16" parent="globals/ZonePacePercentage" pc="268438601" symbol="calculatePacePercentage"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="40" lineNum="17" parent="globals/ZonePacePercentage" pc="268438610" symbol="calculatePacePercentage"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="40" lineNum="18" parent="globals/ZonePacePercentage" pc="268438621" symbol="calculatePacePercentage"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="40" lineNum="19" parent="globals/ZonePacePercentage" pc="268438628" symbol="calculatePacePercentage"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="40" lineNum="20" parent="globals/ZonePacePercentage" pc="268438653" symbol="calculatePacePercentage"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="40" lineNum="21" parent="globals/ZonePacePercentage" pc="268438662" symbol="calculatePacePercentage"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="40" lineNum="22" parent="globals/ZonePacePercentage" pc="268438673" symbol="calculatePacePercentage"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="40" lineNum="23" parent="globals/ZonePacePercentage" pc="268438680" symbol="calculatePacePercentage"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="40" lineNum="24" parent="globals/ZonePacePercentage" pc="268438705" symbol="calculatePacePercentage"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="40" lineNum="25" parent="globals/ZonePacePercentage" pc="268438714" symbol="calculatePacePercentage"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="40" lineNum="26" parent="globals/ZonePacePercentage" pc="268438725" symbol="calculatePacePercentage"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="40" lineNum="27" parent="globals/ZonePacePercentage" pc="268438732" symbol="calculatePacePercentage"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="40" lineNum="28" parent="globals/ZonePacePercentage" pc="268438757" symbol="calculatePacePercentage"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="40" lineNum="30" parent="globals/ZonePacePercentage" pc="268438766" symbol="calculatePacePercentage"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="40" lineNum="31" parent="globals/ZonePacePercentage" pc="268438773" symbol="calculatePacePercentage"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="40" lineNum="32" parent="globals/ZonePacePercentage" pc="268438798" symbol="calculatePacePercentage"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="41" lineNum="36" parent="globals/ZonePacePercentage" pc="268438805" symbol="&lt;globals/ZonePacePercentage/&lt;&gt;zonePercentageToTotalPercentage&gt;"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="41" lineNum="37" parent="globals/ZonePacePercentage" pc="268438809" symbol="&lt;globals/ZonePacePercentage/&lt;&gt;zonePercentageToTotalPercentage&gt;"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="41" lineNum="38" parent="globals/ZonePacePercentage" pc="268438828" symbol="&lt;globals/ZonePacePercentage/&lt;&gt;zonePercentageToTotalPercentage&gt;"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="41" lineNum="39" parent="globals/ZonePacePercentage" pc="268438841" symbol="&lt;globals/ZonePacePercentage/&lt;&gt;zonePercentageToTotalPercentage&gt;"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="42" lineNum="4" parent="globals/ZonePacePercentage" pc="268443205" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" id="43" lineNum="4" parent="globals/ZonePacePercentage" pc="268438878" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc" id="45" lineNum="9" parent="globals/PaceGaugeApp" pc="268438881" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc" id="45" lineNum="10" parent="globals/PaceGaugeApp" pc="268438885" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc" id="46" lineNum="14" parent="globals/PaceGaugeApp" pc="268438904" symbol="onStart"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc" id="47" lineNum="18" parent="globals/PaceGaugeApp" pc="268438909" symbol="onStop"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc" id="48" lineNum="22" parent="globals/PaceGaugeApp" pc="268438914" symbol="getInitialView"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc" id="48" lineNum="23" parent="globals/PaceGaugeApp" pc="268438918" symbol="getInitialView"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc" id="49" lineNum="26" parent="globals/PaceGaugeApp" pc="268438942" symbol="onSettingsChanged"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc" id="49" lineNum="27" parent="globals/PaceGaugeApp" pc="268438946" symbol="onSettingsChanged"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc" id="49" lineNum="28" parent="globals/PaceGaugeApp" pc="268438964" symbol="onSettingsChanged"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc" id="50" lineNum="5" parent="globals/PaceGaugeApp" pc="268443156" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc" id="50" lineNum="7" parent="globals/PaceGaugeApp" pc="268443174" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc" id="50" lineNum="5" parent="globals/PaceGaugeApp" pc="268443156" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc" id="51" lineNum="33" parent="globals" pc="268438981" symbol="getApp"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc" id="51" lineNum="34" parent="globals" pc="268438993" symbol="getApp"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" id="53" lineNum="11" parent="globals/PaceGauge" pc="268439010" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" id="53" lineNum="19" parent="globals/PaceGauge" pc="268439014" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" id="53" lineNum="20" parent="globals/PaceGauge" pc="268439024" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" id="53" lineNum="21" parent="globals/PaceGauge" pc="268439034" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" id="53" lineNum="22" parent="globals/PaceGauge" pc="268439044" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" id="53" lineNum="23" parent="globals/PaceGauge" pc="268439054" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" id="53" lineNum="24" parent="globals/PaceGauge" pc="268439064" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" id="54" lineNum="27" parent="globals/PaceGauge" pc="268439075" symbol="length"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" id="54" lineNum="28" parent="globals/PaceGauge" pc="268439079" symbol="length"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" id="55" lineNum="31" parent="globals/PaceGauge" pc="268439098" symbol="getIndicatorPosition"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" id="55" lineNum="32" parent="globals/PaceGauge" pc="268439102" symbol="getIndicatorPosition"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" id="56" lineNum="35" parent="globals/PaceGauge" pc="268439139" symbol="highlightedIndex"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" id="56" lineNum="36" parent="globals/PaceGauge" pc="268439143" symbol="highlightedIndex"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" id="56" lineNum="37" parent="globals/PaceGauge" pc="268439156" symbol="highlightedIndex"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" id="56" lineNum="38" parent="globals/PaceGauge" pc="268439174" symbol="highlightedIndex"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" id="56" lineNum="39" parent="globals/PaceGauge" pc="268439209" symbol="highlightedIndex"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" id="56" lineNum="42" parent="globals/PaceGauge" pc="268439228" symbol="highlightedIndex"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" id="57" lineNum="45" parent="globals/PaceGauge" pc="268439235" symbol="tileLength"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" id="57" lineNum="46" parent="globals/PaceGauge" pc="268439239" symbol="tileLength"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" id="58" lineNum="49" parent="globals/PaceGauge" pc="268439258" symbol="getColors"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" id="58" lineNum="50" parent="globals/PaceGauge" pc="268439262" symbol="getColors"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" id="59" lineNum="60" parent="globals/PaceGauge" pc="268439402" symbol="getHighlightedColor"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" id="59" lineNum="61" parent="globals/PaceGauge" pc="268439406" symbol="getHighlightedColor"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" id="60" lineNum="2" parent="globals/PaceGauge" pc="268443125" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeBackground.mc" id="62" lineNum="9" parent="globals/Background" pc="268439431" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeBackground.mc" id="62" lineNum="10" parent="globals/Background" pc="268439435" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeBackground.mc" id="62" lineNum="14" parent="globals/Background" pc="268439456" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeBackground.mc" id="62" lineNum="16" parent="globals/Background" pc="268439476" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeBackground.mc" id="63" lineNum="19" parent="globals/Background" pc="268439497" symbol="setColor"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeBackground.mc" id="63" lineNum="20" parent="globals/Background" pc="268439501" symbol="setColor"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeBackground.mc" id="64" lineNum="23" parent="globals/Background" pc="268439512" symbol="draw"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeBackground.mc" id="64" lineNum="24" parent="globals/Background" pc="268439516" symbol="draw"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeBackground.mc" id="64" lineNum="25" parent="globals/Background" pc="268439548" symbol="draw"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeBackground.mc" id="65" lineNum="5" parent="globals/Background" pc="268443086" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeBackground.mc" id="65" lineNum="5" parent="globals/Background" pc="268443086" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="67" lineNum="11" parent="globals/PaceGaugeView" pc="268439561" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="67" lineNum="12" parent="globals/PaceGaugeView" pc="268439565" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="67" lineNum="13" parent="globals/PaceGaugeView" pc="268439595" symbol="initialize"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="68" lineNum="17" parent="globals/PaceGaugeView" pc="268439614" symbol="handleSettingUpdate"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="68" lineNum="18" parent="globals/PaceGaugeView" pc="268439618" symbol="handleSettingUpdate"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="69" lineNum="21" parent="globals/PaceGaugeView" pc="268439631" symbol="updateThresholdPace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="69" lineNum="22" parent="globals/PaceGaugeView" pc="268439635" symbol="updateThresholdPace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="69" lineNum="23" parent="globals/PaceGaugeView" pc="268439665" symbol="updateThresholdPace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="69" lineNum="24" parent="globals/PaceGaugeView" pc="268439695" symbol="updateThresholdPace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="70" lineNum="27" parent="globals/PaceGaugeView" pc="268439718" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="70" lineNum="28" parent="globals/PaceGaugeView" pc="268439722" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="70" lineNum="29" parent="globals/PaceGaugeView" pc="268439741" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="70" lineNum="30" parent="globals/PaceGaugeView" pc="268439764" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="70" lineNum="31" parent="globals/PaceGaugeView" pc="268439810" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="70" lineNum="32" parent="globals/PaceGaugeView" pc="268439833" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="70" lineNum="34" parent="globals/PaceGaugeView" pc="268439879" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="70" lineNum="35" parent="globals/PaceGaugeView" pc="268439902" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="70" lineNum="37" parent="globals/PaceGaugeView" pc="268439948" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="70" lineNum="38" parent="globals/PaceGaugeView" pc="268439971" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="70" lineNum="39" parent="globals/PaceGaugeView" pc="268440017" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="70" lineNum="40" parent="globals/PaceGaugeView" pc="268440028" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="70" lineNum="41" parent="globals/PaceGaugeView" pc="268440071" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="70" lineNum="42" parent="globals/PaceGaugeView" pc="268440095" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="70" lineNum="44" parent="globals/PaceGaugeView" pc="268440120" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="70" lineNum="45" parent="globals/PaceGaugeView" pc="268440163" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="70" lineNum="46" parent="globals/PaceGaugeView" pc="268440187" symbol="onLayout"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="71" lineNum="50" parent="globals/PaceGaugeView" pc="268440210" symbol="compute"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="71" lineNum="51" parent="globals/PaceGaugeView" pc="268440214" symbol="compute"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="71" lineNum="52" parent="globals/PaceGaugeView" pc="268440225" symbol="compute"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="72" lineNum="56" parent="globals/PaceGaugeView" pc="268440255" symbol="getInverseBackgroundColor"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="72" lineNum="57" parent="globals/PaceGaugeView" pc="268440259" symbol="getInverseBackgroundColor"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="72" lineNum="58" parent="globals/PaceGaugeView" pc="268440286" symbol="getInverseBackgroundColor"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="72" lineNum="60" parent="globals/PaceGaugeView" pc="268440302" symbol="getInverseBackgroundColor"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="73" lineNum="64" parent="globals/PaceGaugeView" pc="268440316" symbol="onUpdate"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="73" lineNum="65" parent="globals/PaceGaugeView" pc="268440320" symbol="onUpdate"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="73" lineNum="66" parent="globals/PaceGaugeView" pc="268440343" symbol="onUpdate"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="73" lineNum="69" parent="globals/PaceGaugeView" pc="268440358" symbol="onUpdate"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="73" lineNum="70" parent="globals/PaceGaugeView" pc="268440401" symbol="onUpdate"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="73" lineNum="71" parent="globals/PaceGaugeView" pc="268440425" symbol="onUpdate"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="73" lineNum="72" parent="globals/PaceGaugeView" pc="268440448" symbol="onUpdate"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="73" lineNum="73" parent="globals/PaceGaugeView" pc="268440471" symbol="onUpdate"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="73" lineNum="74" parent="globals/PaceGaugeView" pc="268440483" symbol="onUpdate"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="73" lineNum="75" parent="globals/PaceGaugeView" pc="268440498" symbol="onUpdate"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="73" lineNum="76" parent="globals/PaceGaugeView" pc="268440521" symbol="onUpdate"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="73" lineNum="78" parent="globals/PaceGaugeView" pc="268440541" symbol="onUpdate"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="73" lineNum="80" parent="globals/PaceGaugeView" pc="268440578" symbol="onUpdate"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="73" lineNum="81" parent="globals/PaceGaugeView" pc="268440598" symbol="onUpdate"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="73" lineNum="83" parent="globals/PaceGaugeView" pc="268440617" symbol="onUpdate"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="73" lineNum="84" parent="globals/PaceGaugeView" pc="268440629" symbol="onUpdate"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="74" lineNum="89" parent="globals/PaceGaugeView" pc="268440650" symbol="showConfigError"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="74" lineNum="90" parent="globals/PaceGaugeView" pc="268440654" symbol="showConfigError"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="74" lineNum="91" parent="globals/PaceGaugeView" pc="268440678" symbol="showConfigError"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="74" lineNum="92" parent="globals/PaceGaugeView" pc="268440701" symbol="showConfigError"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="75" lineNum="95" parent="globals/PaceGaugeView" pc="268440719" symbol="hideConfigError"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="75" lineNum="96" parent="globals/PaceGaugeView" pc="268440723" symbol="hideConfigError"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="75" lineNum="97" parent="globals/PaceGaugeView" pc="268440747" symbol="hideConfigError"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="75" lineNum="98" parent="globals/PaceGaugeView" pc="268440770" symbol="hideConfigError"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="76" lineNum="101" parent="globals/PaceGaugeView" pc="268440788" symbol="format"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="76" lineNum="102" parent="globals/PaceGaugeView" pc="268440792" symbol="format"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="76" lineNum="103" parent="globals/PaceGaugeView" pc="268440813" symbol="format"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="76" lineNum="104" parent="globals/PaceGaugeView" pc="268440843" symbol="format"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="76" lineNum="105" parent="globals/PaceGaugeView" pc="268440861" symbol="format"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="76" lineNum="106" parent="globals/PaceGaugeView" pc="268440879" symbol="format"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="76" lineNum="107" parent="globals/PaceGaugeView" pc="268440890" symbol="format"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="76" lineNum="109" parent="globals/PaceGaugeView" pc="268440903" symbol="format"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="76" lineNum="110" parent="globals/PaceGaugeView" pc="268440916" symbol="format"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="77" lineNum="113" parent="globals/PaceGaugeView" pc="268440920" symbol="calculatePaceGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="77" lineNum="114" parent="globals/PaceGaugeView" pc="268440924" symbol="calculatePaceGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="77" lineNum="115" parent="globals/PaceGaugeView" pc="268440943" symbol="calculatePaceGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="77" lineNum="116" parent="globals/PaceGaugeView" pc="268440950" symbol="calculatePaceGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="77" lineNum="117" parent="globals/PaceGaugeView" pc="268440969" symbol="calculatePaceGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="77" lineNum="118" parent="globals/PaceGaugeView" pc="268440980" symbol="calculatePaceGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="77" lineNum="120" parent="globals/PaceGaugeView" pc="268441005" symbol="calculatePaceGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="77" lineNum="121" parent="globals/PaceGaugeView" pc="268441027" symbol="calculatePaceGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="77" lineNum="122" parent="globals/PaceGaugeView" pc="268441034" symbol="calculatePaceGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="77" lineNum="123" parent="globals/PaceGaugeView" pc="268441044" symbol="calculatePaceGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="77" lineNum="124" parent="globals/PaceGaugeView" pc="268441060" symbol="calculatePaceGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="77" lineNum="125" parent="globals/PaceGaugeView" pc="268441079" symbol="calculatePaceGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="77" lineNum="126" parent="globals/PaceGaugeView" pc="268441089" symbol="calculatePaceGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="78" lineNum="130" parent="globals/PaceGaugeView" pc="268441125" symbol="fillRectangleWithContrast"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="78" lineNum="138" parent="globals/PaceGaugeView" pc="268441129" symbol="fillRectangleWithContrast"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="78" lineNum="139" parent="globals/PaceGaugeView" pc="268441136" symbol="fillRectangleWithContrast"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="78" lineNum="140" parent="globals/PaceGaugeView" pc="268441152" symbol="fillRectangleWithContrast"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="78" lineNum="142" parent="globals/PaceGaugeView" pc="268441172" symbol="fillRectangleWithContrast"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="78" lineNum="143" parent="globals/PaceGaugeView" pc="268441206" symbol="fillRectangleWithContrast"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="78" lineNum="145" parent="globals/PaceGaugeView" pc="268441226" symbol="fillRectangleWithContrast"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="78" lineNum="146" parent="globals/PaceGaugeView" pc="268441260" symbol="fillRectangleWithContrast"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="79" lineNum="149" parent="globals/PaceGaugeView" pc="268441287" symbol="drawGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="79" lineNum="150" parent="globals/PaceGaugeView" pc="268441291" symbol="drawGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="79" lineNum="151" parent="globals/PaceGaugeView" pc="268441305" symbol="drawGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="79" lineNum="152" parent="globals/PaceGaugeView" pc="268441318" symbol="drawGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="79" lineNum="154" parent="globals/PaceGaugeView" pc="268441331" symbol="drawGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="79" lineNum="155" parent="globals/PaceGaugeView" pc="268441349" symbol="drawGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="79" lineNum="156" parent="globals/PaceGaugeView" pc="268441359" symbol="drawGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="79" lineNum="157" parent="globals/PaceGaugeView" pc="268441402" symbol="drawGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="79" lineNum="159" parent="globals/PaceGaugeView" pc="268441415" symbol="drawGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="79" lineNum="168" parent="globals/PaceGaugeView" pc="268441473" symbol="drawGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="79" lineNum="169" parent="globals/PaceGaugeView" pc="268441496" symbol="drawGauge"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="80" lineNum="173" parent="globals/PaceGaugeView" pc="268441516" symbol="drawCurrentPace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="80" lineNum="174" parent="globals/PaceGaugeView" pc="268441520" symbol="drawCurrentPace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="80" lineNum="175" parent="globals/PaceGaugeView" pc="268441527" symbol="drawCurrentPace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="80" lineNum="176" parent="globals/PaceGaugeView" pc="268441540" symbol="drawCurrentPace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="80" lineNum="177" parent="globals/PaceGaugeView" pc="268441556" symbol="drawCurrentPace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="80" lineNum="178" parent="globals/PaceGaugeView" pc="268441563" symbol="drawCurrentPace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="80" lineNum="179" parent="globals/PaceGaugeView" pc="268441574" symbol="drawCurrentPace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="80" lineNum="181" parent="globals/PaceGaugeView" pc="268441590" symbol="drawCurrentPace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="81" lineNum="7" parent="globals/PaceGaugeView" pc="268443206" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeView.mc" id="81" lineNum="7" parent="globals/PaceGaugeView" pc="268443206" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" id="83" lineNum="3" parent="globals" pc="268441624" symbol="max"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" id="83" lineNum="4" parent="globals" pc="268441636" symbol="max"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" id="83" lineNum="5" parent="globals" pc="268441644" symbol="max"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" id="83" lineNum="7" parent="globals" pc="268441650" symbol="max"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" id="84" lineNum="11" parent="globals" pc="268441654" symbol="min"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" id="84" lineNum="12" parent="globals" pc="268441666" symbol="min"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" id="84" lineNum="13" parent="globals" pc="268441674" symbol="min"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" id="84" lineNum="15" parent="globals" pc="268441680" symbol="min"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" id="85" lineNum="19" parent="globals" pc="268441684" symbol="clip"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" id="85" lineNum="20" parent="globals" pc="268441696" symbol="clip"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" id="86" lineNum="23" parent="globals" pc="268441726" symbol="abs"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" id="86" lineNum="24" parent="globals" pc="268441738" symbol="abs"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" id="86" lineNum="25" parent="globals" pc="268441749" symbol="abs"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" id="86" lineNum="27" parent="globals" pc="268441761" symbol="abs"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" id="87" lineNum="31" parent="globals" pc="268441765" symbol="areClose"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" id="87" lineNum="32" parent="globals" pc="268441777" symbol="areClose"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" id="87" lineNum="33" parent="globals" pc="268441784" symbol="areClose"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" id="88" lineNum="36" parent="globals" pc="268441805" symbol="mpsToPace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" id="88" lineNum="37" parent="globals" pc="268441817" symbol="mpsToPace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" id="88" lineNum="37" parent="globals" pc="268441838" symbol="mpsToPace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" id="88" lineNum="39" parent="globals" pc="268441847" symbol="mpsToPace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" id="88" lineNum="40" parent="globals" pc="268441857" symbol="mpsToPace"/>
+        <entry filename="/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" id="88" lineNum="41" parent="globals" pc="268441867" symbol="mpsToPace"/>
+        <entry filename="Rez" id="90" lineNum="2" parent="globals/Rez/Drawables" pc="268443150" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="91" lineNum="6" parent="globals/Rez/Fonts" pc="268443152" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="92" lineNum="8" parent="globals/Rez/JsonData" pc="268443154" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="93" lineNum="17" parent="globals/Rez/Layouts" pc="268441871" symbol="MainLayout"/>
+        <entry filename="Rez" id="93" lineNum="19" parent="globals/Rez/Layouts" pc="268441883" symbol="MainLayout"/>
+        <entry filename="Rez" id="93" lineNum="20" parent="globals/Rez/Layouts" pc="268441896" symbol="MainLayout"/>
+        <entry filename="Rez" id="93" lineNum="22" parent="globals/Rez/Layouts" pc="268441909" symbol="MainLayout"/>
+        <entry filename="Rez" id="93" lineNum="23" parent="globals/Rez/Layouts" pc="268441933" symbol="MainLayout"/>
+        <entry filename="Rez" id="93" lineNum="24" parent="globals/Rez/Layouts" pc="268442096" symbol="MainLayout"/>
+        <entry filename="Rez" id="93" lineNum="26" parent="globals/Rez/Layouts" pc="268442259" symbol="MainLayout"/>
+        <entry filename="Rez" id="94" lineNum="35" parent="globals/Rez/Layouts" pc="268442297" symbol="TopLeftLayout"/>
+        <entry filename="Rez" id="94" lineNum="38" parent="globals/Rez/Layouts" pc="268442309" symbol="TopLeftLayout"/>
+        <entry filename="Rez" id="94" lineNum="39" parent="globals/Rez/Layouts" pc="268442333" symbol="TopLeftLayout"/>
+        <entry filename="Rez" id="94" lineNum="41" parent="globals/Rez/Layouts" pc="268442466" symbol="TopLeftLayout"/>
+        <entry filename="Rez" id="95" lineNum="50" parent="globals/Rez/Layouts" pc="268442494" symbol="TopRightLayout"/>
+        <entry filename="Rez" id="95" lineNum="53" parent="globals/Rez/Layouts" pc="268442506" symbol="TopRightLayout"/>
+        <entry filename="Rez" id="95" lineNum="54" parent="globals/Rez/Layouts" pc="268442530" symbol="TopRightLayout"/>
+        <entry filename="Rez" id="95" lineNum="56" parent="globals/Rez/Layouts" pc="268442663" symbol="TopRightLayout"/>
+        <entry filename="Rez" id="96" lineNum="65" parent="globals/Rez/Layouts" pc="268442691" symbol="BottomLeftLayout"/>
+        <entry filename="Rez" id="96" lineNum="68" parent="globals/Rez/Layouts" pc="268442703" symbol="BottomLeftLayout"/>
+        <entry filename="Rez" id="96" lineNum="69" parent="globals/Rez/Layouts" pc="268442727" symbol="BottomLeftLayout"/>
+        <entry filename="Rez" id="96" lineNum="71" parent="globals/Rez/Layouts" pc="268442860" symbol="BottomLeftLayout"/>
+        <entry filename="Rez" id="97" lineNum="80" parent="globals/Rez/Layouts" pc="268442888" symbol="BottomRightLayout"/>
+        <entry filename="Rez" id="97" lineNum="83" parent="globals/Rez/Layouts" pc="268442900" symbol="BottomRightLayout"/>
+        <entry filename="Rez" id="97" lineNum="84" parent="globals/Rez/Layouts" pc="268442924" symbol="BottomRightLayout"/>
+        <entry filename="Rez" id="97" lineNum="86" parent="globals/Rez/Layouts" pc="268443057" symbol="BottomRightLayout"/>
+        <entry filename="Rez" id="98" lineNum="10" parent="globals/Rez/Layouts" pc="268443153" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="99" lineNum="91" parent="globals/Rez/Menus" pc="268443151" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="100" lineNum="93" parent="globals/Rez/Strings" pc="268443155" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="101" lineNum="1" parent="globals/Rez" pc="268443126" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="101" lineNum="1" parent="globals/Rez" pc="268443126" symbol="&lt;init&gt;"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="76" method="true" symbol="updateThresholdPace"/>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry field="true" id="8389792" method="true" symbol="getTestName"/>
+        <entry field="true" id="52" symbol="currentPacePercent"/>
+        <entry id="73" method="true" symbol="&lt;globals/ZonePacePercentage/&lt;&gt;zonePercentageToTotalPercentage&gt;"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="4" module="true" symbol="globals/Rez/Menus"/>
+        <entry id="62" method="true" symbol="MainLayout"/>
+        <entry id="8389683" method="true" symbol="onSettingsChanged"/>
+        <entry id="82" method="true" symbol="drawGauge"/>
+        <entry field="true" id="42" symbol="pace"/>
+        <entry field="true" id="70" symbol="ThresholdPaceSeconds"/>
+        <entry id="83" method="true" symbol="drawCurrentPace"/>
+        <entry id="9" object="true" symbol="RunNoEvil"/>
+        <entry field="true" id="41" symbol="thresholdPace"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry id="8388649" module="true" object="true" symbol="Test"/>
+        <entry field="true" id="74" symbol="viewModel"/>
+        <entry id="26" method="true" symbol="should_calculate_threshold_pace"/>
+        <entry field="true" id="71" symbol="AppName"/>
+        <entry id="81" method="true" symbol="fillRectangleWithContrast"/>
+        <entry id="8" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+        <entry field="true" id="69" symbol="NumberError"/>
+        <entry id="80" method="true" symbol="calculatePaceGauge"/>
+        <entry field="true" id="8388795" method="true" symbol="length"/>
+        <entry id="38" method="true" symbol="areClose"/>
+        <entry id="8388631" module="true" symbol="Activity"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry field="true" id="68" symbol="ThresholdPacePrompt"/>
+        <entry id="8388774" method="true" symbol="abs"/>
+        <entry id="75" method="true" symbol="handleSettingUpdate"/>
+        <entry id="22" object="true" symbol="PaceGaugeViewModel"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry id="19" method="true" symbol="should_return_absolute_negative_value"/>
+        <entry id="11" method="true" symbol="should_return_max_of_two_numbers2"/>
+        <entry id="27" method="true" symbol="should_clip_low_configured_minutes_when_calculating_threshold_pace"/>
+        <entry id="8389568" method="true" symbol="runTest"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="31" method="true" symbol="should_only_update_threshold_pace_if_config_changed"/>
+        <entry id="8388764" method="true" symbol="format"/>
+        <entry field="true" id="8388721" method="true" symbol="min"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry field="true" id="8389067" symbol="height"/>
+        <entry id="60" module="true" symbol="Menus"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="39" method="true" symbol="mpsToPace"/>
+        <entry id="36" method="true" symbol="max"/>
+        <entry id="17" method="true" symbol="should_convert_mps_to_pace"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="37" method="true" symbol="clip"/>
+        <entry field="true" id="8388738" symbol="currentSpeed"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry id="8389137" method="true" symbol="compute"/>
+        <entry id="34" object="true" symbol="PaceGauge"/>
+        <entry id="25" method="true" symbol="should_not_throw_when_current_speed_is_zero"/>
+        <entry id="44" method="true" symbol="onNewCurrentSpeed"/>
+        <entry field="true" id="72" symbol="paceGaugeView"/>
+        <entry id="8389131" method="true" symbol="setColor"/>
+        <entry id="7" module="true" symbol="globals/Rez/JsonData"/>
+        <entry id="48" method="true" symbol="getIndexOf"/>
+        <entry id="21" method="true" symbol="should_return_absolute_zero_value"/>
+        <entry id="24" method="true" symbol="should_convert_mps_to_pace_if_current_speed_not_null"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="8389823" method="true" symbol="indexOf"/>
+        <entry id="10" method="true" symbol="should_return_max_of_two_numbers"/>
+        <entry id="58" method="true" symbol="getHighlightedColor"/>
+        <entry id="63" method="true" symbol="TopLeftLayout"/>
+        <entry field="true" id="8391337" symbol="offset"/>
+        <entry id="79" method="true" symbol="hideConfigError"/>
+        <entry field="true" id="40" symbol="pacePercentageCalculator"/>
+        <entry id="57" method="true" symbol="getColors"/>
+        <entry field="true" id="51" symbol="end"/>
+        <entry id="32" object="true" symbol="ZonePacePercentage"/>
+        <entry id="20" method="true" symbol="should_return_absolute_positive_value"/>
+        <entry id="28" method="true" symbol="should_clip_low_configured_seconds_when_calculating_threshold_pace"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="49" method="true" symbol="populate_test_entries_0_to_21"/>
+        <entry field="true" id="53" symbol="isInverse"/>
+        <entry id="78" method="true" symbol="showConfigError"/>
+        <entry id="65" method="true" symbol="BottomLeftLayout"/>
+        <entry id="23" method="true" symbol="should_update_pace_if_current_speed_not_null"/>
+        <entry id="66" method="true" symbol="BottomRightLayout"/>
+        <entry id="29" method="true" symbol="should_clip_high_configured_minutes_when_calculating_threshold_pace"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="33" object="true" symbol="PaceGaugeApp"/>
+        <entry id="8390088" module="true" object="true" symbol="JsonData"/>
+        <entry field="true" id="8389130" symbol="mColor"/>
+        <entry id="8389068" method="true" symbol="draw"/>
+        <entry field="true" id="61" symbol="LauncherIcon"/>
+        <entry id="14" method="true" symbol="should_clip_number_to_min_and_max"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389567" method="true" symbol="getNumberOfTests"/>
+        <entry id="13" method="true" symbol="should_return_min_of_two_numbers2"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="55" method="true" symbol="highlightedIndex"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8390146" module="true" object="true" symbol="Background"/>
+        <entry id="12" method="true" symbol="should_return_min_of_two_numbers"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="16" method="true" symbol="should_clip_number_to_min_and_max3"/>
+        <entry id="15" method="true" symbol="should_clip_number_to_min_and_max2"/>
+        <entry id="77" method="true" symbol="getInverseBackgroundColor"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry field="true" id="67" symbol="ThresholdPaceMinutes"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="45" method="true" symbol="calculatePacePercentage"/>
+        <entry id="50" method="true" symbol="evaluate_test_entries_0_to_21"/>
+        <entry id="8389347" symbol="color"/>
+        <entry id="59" module="true" symbol="Layouts"/>
+        <entry id="43" method="true" symbol="onNewThresholdPaceConfig"/>
+        <entry field="true" id="47" symbol="idToName"/>
+        <entry field="true" id="8388698" method="true" symbol="start"/>
+        <entry id="54" method="true" symbol="getIndicatorPosition"/>
+        <entry id="5" module="true" symbol="globals/Rez/Fonts"/>
+        <entry field="true" id="46" symbol="logger"/>
+        <entry id="30" method="true" symbol="should_clip_high_configured_seconds_when_calculating_threshold_pace"/>
+        <entry id="56" method="true" symbol="tileLength"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry id="35" object="true" symbol="PaceGaugeView"/>
+        <entry id="64" method="true" symbol="TopRightLayout"/>
+        <entry field="true" id="8389570" method="true" symbol="getTestObject"/>
+        <entry id="18" method="true" symbol="should_pace_conversion_should_not_fail_for_zero"/>
+    </symbolTable>
+    <localVars>
+        <entry endPc="268435700" name="i" stackId="3" startPc="268435657"/>
+        <entry endPc="268435706" name="j" stackId="2" startPc="268435583"/>
+        <entry arg="true" endPc="268435707" name="name" stackId="1" startPc="268435579"/>
+        <entry arg="true" endPc="268435724" name="id" stackId="1" startPc="268435708"/>
+        <entry endPc="268436855" name="result" stackId="3" startPc="268436156"/>
+        <entry arg="true" endPc="268436856" name="logger" stackId="2" startPc="268436152"/>
+        <entry arg="true" endPc="268436856" name="id" stackId="1" startPc="268436152"/>
+        <entry endPc="268436998" name="result" stackId="3" startPc="268436861"/>
+        <entry endPc="268436998" name="id" stackId="2" startPc="268436861"/>
+        <entry arg="true" endPc="268436999" name="test" stackId="1" startPc="268436857"/>
+        <entry arg="true" endPc="268437040" name="logger" stackId="1" startPc="268437000"/>
+        <entry arg="true" endPc="268437081" name="logger" stackId="1" startPc="268437041"/>
+        <entry arg="true" endPc="268437122" name="logger" stackId="1" startPc="268437082"/>
+        <entry arg="true" endPc="268437163" name="logger" stackId="1" startPc="268437123"/>
+        <entry arg="true" endPc="268437209" name="logger" stackId="1" startPc="268437164"/>
+        <entry arg="true" endPc="268437255" name="logger" stackId="1" startPc="268437210"/>
+        <entry arg="true" endPc="268437301" name="logger" stackId="1" startPc="268437256"/>
+        <entry endPc="268437346" name="meterPerSeconds" stackId="2" startPc="268437314"/>
+        <entry arg="true" endPc="268437347" name="logger" stackId="1" startPc="268437302"/>
+        <entry arg="true" endPc="268437393" name="logger" stackId="1" startPc="268437348"/>
+        <entry arg="true" endPc="268437429" name="logger" stackId="1" startPc="268437394"/>
+        <entry arg="true" endPc="268437465" name="logger" stackId="1" startPc="268437430"/>
+        <entry arg="true" endPc="268437501" name="logger" stackId="1" startPc="268437466"/>
+        <entry endPc="268437640" name="newThresholdPace" stackId="3" startPc="268437554"/>
+        <entry arg="true" endPc="268437641" name="thresholdMinutes" stackId="1" startPc="268437550"/>
+        <entry arg="true" endPc="268437641" name="thresholdSeconds" stackId="2" startPc="268437550"/>
+        <entry arg="true" endPc="268437690" name="currentSpeed" stackId="1" startPc="268437642"/>
+        <entry endPc="268437797" name="viewModel" stackId="2" startPc="268437742"/>
+        <entry arg="true" endPc="268437798" name="logger" stackId="1" startPc="268437730"/>
+        <entry endPc="268437878" name="mps" stackId="2" startPc="268437811"/>
+        <entry endPc="268437878" name="viewModel" stackId="3" startPc="268437811"/>
+        <entry arg="true" endPc="268437879" name="logger" stackId="1" startPc="268437799"/>
+        <entry endPc="268437947" name="viewModel" stackId="2" startPc="268437892"/>
+        <entry arg="true" endPc="268437948" name="logger" stackId="1" startPc="268437880"/>
+        <entry endPc="268438029" name="thresholdMinutes" stackId="3" startPc="268437961"/>
+        <entry endPc="268438029" name="viewModel" stackId="2" startPc="268437961"/>
+        <entry endPc="268438029" name="thresholdSeconds" stackId="4" startPc="268437961"/>
+        <entry arg="true" endPc="268438030" name="logger" stackId="1" startPc="268437949"/>
+        <entry endPc="268438111" name="thresholdMinutes" stackId="3" startPc="268438043"/>
+        <entry endPc="268438111" name="viewModel" stackId="2" startPc="268438043"/>
+        <entry endPc="268438111" name="thresholdSeconds" stackId="4" startPc="268438043"/>
+        <entry arg="true" endPc="268438112" name="logger" stackId="1" startPc="268438031"/>
+        <entry endPc="268438193" name="thresholdMinutes" stackId="3" startPc="268438125"/>
+        <entry endPc="268438193" name="viewModel" stackId="2" startPc="268438125"/>
+        <entry endPc="268438193" name="thresholdSeconds" stackId="4" startPc="268438125"/>
+        <entry arg="true" endPc="268438194" name="logger" stackId="1" startPc="268438113"/>
+        <entry endPc="268438275" name="thresholdMinutes" stackId="3" startPc="268438207"/>
+        <entry endPc="268438275" name="viewModel" stackId="2" startPc="268438207"/>
+        <entry endPc="268438275" name="thresholdSeconds" stackId="4" startPc="268438207"/>
+        <entry arg="true" endPc="268438276" name="logger" stackId="1" startPc="268438195"/>
+        <entry endPc="268438367" name="thresholdMinutes" stackId="3" startPc="268438289"/>
+        <entry endPc="268438367" name="viewModel" stackId="2" startPc="268438289"/>
+        <entry endPc="268438367" name="thresholdSeconds" stackId="4" startPc="268438289"/>
+        <entry arg="true" endPc="268438368" name="logger" stackId="1" startPc="268438277"/>
+        <entry endPc="268438462" name="thresholdMinutes" stackId="3" startPc="268438381"/>
+        <entry endPc="268438462" name="viewModel" stackId="2" startPc="268438381"/>
+        <entry endPc="268438462" name="thresholdSeconds" stackId="4" startPc="268438381"/>
+        <entry arg="true" endPc="268438463" name="logger" stackId="1" startPc="268438369"/>
+        <entry endPc="268438554" name="percentage" stackId="6" startPc="268438517"/>
+        <entry endPc="268438554" name="base" stackId="5" startPc="268438517"/>
+        <entry endPc="268438606" name="percentage" stackId="8" startPc="268438569"/>
+        <entry endPc="268438606" name="base" stackId="7" startPc="268438569"/>
+        <entry endPc="268438658" name="percentage" stackId="10" startPc="268438621"/>
+        <entry endPc="268438658" name="base" stackId="9" startPc="268438621"/>
+        <entry endPc="268438710" name="percentage" stackId="12" startPc="268438673"/>
+        <entry endPc="268438710" name="base" stackId="11" startPc="268438673"/>
+        <entry endPc="268438762" name="percentage" stackId="14" startPc="268438725"/>
+        <entry endPc="268438762" name="base" stackId="13" startPc="268438725"/>
+        <entry endPc="268438803" name="percentage" stackId="16" startPc="268438766"/>
+        <entry endPc="268438803" name="base" stackId="15" startPc="268438766"/>
+        <entry endPc="268438803" name="clipped" stackId="3" startPc="268438468"/>
+        <entry endPc="268438803" name="pThreshold" stackId="4" startPc="268438468"/>
+        <entry arg="true" endPc="268438804" name="thresholdPace" stackId="2" startPc="268438464"/>
+        <entry arg="true" endPc="268438804" name="pace" stackId="1" startPc="268438464"/>
+        <entry endPc="268438876" name="totalPercentage" stackId="5" startPc="268438809"/>
+        <entry endPc="268438876" name="clippedPThreshold" stackId="4" startPc="268438809"/>
+        <entry arg="true" endPc="268438877" name="pThreshold" stackId="1" startPc="268438805"/>
+        <entry arg="true" endPc="268438877" name="lower" stackId="3" startPc="268438805"/>
+        <entry arg="true" endPc="268438877" name="upper" stackId="2" startPc="268438805"/>
+        <entry arg="true" endPc="268438908" name="state" stackId="1" startPc="268438904"/>
+        <entry arg="true" endPc="268438913" name="state" stackId="1" startPc="268438909"/>
+        <entry arg="true" endPc="268439074" name="height" stackId="4" startPc="268439010"/>
+        <entry arg="true" endPc="268439074" name="end" stackId="2" startPc="268439010"/>
+        <entry arg="true" endPc="268439074" name="currentPacePercent" stackId="5" startPc="268439010"/>
+        <entry arg="true" endPc="268439074" name="isInverse" stackId="6" startPc="268439010"/>
+        <entry arg="true" endPc="268439074" name="offset" stackId="3" startPc="268439010"/>
+        <entry arg="true" endPc="268439074" name="start" stackId="1" startPc="268439010"/>
+        <entry endPc="268439227" name="i" stackId="2" startPc="268439174"/>
+        <entry endPc="268439233" name="tileLength" stackId="1" startPc="268439143"/>
+        <entry endPc="268439495" name="dictionary" stackId="1" startPc="268439435"/>
+        <entry arg="true" endPc="268439511" name="color" stackId="1" startPc="268439497"/>
+        <entry arg="true" endPc="268439560" name="dc" stackId="1" startPc="268439512"/>
+        <entry endPc="268439716" name="thresholdMinutes" stackId="1" startPc="268439635"/>
+        <entry endPc="268439716" name="thresholdSeconds" stackId="2" startPc="268439635"/>
+        <entry endPc="268440116" name="valueView" stackId="3" startPc="268440028"/>
+        <entry endPc="268440208" name="valueView" stackId="4" startPc="268440120"/>
+        <entry endPc="268440208" name="obscurityFlags" stackId="2" startPc="268439722"/>
+        <entry arg="true" endPc="268440209" name="dc" stackId="1" startPc="268439718"/>
+        <entry arg="true" endPc="268440254" name="info" stackId="1" startPc="268440210"/>
+        <entry endPc="268440613" name="gauge" stackId="3" startPc="268440471"/>
+        <entry endPc="268440648" name="value" stackId="2" startPc="268440320"/>
+        <entry arg="true" endPc="268440649" name="dc" stackId="1" startPc="268440316"/>
+        <entry endPc="268440717" name="error" stackId="1" startPc="268440654"/>
+        <entry endPc="268440786" name="error" stackId="1" startPc="268440723"/>
+        <entry endPc="268440918" name="paceString" stackId="6" startPc="268440792"/>
+        <entry endPc="268440918" name="formattedMinutes" stackId="4" startPc="268440792"/>
+        <entry endPc="268440918" name="minutes" stackId="2" startPc="268440792"/>
+        <entry endPc="268440918" name="formattedSeconds" stackId="5" startPc="268440792"/>
+        <entry endPc="268440918" name="seconds" stackId="3" startPc="268440792"/>
+        <entry arg="true" endPc="268440919" name="digitalPace" stackId="1" startPc="268440788"/>
+        <entry endPc="268441123" name="additionalBottomAndTopPadding" stackId="3" startPc="268440924"/>
+        <entry endPc="268441123" name="start" stackId="7" startPc="268440924"/>
+        <entry endPc="268441123" name="end" stackId="8" startPc="268440924"/>
+        <entry endPc="268441123" name="offset" stackId="4" startPc="268440924"/>
+        <entry endPc="268441123" name="padding" stackId="5" startPc="268440924"/>
+        <entry endPc="268441123" name="isInverse" stackId="10" startPc="268440924"/>
+        <entry endPc="268441123" name="obscurityFlags" stackId="2" startPc="268440924"/>
+        <entry endPc="268441123" name="height" stackId="6" startPc="268440924"/>
+        <entry endPc="268441123" name="currentPacePercent" stackId="9" startPc="268440924"/>
+        <entry arg="true" endPc="268441124" name="dc" stackId="1" startPc="268440920"/>
+        <entry endPc="268441285" name="contrastSize" stackId="7" startPc="268441129"/>
+        <entry arg="true" endPc="268441286" name="height" stackId="5" startPc="268441125"/>
+        <entry arg="true" endPc="268441286" name="x" stackId="2" startPc="268441125"/>
+        <entry arg="true" endPc="268441286" name="dc" stackId="1" startPc="268441125"/>
+        <entry arg="true" endPc="268441286" name="color" stackId="6" startPc="268441125"/>
+        <entry arg="true" endPc="268441286" name="width" stackId="4" startPc="268441125"/>
+        <entry arg="true" endPc="268441286" name="y" stackId="3" startPc="268441125"/>
+        <entry endPc="268441459" name="height" stackId="6" startPc="268441349"/>
+        <entry endPc="268441472" name="i" stackId="5" startPc="268441349"/>
+        <entry endPc="268441514" name="colors" stackId="4" startPc="268441291"/>
+        <entry endPc="268441514" name="tile" stackId="3" startPc="268441291"/>
+        <entry arg="true" endPc="268441515" name="dc" stackId="1" startPc="268441287"/>
+        <entry arg="true" endPc="268441515" name="gauge" stackId="2" startPc="268441287"/>
+        <entry endPc="268441622" name="position" stackId="4" startPc="268441520"/>
+        <entry endPc="268441622" name="indicatorY" stackId="5" startPc="268441520"/>
+        <entry endPc="268441622" name="indicatorHeight" stackId="6" startPc="268441520"/>
+        <entry endPc="268441622" name="indicatorWidth" stackId="3" startPc="268441520"/>
+        <entry arg="true" endPc="268441623" name="dc" stackId="1" startPc="268441516"/>
+        <entry arg="true" endPc="268441623" name="gauge" stackId="2" startPc="268441516"/>
+        <entry arg="true" endPc="268441653" name="b" stackId="2" startPc="268441624"/>
+        <entry arg="true" endPc="268441653" name="a" stackId="1" startPc="268441624"/>
+        <entry arg="true" endPc="268441683" name="b" stackId="2" startPc="268441654"/>
+        <entry arg="true" endPc="268441683" name="a" stackId="1" startPc="268441654"/>
+        <entry arg="true" endPc="268441725" name="max" stackId="3" startPc="268441684"/>
+        <entry arg="true" endPc="268441725" name="a" stackId="1" startPc="268441684"/>
+        <entry arg="true" endPc="268441725" name="min" stackId="2" startPc="268441684"/>
+        <entry arg="true" endPc="268441764" name="a" stackId="1" startPc="268441726"/>
+        <entry endPc="268441803" name="epsilon" stackId="3" startPc="268441777"/>
+        <entry arg="true" endPc="268441804" name="b" stackId="2" startPc="268441765"/>
+        <entry arg="true" endPc="268441804" name="a" stackId="1" startPc="268441765"/>
+        <entry endPc="268441869" name="kmh" stackId="2" startPc="268441817"/>
+        <entry endPc="268441869" name="pace" stackId="3" startPc="268441817"/>
+        <entry arg="true" endPc="268441870" name="mps" stackId="1" startPc="268441805"/>
+        <entry endPc="268442295" name="rez_cmp_local_text_value" stackId="5" startPc="268441883"/>
+        <entry endPc="268442295" name="rez_cmp_local_custom_drawable_18833989902052173478" stackId="4" startPc="268441883"/>
+        <entry endPc="268442295" name="rez_cmp_local_var_dc_getWidth" stackId="3" startPc="268441883"/>
+        <entry endPc="268442295" name="rez_cmp_local_var_dc_getHeight" stackId="2" startPc="268441883"/>
+        <entry endPc="268442295" name="rez_cmp_local_text_error" stackId="6" startPc="268441883"/>
+        <entry arg="true" endPc="268442296" name="dc" stackId="1" startPc="268441871"/>
+        <entry endPc="268442492" name="rez_cmp_local_custom_drawable_12336965815014486811" stackId="2" startPc="268442309"/>
+        <entry endPc="268442492" name="rez_cmp_local_text_value" stackId="3" startPc="268442309"/>
+        <entry arg="true" endPc="268442493" name="dc" stackId="1" startPc="268442297"/>
+        <entry endPc="268442689" name="rez_cmp_local_text_value" stackId="3" startPc="268442506"/>
+        <entry endPc="268442689" name="rez_cmp_local_custom_drawable_10614962251214409567" stackId="2" startPc="268442506"/>
+        <entry arg="true" endPc="268442690" name="dc" stackId="1" startPc="268442494"/>
+        <entry endPc="268442886" name="rez_cmp_local_text_value" stackId="3" startPc="268442703"/>
+        <entry endPc="268442886" name="rez_cmp_local_custom_drawable_49878606971548618485" stackId="2" startPc="268442703"/>
+        <entry arg="true" endPc="268442887" name="dc" stackId="1" startPc="268442691"/>
+        <entry endPc="268443083" name="rez_cmp_local_text_value" stackId="3" startPc="268442900"/>
+        <entry endPc="268443083" name="rez_cmp_local_custom_drawable_28702469957966360873" stackId="2" startPc="268442900"/>
+        <entry arg="true" endPc="268443084" name="dc" stackId="1" startPc="268442888"/>
+    </localVars>
+    <annotations>
+        <annotationEntry annotation="typecheck(false)" class="globals" module="" symbol="getTestObject"/>
+        <annotationEntry annotation="test" class="globals" module="" symbol="should_return_max_of_two_numbers"/>
+        <annotationEntry annotation="test" class="globals" module="" symbol="should_return_max_of_two_numbers2"/>
+        <annotationEntry annotation="test" class="globals" module="" symbol="should_return_min_of_two_numbers"/>
+        <annotationEntry annotation="test" class="globals" module="" symbol="should_return_min_of_two_numbers2"/>
+        <annotationEntry annotation="test" class="globals" module="" symbol="should_clip_number_to_min_and_max"/>
+        <annotationEntry annotation="test" class="globals" module="" symbol="should_clip_number_to_min_and_max2"/>
+        <annotationEntry annotation="test" class="globals" module="" symbol="should_clip_number_to_min_and_max3"/>
+        <annotationEntry annotation="test" class="globals" module="" symbol="should_convert_mps_to_pace"/>
+        <annotationEntry annotation="test" class="globals" module="" symbol="should_pace_conversion_should_not_fail_for_zero"/>
+        <annotationEntry annotation="test" class="globals" module="" symbol="should_return_absolute_negative_value"/>
+        <annotationEntry annotation="test" class="globals" module="" symbol="should_return_absolute_positive_value"/>
+        <annotationEntry annotation="test" class="globals" module="" symbol="should_return_absolute_zero_value"/>
+        <annotationEntry annotation="test" class="globals" module="" symbol="should_update_pace_if_current_speed_not_null"/>
+        <annotationEntry annotation="test" class="globals" module="" symbol="should_convert_mps_to_pace_if_current_speed_not_null"/>
+        <annotationEntry annotation="test" class="globals" module="" symbol="should_not_throw_when_current_speed_is_zero"/>
+        <annotationEntry annotation="test" class="globals" module="" symbol="should_calculate_threshold_pace"/>
+        <annotationEntry annotation="test" class="globals" module="" symbol="should_clip_low_configured_minutes_when_calculating_threshold_pace"/>
+        <annotationEntry annotation="test" class="globals" module="" symbol="should_clip_low_configured_seconds_when_calculating_threshold_pace"/>
+        <annotationEntry annotation="test" class="globals" module="" symbol="should_clip_high_configured_minutes_when_calculating_threshold_pace"/>
+        <annotationEntry annotation="test" class="globals" module="" symbol="should_clip_high_configured_seconds_when_calculating_threshold_pace"/>
+        <annotationEntry annotation="test" class="globals" module="" symbol="should_only_update_threshold_pace_if_config_changed"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ThresholdPaceMinutes"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ThresholdPacePrompt"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="NumberError"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ThresholdPaceSeconds"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/Background" offset="422" parentId="globals" symbolId="Background" type="class"/>
+        <dataEntry label="globals/PaceGaugeViewModel" offset="493" parentId="globals" symbolId="PaceGaugeViewModel" type="class"/>
+        <dataEntry label="globals/RunNoEvil" offset="588" parentId="globals" symbolId="RunNoEvil" type="class"/>
+        <dataEntry label="globals/PaceGauge" offset="699" parentId="globals" symbolId="PaceGauge" type="class"/>
+        <dataEntry label="globals/Rez" offset="842" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/Rez/Drawables" offset="921" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="960" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Fonts" offset="991" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="1022" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/JsonData" offset="1093" parentId="Rez" symbolId="JsonData" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="1124" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/PaceGaugeApp" offset="1195" parentId="globals" symbolId="PaceGaugeApp" type="class"/>
+        <dataEntry label="globals/ZonePacePercentage" offset="1282" parentId="globals" symbolId="ZonePacePercentage" type="class"/>
+        <dataEntry label="globals/PaceGaugeView" offset="1345" parentId="globals" symbolId="PaceGaugeView" type="class"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435491" name="getTestObject" startPc="268435456">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435578" name="initialize" parent="RunNoEvil" startPc="268435492">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435707" name="getIndexOf" parent="RunNoEvil" startPc="268435579">
+            <param id="name"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435724" name="getTestName" parent="RunNoEvil" startPc="268435708">
+            <param id="id"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435747" name="getNumberOfTests" parent="RunNoEvil" startPc="268435725">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436151" name="populate_test_entries_0_to_21" parent="RunNoEvil" startPc="268435748">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436856" name="evaluate_test_entries_0_to_21" parent="RunNoEvil" startPc="268436152">
+            <param id="id"/>
+            <param id="logger"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436999" name="runTest" parent="RunNoEvil" startPc="268436857">
+            <param id="test"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268443124" name="&lt;init&gt;" parent="RunNoEvil" startPc="268443106">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437040" name="should_return_max_of_two_numbers" startPc="268437000">
+            <param id="logger"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437081" name="should_return_max_of_two_numbers2" startPc="268437041">
+            <param id="logger"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437122" name="should_return_min_of_two_numbers" startPc="268437082">
+            <param id="logger"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437163" name="should_return_min_of_two_numbers2" startPc="268437123">
+            <param id="logger"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437209" name="should_clip_number_to_min_and_max" startPc="268437164">
+            <param id="logger"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437255" name="should_clip_number_to_min_and_max2" startPc="268437210">
+            <param id="logger"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437301" name="should_clip_number_to_min_and_max3" startPc="268437256">
+            <param id="logger"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437347" name="should_convert_mps_to_pace" startPc="268437302">
+            <param id="logger"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437393" name="should_pace_conversion_should_not_fail_for_zero" startPc="268437348">
+            <param id="logger"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437429" name="should_return_absolute_negative_value" startPc="268437394">
+            <param id="logger"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437465" name="should_return_absolute_positive_value" startPc="268437430">
+            <param id="logger"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437501" name="should_return_absolute_zero_value" startPc="268437466">
+            <param id="logger"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437549" name="initialize" parent="PaceGaugeViewModel" startPc="268437502">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437641" name="onNewThresholdPaceConfig" parent="PaceGaugeViewModel" startPc="268437550">
+            <param id="thresholdMinutes"/>
+            <param id="thresholdSeconds"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437690" name="onNewCurrentSpeed" parent="PaceGaugeViewModel" startPc="268437642">
+            <param id="currentSpeed"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437729" name="calculatePacePercentage" parent="PaceGaugeViewModel" startPc="268437691">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268443105" name="&lt;init&gt;" parent="PaceGaugeViewModel" startPc="268443105">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437798" name="should_update_pace_if_current_speed_not_null" startPc="268437730">
+            <param id="logger"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437879" name="should_convert_mps_to_pace_if_current_speed_not_null" startPc="268437799">
+            <param id="logger"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437948" name="should_not_throw_when_current_speed_is_zero" startPc="268437880">
+            <param id="logger"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438030" name="should_calculate_threshold_pace" startPc="268437949">
+            <param id="logger"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438112" name="should_clip_low_configured_minutes_when_calculating_threshold_pace" startPc="268438031">
+            <param id="logger"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438194" name="should_clip_low_configured_seconds_when_calculating_threshold_pace" startPc="268438113">
+            <param id="logger"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438276" name="should_clip_high_configured_minutes_when_calculating_threshold_pace" startPc="268438195">
+            <param id="logger"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438368" name="should_clip_high_configured_seconds_when_calculating_threshold_pace" startPc="268438277">
+            <param id="logger"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438463" name="should_only_update_threshold_pace_if_config_changed" startPc="268438369">
+            <param id="logger"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438804" name="calculatePacePercentage" parent="ZonePacePercentage" startPc="268438464">
+            <param id="pace"/>
+            <param id="thresholdPace"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268438877" name="&lt;globals/ZonePacePercentage/&lt;&gt;zonePercentageToTotalPercentage&gt;" parent="ZonePacePercentage" startPc="268438805">
+            <param id="pThreshold"/>
+            <param id="upper"/>
+            <param id="lower"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268443205" name="&lt;init&gt;" parent="ZonePacePercentage" startPc="268443205">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438880" name="initialize" parent="ZonePacePercentage" startPc="268438878">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438903" name="initialize" parent="PaceGaugeApp" startPc="268438881">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438908" name="onStart" parent="PaceGaugeApp" startPc="268438904">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438913" name="onStop" parent="PaceGaugeApp" startPc="268438909">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438941" name="getInitialView" parent="PaceGaugeApp" startPc="268438914">
+            <documentation><![CDATA[<div class="description"> Return the initial view of your application here<br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438980" name="onSettingsChanged" parent="PaceGaugeApp" startPc="268438942">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268443204" name="&lt;init&gt;" parent="PaceGaugeApp" startPc="268443156">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439009" name="getApp" startPc="268438981">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439074" name="initialize" parent="PaceGauge" startPc="268439010">
+            <param id="start"/>
+            <param id="end"/>
+            <param id="offset"/>
+            <param id="height"/>
+            <param id="currentPacePercent"/>
+            <param id="isInverse"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439097" name="length" parent="PaceGauge" startPc="268439075">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439138" name="getIndicatorPosition" parent="PaceGauge" startPc="268439098">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439234" name="highlightedIndex" parent="PaceGauge" startPc="268439139">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439257" name="tileLength" parent="PaceGauge" startPc="268439235">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439401" name="getColors" parent="PaceGauge" startPc="268439258">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439430" name="getHighlightedColor" parent="PaceGauge" startPc="268439402">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268443125" name="&lt;init&gt;" parent="PaceGauge" startPc="268443125">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439496" name="initialize" parent="Background" startPc="268439431">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439511" name="setColor" parent="Background" startPc="268439497">
+            <param id="color"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439560" name="draw" parent="Background" startPc="268439512">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268443104" name="&lt;init&gt;" parent="Background" startPc="268443086">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439613" name="initialize" parent="PaceGaugeView" startPc="268439561">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439630" name="handleSettingUpdate" parent="PaceGaugeView" startPc="268439614">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439717" name="updateThresholdPace" parent="PaceGaugeView" startPc="268439631">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440209" name="onLayout" parent="PaceGaugeView" startPc="268439718">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440254" name="compute" parent="PaceGaugeView" startPc="268440210">
+            <param id="info"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440315" name="getInverseBackgroundColor" parent="PaceGaugeView" startPc="268440255">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440649" name="onUpdate" parent="PaceGaugeView" startPc="268440316">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440718" name="showConfigError" parent="PaceGaugeView" startPc="268440650">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440787" name="hideConfigError" parent="PaceGaugeView" startPc="268440719">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440919" name="format" parent="PaceGaugeView" startPc="268440788">
+            <param id="digitalPace"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441124" name="calculatePaceGauge" parent="PaceGaugeView" startPc="268440920">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441286" name="fillRectangleWithContrast" parent="PaceGaugeView" startPc="268441125">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <param id="width"/>
+            <param id="height"/>
+            <param id="color"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441515" name="drawGauge" parent="PaceGaugeView" startPc="268441287">
+            <param id="dc"/>
+            <param id="gauge"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441623" name="drawCurrentPace" parent="PaceGaugeView" startPc="268441516">
+            <param id="dc"/>
+            <param id="gauge"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268443224" name="&lt;init&gt;" parent="PaceGaugeView" startPc="268443206">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441653" name="max" startPc="268441624">
+            <param id="a"/>
+            <param id="b"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441683" name="min" startPc="268441654">
+            <param id="a"/>
+            <param id="b"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441725" name="clip" startPc="268441684">
+            <param id="a"/>
+            <param id="min"/>
+            <param id="max"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441764" name="abs" startPc="268441726">
+            <param id="a"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441804" name="areClose" startPc="268441765">
+            <param id="a"/>
+            <param id="b"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441870" name="mpsToPace" startPc="268441805">
+            <param id="mps"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268443150" name="&lt;init&gt;" parent="Drawables" startPc="268443150">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268443152" name="&lt;init&gt;" parent="Fonts" startPc="268443152">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268443154" name="&lt;init&gt;" parent="JsonData" startPc="268443154">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442296" name="MainLayout" parent="Layouts" startPc="268441871">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442493" name="TopLeftLayout" parent="Layouts" startPc="268442297">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442690" name="TopRightLayout" parent="Layouts" startPc="268442494">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442887" name="BottomLeftLayout" parent="Layouts" startPc="268442691">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443084" name="BottomRightLayout" parent="Layouts" startPc="268442888">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268443153" name="&lt;init&gt;" parent="Layouts" startPc="268443153">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268443151" name="&lt;init&gt;" parent="Menus" startPc="268443151">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268443155" name="&lt;init&gt;" parent="Strings" startPc="268443155">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268443149" name="&lt;init&gt;" parent="Rez" startPc="268443126">
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

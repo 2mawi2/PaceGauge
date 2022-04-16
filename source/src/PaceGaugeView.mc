@@ -88,11 +88,13 @@ class PaceGaugeView extends WatchUi.DataField {
 
     function showConfigError() {
         var error = View.findDrawableById("error") as Text;
+        error.setColor(getInverseBackgroundColor());
         error.setText("no config");
     }
 
     function hideConfigError() {
         var error = View.findDrawableById("error") as Text;
+        error.setColor(getInverseBackgroundColor());
         error.setText("");
     }
 
