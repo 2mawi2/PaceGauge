@@ -1,0 +1,186 @@
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc"; @line = 3; ]
+function max(a as Float, b as Float) as Float {
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_3_46_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" 4 4 ]
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_4_4_if_stmt:
+    %tmp.2 = lgetv %a;
+    %tmp.4 = lgetv %b;
+    %tmp.5 = gt %tmp.2 %tmp.4;
+    bf %tmp.5 @_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_4_4_if_false;
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_4_4_if_true:
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_4_15_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" 5 8 ]
+    %tmp.7 = lgetv %a;
+    ret %tmp.7;
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_4_15_stop:
+    goto @_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_4_4_if_end;
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_4_4_if_false:
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_6_11_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" 7 8 ]
+    %tmp.9 = lgetv %b;
+    ret %tmp.9;
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_6_11_stop:
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_4_4_if_end:
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_3_46_stop:
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc"; @line = 11; ]
+function min(a as Float, b as Float) as Float {
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_11_46_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" 12 4 ]
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_12_4_if_stmt:
+    %tmp.2 = lgetv %a;
+    %tmp.4 = lgetv %b;
+    %tmp.5 = lt %tmp.2 %tmp.4;
+    bf %tmp.5 @_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_12_4_if_false;
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_12_4_if_true:
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_12_15_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" 13 8 ]
+    %tmp.7 = lgetv %a;
+    ret %tmp.7;
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_12_15_stop:
+    goto @_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_12_4_if_end;
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_12_4_if_false:
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_14_11_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" 15 8 ]
+    %tmp.9 = lgetv %b;
+    ret %tmp.9;
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_14_11_stop:
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_12_4_if_end:
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_11_46_stop:
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc"; @line = 19; ]
+function clip(a as Float, min as Float, max as Float) as Float {
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_19_63_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" 20 4 ]
+    %tmp.1 = self;
+    %tmp.2 = getv function %tmp.1 :max;
+    %tmp.3 = self;
+    %tmp.4 = getv function %tmp.3 :min;
+    %tmp.6 = lgetv %a;
+    %tmp.8 = lgetv %max;
+    %tmp.9 = invoke %tmp.3 %tmp.4(%tmp.6, %tmp.8);
+    %tmp.11 = lgetv %min;
+    %tmp.12 = invoke %tmp.1 %tmp.2(%tmp.9, %tmp.11);
+    ret %tmp.12;
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_19_63_stop:
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc"; @line = 23; ]
+function abs(a as Float) as Float {
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_23_34_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" 24 4 ]
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_24_4_if_stmt:
+    %tmp.2 = lgetv %a;
+    %tmp.3 = 0;
+    %tmp.4 = lt %tmp.2 %tmp.3;
+    bf %tmp.4 @_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_24_4_if_false;
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_24_4_if_true:
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_24_15_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" 25 8 ]
+    %tmp.6 = lgetv %a;
+    %tmp.7 = sub 0 %tmp.6;
+    ret %tmp.7;
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_24_15_stop:
+    goto @_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_24_4_if_end;
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_24_4_if_false:
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_26_11_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" 27 8 ]
+    %tmp.9 = lgetv %a;
+    ret %tmp.9;
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_26_11_stop:
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_24_4_if_end:
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_23_34_stop:
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc"; @line = 31; ]
+function areClose(a as Float, b as Float) as Boolean {
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_31_53_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" 32 4 ]
+    [ "_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_31_53_start" "_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_31_53_stop" ]
+    %epsilon.1 = local;
+    %tmp.1 = 0.000001f;
+    lputv %epsilon.1 %tmp.1;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" 33 4 ]
+    %tmp.2 = self;
+    %tmp.3 = getv function %tmp.2 :abs;
+    %tmp.5 = lgetv %a;
+    %tmp.7 = lgetv %b;
+    %tmp.8 = sub %tmp.5 %tmp.7;
+    %tmp.9 = invoke %tmp.2 %tmp.3(%tmp.8);
+    %tmp.11 = lgetv %epsilon.1;
+    %tmp.12 = lt %tmp.9 %tmp.11;
+    ret %tmp.12;
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_31_53_stop:
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc"; @line = 36; ]
+function mpsToPace(mps as Float, isMetricSystem as Boolean) as Float {
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_36_69_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" 37 4 ]
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_37_4_if_stmt:
+    %tmp.1 = self;
+    %tmp.2 = getv function %tmp.1 :areClose;
+    %tmp.4 = lgetv %mps;
+    %tmp.5 = 0.0f;
+    %tmp.6 = invoke %tmp.1 %tmp.2(%tmp.4, %tmp.5);
+    bf %tmp.6 @_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_37_4_if_end;
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_37_4_if_true:
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_37_29_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" 37 31 ]
+    %tmp.7 = 0.0f;
+    ret %tmp.7;
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_37_29_stop:
+    goto @_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_37_4_if_end;
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_37_4_if_end:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" 39 4 ]
+    [ "_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_36_69_start" "_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_36_69_stop" ]
+    %speed.1 = local;
+    %tmp.8 = self;
+    %tmp.9 = getv function %tmp.8 :getSpeedFor;
+    %tmp.11 = lgetv %mps;
+    %tmp.13 = lgetv %isMetricSystem;
+    %tmp.14 = invoke %tmp.8 %tmp.9(%tmp.11, %tmp.13);
+    lputv %speed.1 %tmp.14;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" 40 4 ]
+    [ "_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_36_69_start" "_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_36_69_stop" ]
+    %pace.2 = local;
+    %tmp.15 = 60.0;
+    %tmp.17 = lgetv %speed.1;
+    %tmp.18 = div %tmp.15 %tmp.17;
+    lputv %pace.2 %tmp.18;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" 41 4 ]
+    %tmp.20 = lgetv %pace.2;
+    ret %tmp.20;
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_36_69_stop:
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc"; @line = 44; ]
+function getSpeedFor(mps as Float, isMetricSystem as Boolean) as Float {
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_44_71_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" 45 4 ]
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_45_4_if_stmt:
+    %tmp.2 = lgetv %isMetricSystem;
+    bf %tmp.2 @_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_45_4_if_false;
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_45_4_if_true:
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_45_24_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" 46 8 ]
+    %tmp.4 = lgetv %mps;
+    %tmp.5 = 3.6;
+    %tmp.6 = mul %tmp.4 %tmp.5;
+    ret %tmp.6;
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_45_24_stop:
+    goto @_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_45_4_if_end;
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_45_4_if_false:
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_47_11_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc" 48 8 ]
+    %tmp.8 = lgetv %mps;
+    %tmp.9 = 3.6;
+    %tmp.10 = mul %tmp.8 %tmp.9;
+    %tmp.11 = 0.621371192;
+    %tmp.12 = mul %tmp.10 %tmp.11;
+    ret %tmp.12;
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_47_11_stop:
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_45_4_if_end:
+_Users_mariusw_git_garmin_PaceGauge_source_src_Math_mc_44_71_stop:
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/Math.mc"; @line = 1; ]
+<init> {
+}

@@ -1,0 +1,135 @@
+import Toybox.Lang;
+import Toybox.Test;
+
+(:typecheck(false))
+function getTestObject() as RunNoEvil {
+    return new RunNoEvil();
+}
+
+(:typecheck(false))
+class RunNoEvil extends Test.Test {
+    private var logger as Logger;
+    private var idToName as Array;
+
+    function initialize() {
+        Test.Test.initialize();
+        logger = new Test.Logger();
+        idToName = new [21];
+        populate_test_entries_0_to_21();
+    }
+
+    function getIndexOf(name as String) as Number {
+        if (idToName has :indexOf) {
+            return idToName.indexOf(name);
+        }
+
+        var j = idToName.size();
+        for (var i = 0; i < j; ++i) {
+            if (idToName[i].equals(name)) {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+
+    function getTestName(id as Number) as String {
+        return idToName[id];
+    }
+
+    function getNumberOfTests() as Number {
+        return idToName.size();
+    }
+
+    function populate_test_entries_0_to_21() as Void {
+        idToName[0] = "should_return_max_of_two_numbers";
+        idToName[1] = "should_return_max_of_two_numbers2";
+        idToName[2] = "should_return_min_of_two_numbers";
+        idToName[3] = "should_return_min_of_two_numbers2";
+        idToName[4] = "should_clip_number_to_min_and_max";
+        idToName[5] = "should_clip_number_to_min_and_max2";
+        idToName[6] = "should_clip_number_to_min_and_max3";
+        idToName[7] = "should_convert_mps_to_pace";
+        idToName[8] = "should_pace_conversion_should_not_fail_for_zero";
+        idToName[9] = "should_return_absolute_negative_value";
+        idToName[10] = "should_return_absolute_positive_value";
+        idToName[11] = "should_return_absolute_zero_value";
+        idToName[12] = "should_update_pace_if_current_speed_not_null";
+        idToName[13] = "should_convert_mps_to_pace_if_current_speed_not_null";
+        idToName[14] = "should_not_throw_when_current_speed_is_zero";
+        idToName[15] = "should_calculate_threshold_pace";
+        idToName[16] = "should_clip_low_configured_minutes_when_calculating_threshold_pace";
+        idToName[17] = "should_clip_low_configured_seconds_when_calculating_threshold_pace";
+        idToName[18] = "should_clip_high_configured_minutes_when_calculating_threshold_pace";
+        idToName[19] = "should_clip_high_configured_seconds_when_calculating_threshold_pace";
+        idToName[20] = "should_only_update_threshold_pace_if_config_changed";
+    }
+
+    function evaluate_test_entries_0_to_21(id as Number, logger as Logger) {
+        var result = false;
+        if (id == 0) {
+            result = $.should_return_max_of_two_numbers(logger);
+        } else if (id == 1) {
+            result = $.should_return_max_of_two_numbers2(logger);
+        } else if (id == 2) {
+            result = $.should_return_min_of_two_numbers(logger);
+        } else if (id == 3) {
+            result = $.should_return_min_of_two_numbers2(logger);
+        } else if (id == 4) {
+            result = $.should_clip_number_to_min_and_max(logger);
+        } else if (id == 5) {
+            result = $.should_clip_number_to_min_and_max2(logger);
+        } else if (id == 6) {
+            result = $.should_clip_number_to_min_and_max3(logger);
+        } else if (id == 7) {
+            result = $.should_convert_mps_to_pace(logger);
+        } else if (id == 8) {
+            result = $.should_pace_conversion_should_not_fail_for_zero(logger);
+        } else if (id == 9) {
+            result = $.should_return_absolute_negative_value(logger);
+        } else if (id == 10) {
+            result = $.should_return_absolute_positive_value(logger);
+        } else if (id == 11) {
+            result = $.should_return_absolute_zero_value(logger);
+        } else if (id == 12) {
+            result = $.should_update_pace_if_current_speed_not_null(logger);
+        } else if (id == 13) {
+            result = $.should_convert_mps_to_pace_if_current_speed_not_null(logger);
+        } else if (id == 14) {
+            result = $.should_not_throw_when_current_speed_is_zero(logger);
+        } else if (id == 15) {
+            result = $.should_calculate_threshold_pace(logger);
+        } else if (id == 16) {
+            result = $.should_clip_low_configured_minutes_when_calculating_threshold_pace(logger);
+        } else if (id == 17) {
+            result = $.should_clip_low_configured_seconds_when_calculating_threshold_pace(logger);
+        } else if (id == 18) {
+            result = $.should_clip_high_configured_minutes_when_calculating_threshold_pace(logger);
+        } else if (id == 19) {
+            result = $.should_clip_high_configured_seconds_when_calculating_threshold_pace(logger);
+        } else if (id == 20) {
+            result = $.should_only_update_threshold_pace_if_config_changed(logger);
+        }
+
+        return result;
+    }
+
+    function runTest(test as String or Number) as Boolean {
+        var id = test;
+        if (test instanceof Lang.String) {
+            id = getIndexOf(test);
+        }
+
+        assertMessage(id >= 0, "Could not find '" + test + "'");
+        var result = false;
+        if (id < 21) {
+            result = self.evaluate_test_entries_0_to_21(id, logger);
+        }
+
+        if (result instanceof Boolean) {
+            return result;
+        }
+
+        return false;
+    }
+}

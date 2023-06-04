@@ -1,0 +1,283 @@
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc"; @line = 3; test = true; ]
+function should_update_pace_if_current_speed_not_null(logger as Logger) as Boolean {
+_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_4_83_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 6 4 ]
+    [ "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_4_83_start" "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_4_83_stop" ]
+    %viewModel.1 = local;
+    %tmp.4 = getv ? :PaceGaugeViewModel;
+    %tmp.1 = newc %tmp.4 ();
+    lputv %viewModel.1 %tmp.1;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 8 4 ]
+    %tmp.5 = lgetv %viewModel.1;
+    %tmp.6 = getv function %tmp.5 :onNewCurrentSpeed;
+    %tmp.7 = 1.0f;
+    invoke %tmp.5 %tmp.6(%tmp.7);
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 10 4 ]
+    %tmp.8 = lgetv %viewModel.1;
+    %tmp.9 = getv %tmp.8 :pace;
+    %tmp.10 = 0.0f;
+    %tmp.11 = ne %tmp.9 %tmp.10;
+    ret %tmp.11;
+_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_4_83_stop:
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc"; @line = 14; test = true; ]
+function should_convert_mps_to_pace_if_current_speed_not_null(logger as Logger) as Boolean {
+_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_15_91_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 17 4 ]
+    [ "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_15_91_start" "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_15_91_stop" ]
+    %mps.1 = local;
+    %tmp.1 = 1.0f;
+    lputv %mps.1 %tmp.1;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 18 4 ]
+    [ "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_15_91_start" "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_15_91_stop" ]
+    %viewModel.2 = local;
+    %tmp.5 = getv ? :PaceGaugeViewModel;
+    %tmp.2 = newc %tmp.5 ();
+    lputv %viewModel.2 %tmp.2;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 20 4 ]
+    %tmp.6 = lgetv %viewModel.2;
+    %tmp.7 = getv function %tmp.6 :onNewCurrentSpeed;
+    %tmp.9 = lgetv %mps.1;
+    invoke %tmp.6 %tmp.7(%tmp.9);
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 22 4 ]
+    %tmp.10 = lgetv %viewModel.2;
+    %tmp.11 = getv %tmp.10 :pace;
+    %tmp.12 = self;
+    %tmp.13 = getv function %tmp.12 :mpsToPace;
+    %tmp.15 = lgetv %mps.1;
+    %tmp.16 = invoke %tmp.12 %tmp.13(%tmp.15);
+    %tmp.17 = eq %tmp.11 %tmp.16;
+    ret %tmp.17;
+_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_15_91_stop:
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc"; @line = 25; test = true; ]
+function should_not_throw_when_current_speed_is_zero(logger as Logger) as Boolean {
+_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_26_82_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 28 4 ]
+    [ "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_26_82_start" "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_26_82_stop" ]
+    %viewModel.1 = local;
+    %tmp.4 = getv ? :PaceGaugeViewModel;
+    %tmp.1 = newc %tmp.4 ();
+    lputv %viewModel.1 %tmp.1;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 30 4 ]
+    %tmp.5 = lgetv %viewModel.1;
+    %tmp.6 = getv function %tmp.5 :onNewCurrentSpeed;
+    %tmp.7 = 0.0f;
+    invoke %tmp.5 %tmp.6(%tmp.7);
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 32 4 ]
+    %tmp.8 = lgetv %viewModel.1;
+    %tmp.9 = getv %tmp.8 :pace;
+    %tmp.10 = 0.0f;
+    %tmp.11 = eq %tmp.9 %tmp.10;
+    ret %tmp.11;
+_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_26_82_stop:
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc"; @line = 36; test = true; ]
+function should_calculate_threshold_pace(logger as Logger) as Boolean {
+_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_37_70_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 39 4 ]
+    [ "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_37_70_start" "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_37_70_stop" ]
+    %viewModel.1 = local;
+    %tmp.4 = getv ? :PaceGaugeViewModel;
+    %tmp.1 = newc %tmp.4 ();
+    lputv %viewModel.1 %tmp.1;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 40 4 ]
+    [ "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_37_70_start" "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_37_70_stop" ]
+    %thresholdMinutes.2 = local;
+    %tmp.5 = 1;
+    lputv %thresholdMinutes.2 %tmp.5;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 41 4 ]
+    [ "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_37_70_start" "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_37_70_stop" ]
+    %thresholdSeconds.3 = local;
+    %tmp.6 = 30;
+    lputv %thresholdSeconds.3 %tmp.6;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 43 4 ]
+    %tmp.7 = lgetv %viewModel.1;
+    %tmp.8 = getv function %tmp.7 :onNewThresholdPaceConfig;
+    %tmp.10 = lgetv %thresholdMinutes.2;
+    %tmp.12 = lgetv %thresholdSeconds.3;
+    invoke %tmp.7 %tmp.8(%tmp.10, %tmp.12);
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 45 4 ]
+    %tmp.13 = lgetv %viewModel.1;
+    %tmp.14 = getv %tmp.13 :thresholdPace;
+    %tmp.15 = 1.5;
+    %tmp.16 = eq %tmp.14 %tmp.15;
+    ret %tmp.16;
+_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_37_70_stop:
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc"; @line = 48; test = true; ]
+function should_clip_low_configured_minutes_when_calculating_threshold_pace(logger as Logger) as Boolean {
+_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_49_105_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 51 4 ]
+    [ "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_49_105_start" "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_49_105_stop" ]
+    %viewModel.1 = local;
+    %tmp.4 = getv ? :PaceGaugeViewModel;
+    %tmp.1 = newc %tmp.4 ();
+    lputv %viewModel.1 %tmp.1;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 52 4 ]
+    [ "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_49_105_start" "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_49_105_stop" ]
+    %thresholdMinutes.2 = local;
+    %tmp.5 = 1;
+    %tmp.6 = sub 0 %tmp.5;
+    lputv %thresholdMinutes.2 %tmp.6;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 53 4 ]
+    [ "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_49_105_start" "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_49_105_stop" ]
+    %thresholdSeconds.3 = local;
+    %tmp.7 = 30;
+    lputv %thresholdSeconds.3 %tmp.7;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 55 4 ]
+    %tmp.8 = lgetv %viewModel.1;
+    %tmp.9 = getv function %tmp.8 :onNewThresholdPaceConfig;
+    %tmp.11 = lgetv %thresholdMinutes.2;
+    %tmp.13 = lgetv %thresholdSeconds.3;
+    invoke %tmp.8 %tmp.9(%tmp.11, %tmp.13);
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 57 4 ]
+    %tmp.14 = lgetv %viewModel.1;
+    %tmp.15 = getv %tmp.14 :thresholdPace;
+    %tmp.16 = 0.5;
+    %tmp.17 = eq %tmp.15 %tmp.16;
+    ret %tmp.17;
+_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_49_105_stop:
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc"; @line = 60; test = true; ]
+function should_clip_low_configured_seconds_when_calculating_threshold_pace(logger as Logger) as Boolean {
+_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_61_105_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 63 4 ]
+    [ "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_61_105_start" "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_61_105_stop" ]
+    %viewModel.1 = local;
+    %tmp.4 = getv ? :PaceGaugeViewModel;
+    %tmp.1 = newc %tmp.4 ();
+    lputv %viewModel.1 %tmp.1;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 64 4 ]
+    [ "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_61_105_start" "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_61_105_stop" ]
+    %thresholdMinutes.2 = local;
+    %tmp.5 = 1;
+    lputv %thresholdMinutes.2 %tmp.5;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 65 4 ]
+    [ "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_61_105_start" "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_61_105_stop" ]
+    %thresholdSeconds.3 = local;
+    %tmp.6 = 1;
+    %tmp.7 = sub 0 %tmp.6;
+    lputv %thresholdSeconds.3 %tmp.7;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 67 4 ]
+    %tmp.8 = lgetv %viewModel.1;
+    %tmp.9 = getv function %tmp.8 :onNewThresholdPaceConfig;
+    %tmp.11 = lgetv %thresholdMinutes.2;
+    %tmp.13 = lgetv %thresholdSeconds.3;
+    invoke %tmp.8 %tmp.9(%tmp.11, %tmp.13);
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 69 4 ]
+    %tmp.14 = lgetv %viewModel.1;
+    %tmp.15 = getv %tmp.14 :thresholdPace;
+    %tmp.16 = 1.0;
+    %tmp.17 = eq %tmp.15 %tmp.16;
+    ret %tmp.17;
+_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_61_105_stop:
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc"; @line = 72; test = true; ]
+function should_clip_high_configured_minutes_when_calculating_threshold_pace(logger as Logger) as Boolean {
+_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_73_106_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 75 4 ]
+    [ "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_73_106_start" "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_73_106_stop" ]
+    %viewModel.1 = local;
+    %tmp.4 = getv ? :PaceGaugeViewModel;
+    %tmp.1 = newc %tmp.4 ();
+    lputv %viewModel.1 %tmp.1;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 76 4 ]
+    [ "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_73_106_start" "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_73_106_stop" ]
+    %thresholdMinutes.2 = local;
+    %tmp.5 = 61;
+    lputv %thresholdMinutes.2 %tmp.5;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 77 4 ]
+    [ "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_73_106_start" "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_73_106_stop" ]
+    %thresholdSeconds.3 = local;
+    %tmp.6 = 30;
+    lputv %thresholdSeconds.3 %tmp.6;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 79 4 ]
+    %tmp.7 = lgetv %viewModel.1;
+    %tmp.8 = getv function %tmp.7 :onNewThresholdPaceConfig;
+    %tmp.10 = lgetv %thresholdMinutes.2;
+    %tmp.12 = lgetv %thresholdSeconds.3;
+    invoke %tmp.7 %tmp.8(%tmp.10, %tmp.12);
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 81 4 ]
+    %tmp.13 = lgetv %viewModel.1;
+    %tmp.14 = getv %tmp.13 :thresholdPace;
+    %tmp.15 = 60.5;
+    %tmp.16 = eq %tmp.14 %tmp.15;
+    ret %tmp.16;
+_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_73_106_stop:
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc"; @line = 84; test = true; ]
+function should_clip_high_configured_seconds_when_calculating_threshold_pace(logger as Logger) as Boolean {
+_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_85_106_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 87 4 ]
+    [ "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_85_106_start" "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_85_106_stop" ]
+    %viewModel.1 = local;
+    %tmp.4 = getv ? :PaceGaugeViewModel;
+    %tmp.1 = newc %tmp.4 ();
+    lputv %viewModel.1 %tmp.1;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 88 4 ]
+    [ "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_85_106_start" "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_85_106_stop" ]
+    %thresholdMinutes.2 = local;
+    %tmp.5 = 1;
+    lputv %thresholdMinutes.2 %tmp.5;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 89 4 ]
+    [ "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_85_106_start" "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_85_106_stop" ]
+    %thresholdSeconds.3 = local;
+    %tmp.6 = 61;
+    lputv %thresholdSeconds.3 %tmp.6;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 91 4 ]
+    %tmp.7 = lgetv %viewModel.1;
+    %tmp.8 = getv function %tmp.7 :onNewThresholdPaceConfig;
+    %tmp.10 = lgetv %thresholdMinutes.2;
+    %tmp.12 = lgetv %thresholdSeconds.3;
+    invoke %tmp.7 %tmp.8(%tmp.10, %tmp.12);
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 93 4 ]
+    %tmp.13 = self;
+    %tmp.14 = getv function %tmp.13 :areClose;
+    %tmp.15 = lgetv %viewModel.1;
+    %tmp.16 = getv %tmp.15 :thresholdPace;
+    %tmp.17 = 1.98333333f;
+    %tmp.18 = invoke %tmp.13 %tmp.14(%tmp.16, %tmp.17);
+    ret %tmp.18;
+_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_85_106_stop:
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc"; @line = 96; test = true; ]
+function should_only_update_threshold_pace_if_config_changed(logger as Logger) as Boolean {
+_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_97_90_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 99 4 ]
+    [ "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_97_90_start" "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_97_90_stop" ]
+    %viewModel.1 = local;
+    %tmp.4 = getv ? :PaceGaugeViewModel;
+    %tmp.1 = newc %tmp.4 ();
+    lputv %viewModel.1 %tmp.1;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 100 4 ]
+    %tmp.5 = lgetv %viewModel.1;
+    %tmp.6 = 1.0f;
+    putv %tmp.5 :thresholdPace %tmp.6;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 101 4 ]
+    [ "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_97_90_start" "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_97_90_stop" ]
+    %thresholdMinutes.2 = local;
+    %tmp.7 = 0.0;
+    lputv %thresholdMinutes.2 %tmp.7;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 102 4 ]
+    [ "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_97_90_start" "_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_97_90_stop" ]
+    %thresholdSeconds.3 = local;
+    %tmp.8 = 0.0;
+    lputv %thresholdSeconds.3 %tmp.8;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 104 4 ]
+    %tmp.9 = lgetv %viewModel.1;
+    %tmp.10 = getv function %tmp.9 :onNewThresholdPaceConfig;
+    %tmp.12 = lgetv %thresholdMinutes.2;
+    %tmp.14 = lgetv %thresholdSeconds.3;
+    invoke %tmp.9 %tmp.10(%tmp.12, %tmp.14);
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc" 106 4 ]
+    %tmp.15 = lgetv %viewModel.1;
+    %tmp.16 = getv %tmp.15 :thresholdPace;
+    %tmp.17 = 1.0f;
+    %tmp.18 = eq %tmp.16 %tmp.17;
+    ret %tmp.18;
+_Users_mariusw_git_garmin_PaceGauge_source_test_PaceGaugeViewModelTests_mc_97_90_stop:
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/test/PaceGaugeViewModelTests.mc"; @line = 3; ]
+<init> {
+}

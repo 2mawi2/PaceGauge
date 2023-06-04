@@ -3,5 +3,6 @@
     <string id="ThresholdPaceMinutes">Minutes</string>
     <string id="ThresholdPaceSeconds">Seconds</string>
     <string id="ThresholdPacePrompt">Please enter your threshold pace:</string>
+    <string id="IsMetricSystem">Use metric system?</string>
     <string id="NumberError">Input must be numeric.</string>
 </strings>

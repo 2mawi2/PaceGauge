@@ -3,7 +3,6 @@ import Toybox.Graphics;
 import Toybox.Lang;
 import Toybox.WatchUi;
 
-
 class PaceGaugeView extends WatchUi.DataField {
 
     hidden var viewModel as PaceGaugeViewModel;
@@ -21,7 +20,8 @@ class PaceGaugeView extends WatchUi.DataField {
     function updateThresholdPace() {
         var thresholdMinutes = Application.Properties.getValue("thresholdMinutes") as Number;
         var thresholdSeconds = Application.Properties.getValue("thresholdSeconds") as Number;
-        viewModel.onNewThresholdPaceConfig(thresholdMinutes, thresholdSeconds);
+        var isMetric = Application.Properties.getValue("isMetricSystem") as Boolean;
+        viewModel.onNewThresholdPaceConfig(thresholdMinutes, thresholdSeconds, isMetric);
     }
 
     function onLayout(dc as Dc) as Void {
@@ -110,7 +110,7 @@ class PaceGaugeView extends WatchUi.DataField {
         return paceString;
     }
 
-    function calculatePaceGauge(dc as DC) as PaceGauge {
+    function calculatePaceGauge(dc) as PaceGauge {
         var obscurityFlags = DataField.getObscurityFlags();
         var additionalBottomAndTopPadding = 0.0;
         var offset = dc.getHeight()/10;
@@ -128,12 +128,12 @@ class PaceGaugeView extends WatchUi.DataField {
 
 
     function fillRectangleWithContrast(
-        dc as DC, 
-        x as Float, 
-        y as Float, 
-        width as Float, 
-        height as Float, 
-        color as Int
+        dc, 
+        x as Number, 
+        y as Number, 
+        width as Number, 
+        height as Number, 
+        color as Number
     ) {
         var contrastSize = 2.0;
         dc.setColor(color, color);
@@ -146,7 +146,7 @@ class PaceGaugeView extends WatchUi.DataField {
         dc.fillRectangle(x + width - contrastSize, y, contrastSize, height);
     }
 
-    function drawGauge(dc as DC, gauge as PaceGauge) as Void {
+    function drawGauge(dc, gauge as PaceGauge) as Void {
         dc.setAntiAlias(true);
         var tile = gauge.tileLength();
         var colors = gauge.getColors();
@@ -170,8 +170,8 @@ class PaceGaugeView extends WatchUi.DataField {
         }
     }
 
-    function drawCurrentPace(dc as DC, gauge as PaceGauge) {
-        var indicatorWidth = 10.0;
+    function drawCurrentPace(dc, gauge as PaceGauge) {
+        var indicatorWidth = 10.0 as Number;
         var position = gauge.getIndicatorPosition();
         var indicatorY = gauge.offset - 5;
         var indicatorHeight = 30;

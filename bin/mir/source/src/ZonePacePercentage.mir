@@ -1,0 +1,291 @@
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc"; @line = 5; ]
+class ZonePacePercentage{
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc"; @line = 5; ]
+    function initialize() as Void {
+    }
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc"; @line = 7; ]
+    function calculatePacePercentage(pace as Float, thresholdPace as Float) as Float {
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_7_85_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" 8 8 ]
+        [ "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_7_85_start" "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_7_85_stop" ]
+        %clipped.1 = local;
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :clip;
+        %tmp.4 = lgetv %pace;
+        %tmp.5 = 0.8f;
+        %tmp.7 = lgetv %pace;
+        %tmp.8 = mul %tmp.5 %tmp.7;
+        %tmp.9 = 1.40f;
+        %tmp.11 = lgetv %pace;
+        %tmp.12 = mul %tmp.9 %tmp.11;
+        %tmp.13 = invoke %tmp.1 %tmp.2(%tmp.4, %tmp.8, %tmp.12);
+        lputv %clipped.1 %tmp.13;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" 9 8 ]
+        [ "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_7_85_start" "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_7_85_stop" ]
+        %pThreshold.2 = local;
+        %tmp.15 = lgetv %clipped.1;
+        %tmp.17 = lgetv %thresholdPace;
+        %tmp.18 = div %tmp.15 %tmp.17;
+        lputv %pThreshold.2 %tmp.18;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" 10 8 ]
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_10_8_if_stmt:
+        %tmp.20 = lgetv %pThreshold.2;
+        %tmp.21 = 1.29f;
+        %tmp.22 = gt %tmp.20 %tmp.21;
+        bf %tmp.22 @_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_10_8_if_false;
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_10_8_if_true:
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_10_32_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" 11 12 ]
+        [ "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_10_32_start" "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_10_32_stop" ]
+        %base.3 = local;
+        %tmp.23 = 0.0;
+        %tmp.24 = 100.0;
+        %tmp.25 = 6.0;
+        %tmp.26 = div %tmp.24 %tmp.25;
+        %tmp.27 = mul %tmp.23 %tmp.26;
+        lputv %base.3 %tmp.27;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" 12 12 ]
+        [ "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_10_32_start" "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_10_32_stop" ]
+        %percentage.4 = local;
+        %tmp.28 = self;
+        %tmp.29 = getv function %tmp.28 :zonePercentageToTotalPercentage;
+        %tmp.31 = lgetv %pThreshold.2;
+        %tmp.32 = 1.4f;
+        %tmp.33 = 1.29f;
+        %tmp.34 = invoke %tmp.28 %tmp.29(%tmp.31, %tmp.32, %tmp.33);
+        lputv %percentage.4 %tmp.34;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" 13 12 ]
+        %tmp.36 = lgetv %base.3;
+        %tmp.38 = lgetv %percentage.4;
+        %tmp.39 = add %tmp.36 %tmp.38;
+        ret %tmp.39;
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_10_32_stop:
+        goto @_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_10_8_if_end;
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_10_8_if_false:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" 14 15 ]
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_14_15_if_stmt:
+        %tmp.41 = lgetv %pThreshold.2;
+        %tmp.42 = 1.14f;
+        %tmp.43 = gt %tmp.41 %tmp.42;
+        bf %tmp.43 @_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_14_15_if_false;
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_14_15_if_true:
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_14_39_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" 15 12 ]
+        [ "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_14_39_start" "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_14_39_stop" ]
+        %base.5 = local;
+        %tmp.44 = 1.0;
+        %tmp.45 = 100.0;
+        %tmp.46 = 6.0;
+        %tmp.47 = div %tmp.45 %tmp.46;
+        %tmp.48 = mul %tmp.44 %tmp.47;
+        lputv %base.5 %tmp.48;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" 16 12 ]
+        [ "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_14_39_start" "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_14_39_stop" ]
+        %percentage.6 = local;
+        %tmp.49 = self;
+        %tmp.50 = getv function %tmp.49 :zonePercentageToTotalPercentage;
+        %tmp.52 = lgetv %pThreshold.2;
+        %tmp.53 = 1.29f;
+        %tmp.54 = 1.14f;
+        %tmp.55 = invoke %tmp.49 %tmp.50(%tmp.52, %tmp.53, %tmp.54);
+        lputv %percentage.6 %tmp.55;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" 17 12 ]
+        %tmp.57 = lgetv %base.5;
+        %tmp.59 = lgetv %percentage.6;
+        %tmp.60 = add %tmp.57 %tmp.59;
+        ret %tmp.60;
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_14_39_stop:
+        goto @_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_14_15_if_end;
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_14_15_if_false:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" 18 15 ]
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_18_15_if_stmt:
+        %tmp.62 = lgetv %pThreshold.2;
+        %tmp.63 = 1.06f;
+        %tmp.64 = gt %tmp.62 %tmp.63;
+        bf %tmp.64 @_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_18_15_if_false;
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_18_15_if_true:
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_18_39_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" 19 12 ]
+        [ "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_18_39_start" "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_18_39_stop" ]
+        %base.7 = local;
+        %tmp.65 = 2.0;
+        %tmp.66 = 100.0;
+        %tmp.67 = 6.0;
+        %tmp.68 = div %tmp.66 %tmp.67;
+        %tmp.69 = mul %tmp.65 %tmp.68;
+        lputv %base.7 %tmp.69;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" 20 12 ]
+        [ "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_18_39_start" "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_18_39_stop" ]
+        %percentage.8 = local;
+        %tmp.70 = self;
+        %tmp.71 = getv function %tmp.70 :zonePercentageToTotalPercentage;
+        %tmp.73 = lgetv %pThreshold.2;
+        %tmp.74 = 1.14f;
+        %tmp.75 = 1.06f;
+        %tmp.76 = invoke %tmp.70 %tmp.71(%tmp.73, %tmp.74, %tmp.75);
+        lputv %percentage.8 %tmp.76;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" 21 12 ]
+        %tmp.78 = lgetv %base.7;
+        %tmp.80 = lgetv %percentage.8;
+        %tmp.81 = add %tmp.78 %tmp.80;
+        ret %tmp.81;
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_18_39_stop:
+        goto @_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_18_15_if_end;
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_18_15_if_false:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" 22 15 ]
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_22_15_if_stmt:
+        %tmp.83 = lgetv %pThreshold.2;
+        %tmp.84 = 0.97f;
+        %tmp.85 = gt %tmp.83 %tmp.84;
+        bf %tmp.85 @_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_22_15_if_false;
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_22_15_if_true:
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_22_39_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" 23 12 ]
+        [ "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_22_39_start" "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_22_39_stop" ]
+        %base.9 = local;
+        %tmp.86 = 3.0;
+        %tmp.87 = 100.0;
+        %tmp.88 = 6.0;
+        %tmp.89 = div %tmp.87 %tmp.88;
+        %tmp.90 = mul %tmp.86 %tmp.89;
+        lputv %base.9 %tmp.90;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" 24 12 ]
+        [ "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_22_39_start" "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_22_39_stop" ]
+        %percentage.10 = local;
+        %tmp.91 = self;
+        %tmp.92 = getv function %tmp.91 :zonePercentageToTotalPercentage;
+        %tmp.94 = lgetv %pThreshold.2;
+        %tmp.95 = 1.06f;
+        %tmp.96 = 0.97f;
+        %tmp.97 = invoke %tmp.91 %tmp.92(%tmp.94, %tmp.95, %tmp.96);
+        lputv %percentage.10 %tmp.97;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" 25 12 ]
+        %tmp.99 = lgetv %base.9;
+        %tmp.101 = lgetv %percentage.10;
+        %tmp.102 = add %tmp.99 %tmp.101;
+        ret %tmp.102;
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_22_39_stop:
+        goto @_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_22_15_if_end;
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_22_15_if_false:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" 26 15 ]
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_26_15_if_stmt:
+        %tmp.104 = lgetv %pThreshold.2;
+        %tmp.105 = 0.90f;
+        %tmp.106 = gt %tmp.104 %tmp.105;
+        bf %tmp.106 @_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_26_15_if_false;
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_26_15_if_true:
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_26_39_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" 27 12 ]
+        [ "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_26_39_start" "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_26_39_stop" ]
+        %base.11 = local;
+        %tmp.107 = 4.0;
+        %tmp.108 = 100.0;
+        %tmp.109 = 6.0;
+        %tmp.110 = div %tmp.108 %tmp.109;
+        %tmp.111 = mul %tmp.107 %tmp.110;
+        lputv %base.11 %tmp.111;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" 28 12 ]
+        [ "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_26_39_start" "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_26_39_stop" ]
+        %percentage.12 = local;
+        %tmp.112 = self;
+        %tmp.113 = getv function %tmp.112 :zonePercentageToTotalPercentage;
+        %tmp.115 = lgetv %pThreshold.2;
+        %tmp.116 = 0.97f;
+        %tmp.117 = 0.90f;
+        %tmp.118 = invoke %tmp.112 %tmp.113(%tmp.115, %tmp.116, %tmp.117);
+        lputv %percentage.12 %tmp.118;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" 29 12 ]
+        %tmp.120 = lgetv %base.11;
+        %tmp.122 = lgetv %percentage.12;
+        %tmp.123 = add %tmp.120 %tmp.122;
+        ret %tmp.123;
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_26_39_stop:
+        goto @_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_26_15_if_end;
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_26_15_if_false:
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_30_15_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" 31 12 ]
+        [ "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_30_15_start" "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_30_15_stop" ]
+        %base.13 = local;
+        %tmp.124 = 5.0;
+        %tmp.125 = 100.0;
+        %tmp.126 = 6.0;
+        %tmp.127 = div %tmp.125 %tmp.126;
+        %tmp.128 = mul %tmp.124 %tmp.127;
+        lputv %base.13 %tmp.128;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" 32 12 ]
+        [ "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_30_15_start" "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_30_15_stop" ]
+        %percentage.14 = local;
+        %tmp.129 = self;
+        %tmp.130 = getv function %tmp.129 :zonePercentageToTotalPercentage;
+        %tmp.132 = lgetv %pThreshold.2;
+        %tmp.133 = 0.90f;
+        %tmp.134 = 0.80f;
+        %tmp.135 = invoke %tmp.129 %tmp.130(%tmp.132, %tmp.133, %tmp.134);
+        lputv %percentage.14 %tmp.135;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" 33 12 ]
+        %tmp.137 = lgetv %base.13;
+        %tmp.139 = lgetv %percentage.14;
+        %tmp.140 = add %tmp.137 %tmp.139;
+        ret %tmp.140;
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_30_15_stop:
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_26_15_if_end:
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_22_15_if_end:
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_18_15_if_end:
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_14_15_if_end:
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_10_8_if_end:
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_7_85_stop:
+    }
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc"; @line = 37; ]
+    private
+    function zonePercentageToTotalPercentage(pThreshold as Float, upper as Float, lower as Float) as Float {
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_37_115_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" 38 8 ]
+        [ "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_37_115_start" "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_37_115_stop" ]
+        %clippedPThreshold.1 = local;
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :clip;
+        %tmp.4 = lgetv %pThreshold;
+        %tmp.6 = lgetv %lower;
+        %tmp.8 = lgetv %upper;
+        %tmp.9 = invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6, %tmp.8);
+        lputv %clippedPThreshold.1 %tmp.9;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" 39 8 ]
+        [ "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_37_115_start" "_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_37_115_stop" ]
+        %totalPercentage.2 = local;
+        %tmp.11 = lgetv %clippedPThreshold.1;
+        %tmp.13 = lgetv %lower;
+        %tmp.14 = sub %tmp.11 %tmp.13;
+        %tmp.16 = lgetv %upper;
+        %tmp.18 = lgetv %lower;
+        %tmp.19 = sub %tmp.16 %tmp.18;
+        %tmp.20 = div %tmp.14 %tmp.19;
+        lputv %totalPercentage.2 %tmp.20;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc" 40 8 ]
+        %tmp.21 = 1;
+        %tmp.22 = self;
+        %tmp.23 = getv function %tmp.22 :clip;
+        %tmp.25 = lgetv %totalPercentage.2;
+        %tmp.26 = 0.0;
+        %tmp.27 = 1.0;
+        %tmp.28 = invoke %tmp.22 %tmp.23(%tmp.25, %tmp.26, %tmp.27);
+        %tmp.29 = sub %tmp.21 %tmp.28;
+        %tmp.30 = 100.0;
+        %tmp.31 = 6.0;
+        %tmp.32 = div %tmp.30 %tmp.31;
+        %tmp.33 = mul %tmp.29 %tmp.32;
+        ret %tmp.33;
+_Users_mariusw_git_garmin_PaceGauge_source_src_ZonePacePercentage_mc_37_115_stop:
+    }
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/ZonePacePercentage.mc"; @line = 1; ]
+<init> {
+}

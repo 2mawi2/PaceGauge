@@ -6,5 +6,8 @@
         <setting propertyKey="@Properties.thresholdSeconds" title="@Strings.ThresholdPaceSeconds" prompt="@Strings.ThresholdPacePrompt">
             <settingConfig required="true" min="0" max="59" type="numeric" errorMessage="@Strings.NumberError" />
         </setting>
+        <setting propertyKey="@Properties.isMetricSystem" title="@Strings.IsMetricSystem">
+            <settingConfig type="boolean" />
+        </setting>
     </group>
 </settings>

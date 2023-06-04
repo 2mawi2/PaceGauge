@@ -1,3 +1,4 @@
+import Toybox.Lang;
 
 
 
@@ -36,6 +37,6 @@ class ZonePacePercentage {
     private function zonePercentageToTotalPercentage(pThreshold as Float, upper as Float, lower as Float) as Float {
         var clippedPThreshold = clip(pThreshold, lower, upper);
         var totalPercentage = (clippedPThreshold - lower) / (upper - lower);
-        return (1-clip(totalPercentage, 0, 1)) * (100.0 / 6.0);
+        return (1-clip(totalPercentage, 0.0, 1.0)) * (100.0 / 6.0);
     }
 }

@@ -1,0 +1,76 @@
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc"; @line = 3; ]
+import Toybox.WatchUi;
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc"; @line = 5; ]
+class PaceGaugeApp extends Application.AppBase{
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc"; @line = 5; ]
+    <init> {
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc" 7 8 ]
+        %tmp.4 = getv ? :PaceGaugeView;
+        %tmp.1 = newc %tmp.4 ();
+        putv self :paceGaugeView %tmp.1;
+    }
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc"; @line = 7; @position = 8; ]
+    var paceGaugeView;
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc"; @line = 9; ]
+    function initialize() as Void {
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeApp_mc_9_26_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc" 10 8 ]
+        %tmp.2 = getv ? :AppBase;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeApp_mc_9_26_stop:
+    }
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc"; @line = 14; ]
+    function onStart(state as Dictionary or Null) as Void {
+    }
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc"; @line = 18; ]
+    function onStop(state as Dictionary or Null) as Void {
+    }
+    //! Return the initial view of your application here
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc"; @line = 22; ]
+    function getInitialView() as Array<Views or InputDelegates> or Null {
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeApp_mc_22_65_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc" 23 8 ]
+        %tmp.1 = newa Array<Views or InputDelegates> 1;
+        %tmp.3 = getv ? :paceGaugeView;
+        %tmp.4 = dup %tmp.1;
+        %tmp.5 = aputv %tmp.4 0 %tmp.3;
+        ret %tmp.5;
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeApp_mc_22_65_stop:
+    }
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc"; @line = 26; ]
+    function onSettingsChanged() {
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeApp_mc_26_33_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc" 27 8 ]
+        %tmp.2 = getv ? :paceGaugeView;
+        %tmp.3 = getv function %tmp.2 :handleSettingUpdate;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc" 28 8 ]
+        %tmp.4 = getm $.Toybox.WatchUi;
+        %tmp.5 = getv function %tmp.4 :requestUpdate;
+        invoke %tmp.4 %tmp.5();
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeApp_mc_26_33_stop:
+    }
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc"; @line = 33; ]
+function getApp() as PaceGaugeApp {
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeApp_mc_33_34_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc" 34 4 ]
+    %tmp.1 = getm $.Toybox.Application;
+    %tmp.2 = getv function %tmp.1 :getApp;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    %tmp.4 = as %tmp.3 PaceGaugeApp;
+    ret %tmp.4;
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeApp_mc_33_34_stop:
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeApp.mc"; @line = 1; ]
+<init> {
+}

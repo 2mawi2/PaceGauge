@@ -1,0 +1,209 @@
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc"; @line = 3; ]
+class PaceGauge{
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc"; @line = 3; ]
+    <init> {
+    }
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc"; @line = 3; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc"; @line = 5; @position = 15; ]
+    public
+    var start;
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc"; @line = 6; @position = 15; ]
+    public
+    var end;
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc"; @line = 7; @position = 15; ]
+    public
+    var offset;
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc"; @line = 8; @position = 15; ]
+    public
+    var height;
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc"; @line = 9; @position = 15; ]
+    public
+    var currentPacePercent;
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc"; @line = 10; @position = 15; ]
+    public
+    var isInverse;
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc"; @line = 12; ]
+    public
+    function initialize(start, end, offset, height, currentPacePercent, isInverse) as Void {
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_19_6_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" 20 8 ]
+        %tmp.2 = lgetv %start;
+        putv self :start %tmp.2;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" 21 8 ]
+        %tmp.4 = lgetv %end;
+        putv self :end %tmp.4;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" 22 8 ]
+        %tmp.6 = lgetv %offset;
+        putv self :offset %tmp.6;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" 23 8 ]
+        %tmp.8 = lgetv %height;
+        putv self :height %tmp.8;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" 24 8 ]
+        %tmp.10 = lgetv %currentPacePercent;
+        putv self :currentPacePercent %tmp.10;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" 25 8 ]
+        %tmp.12 = lgetv %isInverse;
+        putv self :isInverse %tmp.12;
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_19_6_stop:
+    }
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc"; @line = 28; ]
+    public
+    function length() as Number {
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_28_39_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" 29 8 ]
+        %tmp.1 = lgetv %self;
+        %tmp.2 = getv %tmp.1 :end;
+        %tmp.3 = lgetv %self;
+        %tmp.4 = getv %tmp.3 :start;
+        %tmp.5 = sub %tmp.2 %tmp.4;
+        ret %tmp.5;
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_28_39_stop:
+    }
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc"; @line = 32; ]
+    public
+    function getIndicatorPosition() as Number {
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_32_53_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" 33 8 ]
+        %tmp.1 = lgetv %self;
+        %tmp.2 = getv %tmp.1 :start;
+        %tmp.3 = lgetv %self;
+        %tmp.4 = getv function %tmp.3 :length;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        %tmp.6 = lgetv %self;
+        %tmp.7 = getv %tmp.6 :currentPacePercent;
+        %tmp.8 = 100.0;
+        %tmp.9 = div %tmp.7 %tmp.8;
+        %tmp.10 = mul %tmp.5 %tmp.9;
+        %tmp.11 = add %tmp.2 %tmp.10;
+        ret %tmp.11;
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_32_53_stop:
+    }
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc"; @line = 36; ]
+    public
+    function highlightedIndex() as Number {
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_36_49_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" 37 8 ]
+        [ "_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_36_49_start" "_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_36_49_stop" ]
+        %tileLength.1 = local;
+        %tmp.1 = lgetv %self;
+        %tmp.2 = getv function %tmp.1 :tileLength;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %tileLength.1 %tmp.3;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" 38 8 ]
+        for @_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_38_8_for_test @_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_38_8_for_incr @_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_38_8_for_end;
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_38_8_for_init:
+        [ "_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_38_8_for_begin" "_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_38_8_for_end" ]
+        %i.2 = local;
+        %tmp.4 = 0;
+        lputv %i.2 %tmp.4;
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_38_8_for_test:
+        %tmp.6 = lgetv %i.2;
+        %tmp.7 = 6;
+        %tmp.8 = lt %tmp.6 %tmp.7;
+        bf %tmp.8 @_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_38_8_for_end;
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_38_8_for_begin:
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_38_36_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" 39 12 ]
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_39_12_if_stmt:
+        %tmp.9 = lgetv %self;
+        %tmp.10 = getv function %tmp.9 :getIndicatorPosition;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        %tmp.12 = lgetv %self;
+        %tmp.13 = getv %tmp.12 :start;
+        %tmp.15 = lgetv %tileLength.1;
+        %tmp.17 = lgetv %i.2;
+        %tmp.18 = 1;
+        %tmp.19 = add %tmp.17 %tmp.18;
+        %tmp.20 = mul %tmp.15 %tmp.19;
+        %tmp.21 = add %tmp.13 %tmp.20;
+        %tmp.22 = lte %tmp.11 %tmp.21;
+        bf %tmp.22 @_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_39_12_if_end;
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_39_12_if_true:
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_39_82_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" 40 16 ]
+        %tmp.24 = lgetv %i.2;
+        ret %tmp.24;
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_39_82_stop:
+        goto @_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_39_12_if_end;
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_39_12_if_end:
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_38_36_stop:
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_38_8_for_incr:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" 38 ]
+        %tmp.27 = lgetv %i.2;
+        %tmp.28 = add %tmp.27 1;
+        lputv %i.2 %tmp.28;
+        goto @_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_38_8_for_test;
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_38_8_for_end:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" 43 8 ]
+        %tmp.29 = 0;
+        ret %tmp.29;
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_36_49_stop:
+    }
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc"; @line = 46; ]
+    public
+    function tileLength() as Number {
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_46_43_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" 47 8 ]
+        %tmp.1 = lgetv %self;
+        %tmp.2 = getv function %tmp.1 :length;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = 6;
+        %tmp.5 = div %tmp.3 %tmp.4;
+        ret %tmp.5;
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_46_43_stop:
+    }
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc"; @line = 50; ]
+    function getColors() as Array {
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_50_34_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" 51 8 ]
+        %tmp.1 = newa 6;
+        %tmp.3 = getv ? :Graphics;
+        %tmp.4 = getv %tmp.3 :COLOR_BLUE;
+        %tmp.5 = dup %tmp.1;
+        %tmp.6 = aputv %tmp.5 0 %tmp.4;
+        %tmp.8 = getv ? :Graphics;
+        %tmp.9 = getv %tmp.8 :COLOR_GREEN;
+        %tmp.10 = dup %tmp.6;
+        %tmp.11 = aputv %tmp.10 1 %tmp.9;
+        %tmp.13 = getv ? :Graphics;
+        %tmp.14 = getv %tmp.13 :COLOR_YELLOW;
+        %tmp.15 = dup %tmp.11;
+        %tmp.16 = aputv %tmp.15 2 %tmp.14;
+        %tmp.18 = getv ? :Graphics;
+        %tmp.19 = getv %tmp.18 :COLOR_ORANGE;
+        %tmp.20 = dup %tmp.16;
+        %tmp.21 = aputv %tmp.20 3 %tmp.19;
+        %tmp.23 = getv ? :Graphics;
+        %tmp.24 = getv %tmp.23 :COLOR_RED;
+        %tmp.25 = dup %tmp.21;
+        %tmp.26 = aputv %tmp.25 4 %tmp.24;
+        %tmp.28 = getv ? :Graphics;
+        %tmp.29 = getv %tmp.28 :COLOR_DK_RED;
+        %tmp.30 = dup %tmp.26;
+        %tmp.31 = aputv %tmp.30 5 %tmp.29;
+        ret %tmp.31;
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_50_34_stop:
+    }
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc"; @line = 61; ]
+    function getHighlightedColor() as Number {
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_61_45_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc" 62 8 ]
+        %tmp.1 = lgetv %self;
+        %tmp.2 = getv function %tmp.1 :getColors;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = lgetv %self;
+        %tmp.5 = getv function %tmp.4 :highlightedIndex;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        %tmp.7 = agetv %tmp.3 %tmp.6;
+        ret %tmp.7;
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGauge_mc_61_45_stop:
+    }
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGauge.mc"; @line = 1; ]
+<init> {
+}

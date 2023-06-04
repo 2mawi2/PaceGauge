@@ -1,4 +1,5 @@
 <properties>
 <property id="thresholdMinutes" type="number">0</property>
 <property id="thresholdSeconds" type="number">0</property>
+<property id="isMetricSystem" type="boolean"></property>
 </properties>

@@ -1,3 +1,4 @@
+import Toybox.Lang;
 
 class PaceGauge 
 {

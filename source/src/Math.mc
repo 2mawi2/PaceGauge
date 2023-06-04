@@ -1,4 +1,4 @@
-
+import Toybox.Lang;
 
 function max(a as Float, b as Float) as Float {
     if (a > b) {
@@ -33,10 +33,18 @@ function areClose(a as Float, b as Float) as Boolean {
     return abs(a - b) < epsilon;
 }
 
-function mpsToPace(mps as Float) as Float {
+function mpsToPace(mps as Float, isMetricSystem as Boolean) as Float {
     if (areClose(mps, 0.0f)) { return 0.0f; }
     
-    var kmh = mps * 3.6;
-    var pace = 60.0 / kmh;
+    var speed = getSpeedFor(mps, isMetricSystem);
+    var pace = 60.0 / speed;
     return pace;
-} 
+}
+
+function getSpeedFor(mps as Float, isMetricSystem as Boolean) as Float {
+    if (isMetricSystem) {
+        return mps * 3.6;
+    } else {
+        return mps * 3.6 * 0.621371192;
+    }
+}

@@ -1,0 +1,184 @@
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc"; @line = 2; test = true; ]
+function should_return_max_of_two_numbers(logger as Logger) as Boolean {
+_Users_mariusw_git_garmin_PaceGauge_source_test_MathTests_mc_3_71_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" 4 4 ]
+    %tmp.1 = self;
+    %tmp.2 = getv function %tmp.1 :max;
+    %tmp.3 = 1;
+    %tmp.4 = 2;
+    %tmp.5 = invoke %tmp.1 %tmp.2(%tmp.3, %tmp.4);
+    %tmp.6 = 2;
+    %tmp.7 = eq %tmp.5 %tmp.6;
+    ret %tmp.7;
+_Users_mariusw_git_garmin_PaceGauge_source_test_MathTests_mc_3_71_stop:
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc"; @line = 7; test = true; ]
+function should_return_max_of_two_numbers2(logger as Logger) as Boolean {
+_Users_mariusw_git_garmin_PaceGauge_source_test_MathTests_mc_8_72_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" 9 4 ]
+    %tmp.1 = self;
+    %tmp.2 = getv function %tmp.1 :max;
+    %tmp.3 = 4;
+    %tmp.4 = 2;
+    %tmp.5 = invoke %tmp.1 %tmp.2(%tmp.3, %tmp.4);
+    %tmp.6 = 4;
+    %tmp.7 = eq %tmp.5 %tmp.6;
+    ret %tmp.7;
+_Users_mariusw_git_garmin_PaceGauge_source_test_MathTests_mc_8_72_stop:
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc"; @line = 12; test = true; ]
+function should_return_min_of_two_numbers(logger as Logger) as Boolean {
+_Users_mariusw_git_garmin_PaceGauge_source_test_MathTests_mc_13_71_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" 14 4 ]
+    %tmp.1 = self;
+    %tmp.2 = getv function %tmp.1 :min;
+    %tmp.3 = 1;
+    %tmp.4 = 2;
+    %tmp.5 = invoke %tmp.1 %tmp.2(%tmp.3, %tmp.4);
+    %tmp.6 = 1;
+    %tmp.7 = eq %tmp.5 %tmp.6;
+    ret %tmp.7;
+_Users_mariusw_git_garmin_PaceGauge_source_test_MathTests_mc_13_71_stop:
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc"; @line = 17; test = true; ]
+function should_return_min_of_two_numbers2(logger as Logger) as Boolean {
+_Users_mariusw_git_garmin_PaceGauge_source_test_MathTests_mc_18_72_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" 19 4 ]
+    %tmp.1 = self;
+    %tmp.2 = getv function %tmp.1 :min;
+    %tmp.3 = 4;
+    %tmp.4 = 2;
+    %tmp.5 = invoke %tmp.1 %tmp.2(%tmp.3, %tmp.4);
+    %tmp.6 = 2;
+    %tmp.7 = eq %tmp.5 %tmp.6;
+    ret %tmp.7;
+_Users_mariusw_git_garmin_PaceGauge_source_test_MathTests_mc_18_72_stop:
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc"; @line = 22; test = true; ]
+function should_clip_number_to_min_and_max(logger as Logger) as Boolean {
+_Users_mariusw_git_garmin_PaceGauge_source_test_MathTests_mc_23_72_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" 24 4 ]
+    %tmp.1 = self;
+    %tmp.2 = getv function %tmp.1 :clip;
+    %tmp.3 = 1;
+    %tmp.4 = 2;
+    %tmp.5 = 3;
+    %tmp.6 = invoke %tmp.1 %tmp.2(%tmp.3, %tmp.4, %tmp.5);
+    %tmp.7 = 2;
+    %tmp.8 = eq %tmp.6 %tmp.7;
+    ret %tmp.8;
+_Users_mariusw_git_garmin_PaceGauge_source_test_MathTests_mc_23_72_stop:
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc"; @line = 27; test = true; ]
+function should_clip_number_to_min_and_max2(logger as Logger) as Boolean {
+_Users_mariusw_git_garmin_PaceGauge_source_test_MathTests_mc_28_73_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" 29 4 ]
+    %tmp.1 = self;
+    %tmp.2 = getv function %tmp.1 :clip;
+    %tmp.3 = 4;
+    %tmp.4 = 2;
+    %tmp.5 = 3;
+    %tmp.6 = invoke %tmp.1 %tmp.2(%tmp.3, %tmp.4, %tmp.5);
+    %tmp.7 = 3;
+    %tmp.8 = eq %tmp.6 %tmp.7;
+    ret %tmp.8;
+_Users_mariusw_git_garmin_PaceGauge_source_test_MathTests_mc_28_73_stop:
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc"; @line = 32; test = true; ]
+function should_clip_number_to_min_and_max3(logger as Logger) as Boolean {
+_Users_mariusw_git_garmin_PaceGauge_source_test_MathTests_mc_33_73_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" 34 4 ]
+    %tmp.1 = self;
+    %tmp.2 = getv function %tmp.1 :clip;
+    %tmp.3 = 1;
+    %tmp.4 = sub 0 %tmp.3;
+    %tmp.5 = 2;
+    %tmp.6 = sub 0 %tmp.5;
+    %tmp.7 = 3;
+    %tmp.8 = invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6, %tmp.7);
+    %tmp.9 = 1;
+    %tmp.10 = sub 0 %tmp.9;
+    %tmp.11 = eq %tmp.8 %tmp.10;
+    ret %tmp.11;
+_Users_mariusw_git_garmin_PaceGauge_source_test_MathTests_mc_33_73_stop:
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc"; @line = 37; test = true; ]
+function should_convert_mps_to_pace(logger as Logger) as Boolean {
+_Users_mariusw_git_garmin_PaceGauge_source_test_MathTests_mc_38_65_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" 39 4 ]
+    [ "_Users_mariusw_git_garmin_PaceGauge_source_test_MathTests_mc_38_65_start" "_Users_mariusw_git_garmin_PaceGauge_source_test_MathTests_mc_38_65_stop" ]
+    %meterPerSeconds.1 = local;
+    %tmp.1 = 8.0;
+    lputv %meterPerSeconds.1 %tmp.1;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" 40 4 ]
+    %tmp.2 = self;
+    %tmp.3 = getv function %tmp.2 :mpsToPace;
+    %tmp.5 = lgetv %meterPerSeconds.1;
+    %tmp.6 = true;
+    %tmp.7 = invoke %tmp.2 %tmp.3(%tmp.5, %tmp.6);
+    %tmp.8 = 2.083333333333333f;
+    %tmp.9 = sub %tmp.7 %tmp.8;
+    %tmp.10 = 0.00001f;
+    %tmp.11 = lt %tmp.9 %tmp.10;
+    ret %tmp.11;
+_Users_mariusw_git_garmin_PaceGauge_source_test_MathTests_mc_38_65_stop:
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc"; @line = 43; test = true; ]
+function should_pace_conversion_should_not_fail_for_zero(logger as Logger) as Boolean {
+_Users_mariusw_git_garmin_PaceGauge_source_test_MathTests_mc_44_86_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" 45 4 ]
+    %tmp.1 = self;
+    %tmp.2 = getv function %tmp.1 :areClose;
+    %tmp.3 = self;
+    %tmp.4 = getv function %tmp.3 :mpsToPace;
+    %tmp.5 = 0.0f;
+    %tmp.6 = true;
+    %tmp.7 = invoke %tmp.3 %tmp.4(%tmp.5, %tmp.6);
+    %tmp.8 = 0.0f;
+    %tmp.9 = invoke %tmp.1 %tmp.2(%tmp.7, %tmp.8);
+    ret %tmp.9;
+_Users_mariusw_git_garmin_PaceGauge_source_test_MathTests_mc_44_86_stop:
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc"; @line = 48; test = true; ]
+function should_return_absolute_negative_value(logger as Logger) as Boolean {
+_Users_mariusw_git_garmin_PaceGauge_source_test_MathTests_mc_49_76_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" 50 4 ]
+    %tmp.1 = self;
+    %tmp.2 = getv function %tmp.1 :abs;
+    %tmp.3 = 1;
+    %tmp.4 = sub 0 %tmp.3;
+    %tmp.5 = invoke %tmp.1 %tmp.2(%tmp.4);
+    %tmp.6 = 1;
+    %tmp.7 = eq %tmp.5 %tmp.6;
+    ret %tmp.7;
+_Users_mariusw_git_garmin_PaceGauge_source_test_MathTests_mc_49_76_stop:
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc"; @line = 53; test = true; ]
+function should_return_absolute_positive_value(logger as Logger) as Boolean {
+_Users_mariusw_git_garmin_PaceGauge_source_test_MathTests_mc_54_76_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" 55 4 ]
+    %tmp.1 = self;
+    %tmp.2 = getv function %tmp.1 :abs;
+    %tmp.3 = 1;
+    %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+    %tmp.5 = 1;
+    %tmp.6 = eq %tmp.4 %tmp.5;
+    ret %tmp.6;
+_Users_mariusw_git_garmin_PaceGauge_source_test_MathTests_mc_54_76_stop:
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc"; @line = 58; test = true; ]
+function should_return_absolute_zero_value(logger as Logger) as Boolean {
+_Users_mariusw_git_garmin_PaceGauge_source_test_MathTests_mc_59_72_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc" 60 4 ]
+    %tmp.1 = self;
+    %tmp.2 = getv function %tmp.1 :abs;
+    %tmp.3 = 0.0f;
+    %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+    %tmp.5 = 0.0f;
+    %tmp.6 = eq %tmp.4 %tmp.5;
+    ret %tmp.6;
+_Users_mariusw_git_garmin_PaceGauge_source_test_MathTests_mc_59_72_stop:
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/test/MathTests.mc"; @line = 2; ]
+<init> {
+}

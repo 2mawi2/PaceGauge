@@ -1,0 +1,164 @@
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc"; @line = 4; ]
+class PaceGaugeViewModel{
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc"; @line = 5; @position = 8; ]
+    var pacePercentageCalculator as ZonePacePercentage;
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc"; @line = 6; @position = 8; ]
+    var thresholdPace as Float = -1.0;
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc"; @line = 7; @position = 8; ]
+    var pace as Numeric;
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc"; @line = 8; @position = 8; ]
+    var isMetricSystem as Boolean = true;
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc"; @line = 10; ]
+    function initialize() as Void {
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeViewModel_mc_10_26_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" 11 7 ]
+        %tmp.1 = 0.0f;
+        putv self :pace %tmp.1;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" 12 7 ]
+        %tmp.5 = getv ? :ZonePacePercentage;
+        %tmp.2 = newc %tmp.5 ();
+        putv self :pacePercentageCalculator %tmp.2;
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeViewModel_mc_10_26_stop:
+    }
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc"; @line = 15; ]
+    function onNewThresholdPaceConfig(thresholdMinutes as Number, thresholdSeconds as Number, isMetricSystem as Boolean) {
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeViewModel_mc_15_121_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" 16 8 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :clip;
+        %tmp.4 = lgetv %thresholdMinutes;
+        %tmp.5 = as %tmp.4 Float;
+        %tmp.6 = 0.0;
+        %tmp.7 = 60.0;
+        %tmp.8 = invoke %tmp.1 %tmp.2(%tmp.5, %tmp.6, %tmp.7);
+        lputv %thresholdMinutes %tmp.8;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" 17 8 ]
+        %tmp.9 = self;
+        %tmp.10 = getv function %tmp.9 :clip;
+        %tmp.12 = lgetv %thresholdSeconds;
+        %tmp.13 = as %tmp.12 Float;
+        %tmp.14 = 0.0;
+        %tmp.15 = 59.0;
+        %tmp.16 = invoke %tmp.9 %tmp.10(%tmp.13, %tmp.14, %tmp.15);
+        lputv %thresholdSeconds %tmp.16;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" 18 8 ]
+        [ "_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeViewModel_mc_15_121_start" "_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeViewModel_mc_15_121_stop" ]
+        %newThresholdPace.1 = local;
+        %tmp.18 = lgetv %thresholdMinutes;
+        %tmp.20 = lgetv %thresholdSeconds;
+        %tmp.21 = 60.0f;
+        %tmp.22 = div %tmp.20 %tmp.21;
+        %tmp.23 = add %tmp.18 %tmp.22;
+        lputv %newThresholdPace.1 %tmp.23;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" 19 8 ]
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeViewModel_mc_19_8_if_stmt:
+        %tmp.25 = lgetv %newThresholdPace.1;
+        %tmp.26 = 0.0f;
+        %tmp.27 = gt %tmp.25 %tmp.26;
+        bf %tmp.27 @_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeViewModel_mc_19_8_if_end;
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeViewModel_mc_19_8_if_true:
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeViewModel_mc_19_37_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" 20 12 ]
+        %tmp.29 = lgetv %newThresholdPace.1;
+        putv self :thresholdPace %tmp.29;
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeViewModel_mc_19_37_stop:
+        goto @_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeViewModel_mc_19_8_if_end;
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeViewModel_mc_19_8_if_end:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" 22 8 ]
+        %tmp.31 = lgetv %isMetricSystem;
+        putv self :isMetricSystem %tmp.31;
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" 24 8 ]
+        %tmp.33 = getv ? :System;
+        %tmp.34 = getv function %tmp.33 :println;
+        %tmp.35 = "PaceGaugeViewModel: thresholdPace = ";
+        %tmp.37 = getv ? :thresholdPace;
+        %tmp.38 = add %tmp.35 %tmp.37;
+        invoke %tmp.33 %tmp.34(%tmp.38);
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" 25 8 ]
+        %tmp.40 = getv ? :System;
+        %tmp.41 = getv function %tmp.40 :println;
+        %tmp.42 = "PaceGaugeViewModel: isMetricSystem = ";
+        %tmp.44 = lgetv %isMetricSystem;
+        %tmp.45 = add %tmp.42 %tmp.44;
+        invoke %tmp.40 %tmp.41(%tmp.45);
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" 26 8 ]
+        %tmp.47 = getv ? :System;
+        %tmp.48 = getv function %tmp.47 :println;
+        %tmp.49 = "PaceGaugeViewModel: self.isMetricSystem = ";
+        %tmp.50 = lgetv %self;
+        %tmp.51 = getv %tmp.50 :isMetricSystem;
+        %tmp.52 = add %tmp.49 %tmp.51;
+        invoke %tmp.47 %tmp.48(%tmp.52);
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" 27 8 ]
+        %tmp.54 = getv ? :System;
+        %tmp.55 = getv function %tmp.54 :println;
+        %tmp.56 = "PaceGaugeViewModel: thresholdMinutes = ";
+        %tmp.58 = lgetv %thresholdMinutes;
+        %tmp.59 = add %tmp.56 %tmp.58;
+        invoke %tmp.54 %tmp.55(%tmp.59);
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" 28 8 ]
+        %tmp.61 = getv ? :System;
+        %tmp.62 = getv function %tmp.61 :println;
+        %tmp.63 = "PaceGaugeViewModel: thresholdSeconds = ";
+        %tmp.65 = lgetv %thresholdSeconds;
+        %tmp.66 = add %tmp.63 %tmp.65;
+        invoke %tmp.61 %tmp.62(%tmp.66);
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeViewModel_mc_15_121_stop:
+    }
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc"; @line = 31; ]
+    function onNewCurrentSpeed(currentSpeed as Float) {
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeViewModel_mc_31_54_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" 32 8 ]
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeViewModel_mc_32_8_if_stmt:
+        %tmp.2 = lgetv %currentSpeed;
+        %tmp.3 = null;
+        %tmp.4 = ne %tmp.2 %tmp.3;
+        bf %tmp.4 @_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeViewModel_mc_32_8_if_false;
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeViewModel_mc_32_8_if_true:
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeViewModel_mc_32_32_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" 33 12 ]
+        %tmp.5 = self;
+        %tmp.6 = getv function %tmp.5 :mpsToPace;
+        %tmp.8 = lgetv %currentSpeed;
+        %tmp.9 = as %tmp.8 { (!Null) };
+        %tmp.10 = lgetv %self;
+        %tmp.11 = getv %tmp.10 :isMetricSystem;
+        %tmp.12 = invoke %tmp.5 %tmp.6(%tmp.9, %tmp.11);
+        %tmp.13 = as %tmp.12 Number;
+        putv self :pace %tmp.13;
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeViewModel_mc_32_32_stop:
+        goto @_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeViewModel_mc_32_8_if_end;
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeViewModel_mc_32_8_if_false:
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeViewModel_mc_34_15_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" 35 12 ]
+        %tmp.14 = 0.0f;
+        putv self :pace %tmp.14;
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeViewModel_mc_34_15_stop:
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeViewModel_mc_32_8_if_end:
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeViewModel_mc_31_54_stop:
+    }
+    [ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc"; @line = 39; ]
+    function calculatePacePercentage() as Float {
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeViewModel_mc_39_48_start:
+[ "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc" 40 8 ]
+        %tmp.2 = getv ? :pacePercentageCalculator;
+        %tmp.3 = getv function %tmp.2 :calculatePacePercentage;
+        %tmp.5 = getv ? :pace;
+        %tmp.7 = getv ? :thresholdPace;
+        %tmp.8 = invoke %tmp.2 %tmp.3(%tmp.5, %tmp.7);
+        ret %tmp.8;
+_Users_mariusw_git_garmin_PaceGauge_source_src_PaceGaugeViewModel_mc_39_48_stop:
+    }
+}
+[ @file = "/Users/mariusw/git/garmin/PaceGauge/source/src/PaceGaugeViewModel.mc"; @line = 1; ]
+<init> {
+}
